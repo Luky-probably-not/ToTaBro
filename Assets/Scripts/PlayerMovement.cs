@@ -5,21 +5,23 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed;
-    public Vector2 directionDash;
+    private float speed = 5;
+    private Vector2 directionDash;
 
-    public bool canDash = true;
-    public bool isDashing = false;
-    public float dashPower = 25f;
-    public float dashTime = 0.3f;
-    public float dashCooldown = 1f;
+    private bool canDash = true;
+    private bool isDashing = false;
+    private float dashPower = 25f;
+    private float dashTime = 0.3f;
+    private float dashCooldown = 1f;
 
-    public GameObject weaponObject;
-    //public IWeapon weapon;
-    public bool startedShoot = false;
-    public Vector2 directionShoot;
+    private IWeapon? weapon;
+    private bool startedShoot = false;
+    private Vector2 directionShoot;
 
-    public int LifePoint = 5;
+    private bool isNearWeapon = false;
+    private IWeapon? weaponNear;
+
+    private int LifePoint = 5;
 
     void Start()
     {
@@ -28,11 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        /*this.weapon = this.weaponObject.GetComponent<IWeapon>();
-        if (weapon != null)
-        {
-            weapon.player = this.transform;
-        }*/
         if (isDashing) return;
 
     }
@@ -44,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
         directionDash = GetDirection(input);
         rb.linearVelocity = new Vector2(input.x * speed, input.y * speed);
     }
-
     public void OnLook(InputValue value)
     {
         Vector2 input = value.Get<Vector2>();
@@ -53,12 +49,41 @@ public class PlayerMovement : MonoBehaviour
             directionShoot = input.normalized;
         }
     }
-
     public void OnDash()
     {
         if (!canDash) return;
         canDash = false;
         StartCoroutine(Dash());
+    }
+    public void OnShoot()
+    {
+
+        if (isDashing || weapon == null) return;
+        startedShoot = !startedShoot;
+        StartCoroutine(ShootRoutine());
+    }
+    public void OnInteract()
+    {
+        if (isNearWeapon)
+        {
+            if (weapon == null)
+            {
+                weapon = weaponNear;
+                weapon.player = this.transform;
+                weapon.isWielded = true;
+            } else
+            {
+                weapon.player = null;
+                weapon.isWielded = false;
+                weapon = weaponNear;
+                weapon.player = this.transform;
+                weapon.isWielded = true;
+            }
+            print("true");
+        } else
+        {
+            print("false");
+        }
     }
 
     private Vector2 GetDirection(Vector2 input)
@@ -81,15 +106,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
-
-    public void OnShoot()
-    {
-
-        if (isDashing) return;
-        startedShoot = !startedShoot;
-        //StartCoroutine(ShootRoutine());
-    }
-    /*
+    
     public IEnumerator ShootRoutine()
     {
         while (startedShoot)
@@ -97,16 +114,25 @@ public class PlayerMovement : MonoBehaviour
             weapon.Shoot(directionShoot);
             yield return new WaitForSeconds(weapon.fireRate);
         }
-    }*/
+    }
 
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        /*Ennemies enemy = collision.GetComponent<Ennemies>();
-        if (enemy != null)
+        if (collision.CompareTag("Weapon"))
         {
-            LifePoint = Mathf.Clamp(LifePoint - 1, 0, 5);
-            enemy.Deactivate();
-        }*/
+            weaponNear = collision.GetComponent<IWeapon>();
+            isNearWeapon = !weaponNear.isWielded;
+            print(weaponNear.name);
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Weapon"))
+        {
+            weaponNear = null;
+            isNearWeapon = false;
+        }
     }
 }
