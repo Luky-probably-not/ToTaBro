@@ -4,9 +4,15 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Bot
+  - Gunnie
+  - SmallBulletPlayer
+  - DeadZone
+  - Shotgun
+  - Weapon
+  - LaserBulletPlayer
+  - Potion
   - Ennemy
-  - bullet
+  - SwordSlashPlayer
   layers:
   - Default
   - TransparentFX
@@ -14,9 +20,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Ennemies
+  - SmallBulletPlayer
   - 
   - 
   - 
