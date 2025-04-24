@@ -46,7 +46,7 @@ public class Ennemy : MonoBehaviour
 
     protected void HandleCollision(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("bullet"))
+        if(collision.gameObject.CompareTag("SmallBulletPlayer") || collision.gameObject.CompareTag("LaserBulletPlayer") || collision.gameObject.CompareTag("Player"))
         {
             TakeDamage(1); // Value of damage taken
         }

@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ReceiveDamage(Collider2D collider)
     {
-        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().Damage, 0, MaxLifePoint);
+        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().GetDamage(), 0, MaxLifePoint);
         StartCoroutine(IgnoreCollision(collider, GetComponent<Collider2D>(), 1f));
     }
 
