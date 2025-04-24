@@ -2,21 +2,70 @@ using UnityEngine;
 
 public class Ennemy : MonoBehaviour
 {
-    private int hp;
-    private string name;
-    private int difficulty;
-    private int damage = 1;
-    private int speed;
+    protected int hp;
+    protected string nickname;
+    protected int difficulty;
+    protected int damage;
+    protected int speed;
+    protected Transform target;
+    [SerializeField] protected Rigidbody2D rb;
 
-    Ennemy(int hp, string name, int difficulty, int damage, int speed)
+    public void Init(int hp, string nickname, int difficulty, int damage, int speed)
     {
-	this.hp = hp;
-	this.name = name;
-	this.difficulty = difficulty;
-	this.damage = damage;
-	this.speed = speed;
+        this.hp = hp;
+        this.nickname = nickname;
+        this.difficulty = difficulty;
+        this.damage = damage;
+        this.speed = speed;
     }
 
+
+    protected virtual void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    protected void FindTarget(string targetTag)
+    {
+        GameObject targetObj = GameObject.FindGameObjectWithTag(targetTag);
+        if (targetObj != null)
+        {
+            target = targetObj.transform;
+        }
+    }
+
+    protected void GoTo(string targetTag)
+    {
+        FindTarget(targetTag);
+        if (target != null)
+        {
+            Vector2 direction = (target.position - transform.position).normalized;
+            transform.position += (Vector3)direction * speed * Time.deltaTime;
+        }
+    }
+
+    protected void HandleCollision(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("bullet"))
+        {
+            TakeDamage(1); // Value of damage taken
+        }
+    }
+
+    protected void TakeDamage(int amount)
+    {
+        hp -= amount;
+        if(hp <= 0)
+            Die();
+    }
+
+    protected void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    //Damge moyen method m*x+p +/-50%
+    
     //Getter
     
     public int GetHp()
@@ -24,9 +73,9 @@ public class Ennemy : MonoBehaviour
 	return this.hp;
     }
 
-    public string GetName()
+    public string GetNickname()
     {
-	return this.name;
+	return this.nickname;
     }
 
     public int GetDifficulty()
@@ -51,9 +100,9 @@ public class Ennemy : MonoBehaviour
 	this.hp = hp;
     }
 
-    public void SetName(string name)
+    public void SetNickname(string nickname)
     {
-	this.name = name;
+	this.nickname = nickname;
     }
 
     public void SetDifficulty(int difficulty)
@@ -70,10 +119,4 @@ public class Ennemy : MonoBehaviour
     {
 	this.speed = speed;
     }
-    //Damge moyen method m*x+p +/-50%
-    
-    //Methode todo
-    //damage taken
-    //movement
-    //attack
 }
