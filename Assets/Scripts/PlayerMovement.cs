@@ -5,7 +5,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    private float speed = 5;
+    public float speed = 5;
     private Vector2 directionDash;
 
     private bool canDash = true;
@@ -14,14 +14,18 @@ public class PlayerMovement : MonoBehaviour
     private float dashTime = 0.3f;
     private float dashCooldown = 1f;
 
-    private IWeapon? weapon;
+    private IWeapon? weapon; 
     private bool startedShoot = false;
     private Vector2 directionShoot;
 
     private bool isNearWeapon = false;
     private IWeapon? weaponNear;
 
-    private int LifePoint = 5;
+    private bool isNearPotion = false;
+    private IPotion? potionNear;
+
+    public float LifePoint = 5;
+    private float MaxLifePoint = 10;
 
     void Start()
     {
@@ -68,21 +72,33 @@ public class PlayerMovement : MonoBehaviour
         {
             if (weapon == null)
             {
+                weaponNear.Equip(this.transform);
                 weapon = weaponNear;
-                weapon.player = this.transform;
-                weapon.isWielded = true;
-            } else
-            {
-                weapon.player = null;
-                weapon.isWielded = false;
+            } else {
+                weapon.Desequip();
+                weaponNear.Equip(this.transform);
                 weapon = weaponNear;
-                weapon.player = this.transform;
-                weapon.isWielded = true;
             }
-            print("true");
-        } else
+        }
+        if (isNearPotion)
         {
-            print("false");
+            switch (potionNear.type)
+            {
+                case "Health":
+                    this.Heal(potionNear.value);
+                    potionNear.Use();
+                    break;
+                case "Speed":
+                    StartCoroutine(IncreaseSpeed(potionNear.value));
+                    potionNear.Use();
+                    break;
+                case "FireRate":
+                    if (weapon != null) StartCoroutine(weapon.IncreaseFireRate(potionNear.value));
+                    potionNear.Use(); 
+                    break;
+                default:
+                    break;
+            } 
         }
     }
 
@@ -92,6 +108,33 @@ public class PlayerMovement : MonoBehaviour
         float Y = Mathf.Abs(input.y) > 0.5f ? Mathf.Sign(input.y) : 0;
 
         return new Vector2(X, Y).normalized;
+    }
+
+    public void Heal(float heal)
+    {
+        this.LifePoint = Mathf.Clamp(this.LifePoint+heal, 0, MaxLifePoint);
+    }
+
+    public IEnumerator IncreaseSpeed(float time)
+    {
+        this.speed *= 2;
+        this.dashCooldown /= 2;
+        yield return new WaitForSeconds(time);
+        this.speed /= 2;
+        this.dashCooldown *= 2;
+    }
+
+    public void ReceiveDamage(Collider2D collider)
+    {
+        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().Damage, 0, MaxLifePoint);
+        StartCoroutine(IgnoreCollision(collider, GetComponent<Collider2D>(), 1f));
+    }
+
+    private IEnumerator IgnoreCollision(Collider2D a, Collider2D b, float time)
+    {
+        Physics2D.IgnoreCollision(a, b, true);
+        yield return new WaitForSeconds(time);
+        Physics2D.IgnoreCollision(a, b, false);
     }
     private IEnumerator Dash()
     {
@@ -111,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
     {
         while (startedShoot)
         {
-            weapon.Shoot(directionShoot);
+            weapon.ShootWeapon(directionShoot);
             yield return new WaitForSeconds(weapon.fireRate);
         }
     }
@@ -123,7 +166,15 @@ public class PlayerMovement : MonoBehaviour
         {
             weaponNear = collision.GetComponent<IWeapon>();
             isNearWeapon = !weaponNear.isWielded;
-            print(weaponNear.name);
+        }
+        if (collision.CompareTag("Potion"))
+        {
+            potionNear = collision.GetComponent<IPotion>();
+            isNearPotion = true;
+        }
+        if (collision.CompareTag("Ennemy"))
+        {
+            ReceiveDamage(collision);
         }
     }
 
@@ -133,6 +184,11 @@ public class PlayerMovement : MonoBehaviour
         {
             weaponNear = null;
             isNearWeapon = false;
+        }
+        if (collision.CompareTag("Potion"))
+        {
+            potionNear = null;
+            isNearPotion = false;
         }
     }
 }

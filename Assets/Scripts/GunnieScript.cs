@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Gunnie : MonoBehaviour, IWeapon
 {
-    public string name { get; } = "Gunnie";
+    public new string name { get; set; } = "Gunnie";
     [SerializeField] private GameObject bulletObj;
     public float fireRate { get; set; } = 0.5f;
     public float bulletSpeed { get; set; } = 7;
@@ -21,8 +21,12 @@ public class Gunnie : MonoBehaviour, IWeapon
         get => _lastShotTime;
         set => _lastShotTime = value;
     }
-    public float bulletDisparitionTime { get; set; } = 1.5f;
 
+    public float bulletDisparitionTime { get; set; } = 1.5f;
+    public bool isLegendary { get; set; } = false;
+    public SpriteRenderer sprite { get; set; }
+    public Color currentColor { get; set; }
+    public float hueOffSet { get; set; }
     public void Start()
     {
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -31,27 +35,30 @@ public class Gunnie : MonoBehaviour, IWeapon
             this.player = playerObj.transform;
         }
         _lastShotTime = -Mathf.Infinity;
-    }
 
+        this.sprite = GetComponentInChildren<SpriteRenderer>();
+        currentColor = this.sprite.color;
+        hueOffSet = Random.value;
+    }
     public void Update()
     {
         if (isWielded && player != null)
         {
             transform.position = player.position;
         }
+        if (isLegendary)
+        {
+            (this as IWeapon).LegendaryColor();
+        }
     }
-    public void Shoot(Vector2 directionShoot)
+
+    public void ShootWeapon(Vector2 directionShoot)
     {
         if (Time.time < lastShotTime + fireRate) return;
 
         lastShotTime = Time.time;
-        Transform? positionWeapon = gameObject != null ? gameObject.transform : null;
-
+        var positionWeapon = gameObject != null ? gameObject.transform : null;
         GameObject newBullet = Instantiate(bullet);
-        newBullet.transform.SetPositionAndRotation(positionWeapon.position, transform.rotation);
-        Rigidbody2D newBulletRb = newBullet.GetComponent<Rigidbody2D>();
-        newBulletRb.linearVelocity = directionShoot * bulletSpeed;
-        Bullet bulletObject = newBullet.GetComponent<Bullet>();
-        bulletObject.DieAfterSeconds(bulletDisparitionTime);
+        (this as IWeapon).Shoot(directionShoot, 0, transform.rotation, positionWeapon, newBullet);
     }
 }

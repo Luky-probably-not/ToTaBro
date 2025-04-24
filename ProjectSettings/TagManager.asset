@@ -9,6 +9,10 @@ TagManager:
   - DeadZone
   - Shotgun
   - Weapon
+  - LaserBulletPlayer
+  - Potion
+  - Ennemy
+  - SwordSlashPlayer
   layers:
   - Default
   - TransparentFX

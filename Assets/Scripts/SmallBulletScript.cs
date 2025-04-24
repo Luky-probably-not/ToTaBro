@@ -1,9 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour, IBullet
 {
-    void Start() { }
+    public float StartedAngle {get; set; }
+    void Start() 
+    {
+        
+    }
 
     void Update() { }
 

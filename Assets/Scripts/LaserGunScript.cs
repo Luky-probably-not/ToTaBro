@@ -1,13 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class Shotgun : MonoBehaviour, IWeapon
+public class LaserGun : MonoBehaviour, IWeapon
 {
-
-    public new string name { get; } = "Shotgun";
+    public new string name { get; } = "LaserGun";
     [SerializeField] private GameObject bulletObj;
     public float fireRate { get; set; } = 1f;
-    public float bulletSpeed { get; set; } = 20;
+    public float bulletSpeed { get; set; } = 0;
     public GameObject bullet
     {
         get => bulletObj;
@@ -24,8 +23,7 @@ public class Shotgun : MonoBehaviour, IWeapon
     }
     public float bulletDisparitionTime { get; set; } = 0.2f;
 
-
-    public bool isLegendary { get; set; } = true;
+    public bool isLegendary { get; set; } = false;
     public SpriteRenderer sprite { get; set; }
     public Color currentColor { get; set; }
     public float hueOffSet { get; set; }
@@ -58,20 +56,12 @@ public class Shotgun : MonoBehaviour, IWeapon
     public void ShootWeapon(Vector2 directionShoot)
     {
         if (Time.time < lastShotTime + fireRate) return;
-        lastShotTime = Time.time;
-        int numberBullet = 5;
-        float spreadAngle = 20;
-        float startAngle = -spreadAngle / 2f;
-        float angleStep = spreadAngle / (numberBullet - 1);
-        for (float i = 0; i < numberBullet; i++)
-        {
-            float angle = startAngle + i * angleStep;
-            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
-            var positionWeapon = gameObject != null ? gameObject.transform : null;
+        float angle = Mathf.Atan2(directionShoot.y, directionShoot.x) * Mathf.Rad2Deg;
 
-            GameObject newBullet = Instantiate(bullet);
-            print(angle);
-            (this as IWeapon).Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection), positionWeapon, newBullet);
-        }
+        lastShotTime = Time.time;
+        var positionWeapon = gameObject != null ? gameObject.transform : null;
+
+        GameObject newBullet = Instantiate(bullet);
+        (this as IWeapon).Shoot(directionShoot, angle, transform.rotation, positionWeapon, newBullet);
     }
 }
