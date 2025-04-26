@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class SwordSlash : MonoBehaviour, IBullet
+public class LaserBullet : MonoBehaviour, IBullet
 {
     public Transform player;
+    public int Damage {  get; set; }
     public float StartedAngle { get; set; }
     void Start()
     {
@@ -12,8 +13,6 @@ public class SwordSlash : MonoBehaviour, IBullet
         {
             this.player = playerObj.transform;
         }
-        StartedAngle += 42f;
-        transform.rotation = Quaternion.Euler(0, 0, StartedAngle);
     }
 
     void Update()
@@ -22,8 +21,6 @@ public class SwordSlash : MonoBehaviour, IBullet
         {
             transform.position = this.player.position;
         }
-        StartedAngle -= 1f;
-        transform.rotation = Quaternion.Euler(0, 0, StartedAngle);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +28,10 @@ public class SwordSlash : MonoBehaviour, IBullet
         if (collision.CompareTag("DeadZone"))
         {
             Destroy(gameObject);
+        }
+        if (collision.CompareTag("Ennemy"))
+        {
+            StartCoroutine((this as IBullet).IgnoreCollision(collision, GetComponent<Collider2D>(), 1f));
         }
     }
 
@@ -41,7 +42,6 @@ public class SwordSlash : MonoBehaviour, IBullet
     public IEnumerator Die(float time)
     {
         yield return new WaitForSeconds(time);
-        print(StartedAngle);
         Destroy(gameObject);
     }
 }

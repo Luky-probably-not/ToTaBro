@@ -4,6 +4,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour, IBullet
 {
     public float StartedAngle {get; set; }
+    public int Damage { get; set; }
     void Start() 
     {
         
@@ -17,6 +18,11 @@ public class Bullet : MonoBehaviour, IBullet
         {
             Destroy(gameObject);
         }
+        if (collision.CompareTag("Ennemy"))
+        {
+            StartCoroutine((this as IBullet).IgnoreCollision(collision, GetComponent<Collider2D>(), 1f));
+            Destroy(gameObject);
+        }
     }
 
     public void DieAfterSeconds(float time)
@@ -28,4 +34,5 @@ public class Bullet : MonoBehaviour, IBullet
         yield return new WaitForSeconds(time);
         Destroy(gameObject);
     }
+
 }

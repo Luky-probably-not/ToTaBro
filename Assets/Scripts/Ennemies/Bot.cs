@@ -5,7 +5,7 @@ public class Bot : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 1;
+        hp = 3;
         nickname = "Bot";
         difficulty = 1;
         damage = 1;
@@ -16,7 +16,7 @@ public class Bot : Ennemy
     {
         GoTo("Player");
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         HandleCollision(collision);
     }

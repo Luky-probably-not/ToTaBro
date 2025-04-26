@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 275091698806962004}
   - component: {fileID: -1939983098370600228}
   - component: {fileID: 4585416633502546137}
-  - component: {fileID: -2447183163414297350}
-  - component: {fileID: -2863934864040074475}
+  - component: {fileID: -5144983639518627464}
   m_Layer: 0
   m_Name: Speedy
   m_TagString: Ennemy
@@ -100,7 +99,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7588790100145448760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aa1acc973ebb7b418f50c1c98fdba5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 39a8a64b52ae97f44bac94dffd943035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4585416633502546137}
@@ -131,7 +130,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &-2447183163414297350
+--- !u!70 &-5144983639518627464
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,42 +165,5 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999999}
-  m_Direction: 0
---- !u!70 &-2863934864040074475
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7588790100145448760}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999999}
+  m_Size: {x: 1.2, y: 2.3}
   m_Direction: 0

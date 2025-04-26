@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1643761949759395671}
   m_Layer: 0
   m_Name: LaserGun
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,4 +179,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c83b6c53f8aa3c499a85df73e43300e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 315561612708912388, guid: 3bb6c15a2c01e57418c3fd3a97960e4e, type: 3}
+  bulletObj: {fileID: 315561612708912388, guid: c0c109c5f4d442947bb2b7e6fb0774ab, type: 3}

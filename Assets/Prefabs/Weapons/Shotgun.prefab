@@ -46,9 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbc6252e5c532142b0b4a9fc3fe2a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 1464410677912618184, guid: 9fd84e0baed2e494a99d71756391912e, type: 3}
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
-  hueOffset: 0
+  bulletObj: {fileID: 1464410677912618184, guid: 0d1d8bccb6529f640819de9bcc40640b, type: 3}
 --- !u!61 &6017034801290205119
 BoxCollider2D:
   m_ObjectHideFlags: 0

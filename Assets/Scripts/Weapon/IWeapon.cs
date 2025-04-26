@@ -11,6 +11,7 @@ public interface IWeapon
     bool isWielded { get; set; }
     float lastShotTime { get; set; }
     float bulletDisparitionTime { get; set; }
+    int bulletDamage { get; set; }
 
     float hueOffSet { get; set; }
     Color currentColor { get; set; }
@@ -18,7 +19,7 @@ public interface IWeapon
     SpriteRenderer sprite {  get; set; }
 
 
-    public void Shoot(Vector2 directionShoot, float angle, Quaternion rotateDirection, Transform positionWeapon, GameObject newBullet)
+    public void Shoot(Vector2 directionShoot, float angle, Quaternion rotateDirection, Transform positionWeapon, GameObject newBullet,int damage)
     {
         newBullet.transform.SetPositionAndRotation(positionWeapon.position, rotateDirection);
         Rigidbody2D newBulletRb = newBullet.GetComponentInChildren<Rigidbody2D>();
@@ -27,6 +28,7 @@ public interface IWeapon
         IBullet bulletObject = newBullet.GetComponent<IBullet>();
         bulletObject.StartedAngle = angle;
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
+        bulletObject.Damage = damage;
     }
 
     void ShootWeapon(Vector2 directionShoot) { }

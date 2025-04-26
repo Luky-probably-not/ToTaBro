@@ -44,11 +44,12 @@ public class Ennemy : MonoBehaviour
         }
     }
 
-    protected void HandleCollision(Collision2D collision)
+    protected void HandleCollision(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("SmallBulletPlayer") || collision.gameObject.CompareTag("LaserBulletPlayer") || collision.gameObject.CompareTag("Player"))
+        if(collision.CompareTag("SmallBulletPlayer") || collision.CompareTag("LaserBulletPlayer") || collision.CompareTag("SwordSlashPlayer"))
         {
-            TakeDamage(1); // Value of damage taken
+            IBullet bullet = collision.GetComponentInChildren<IBullet>();
+            TakeDamage(bullet.Damage); // Value of damage taken
         }
     }
 

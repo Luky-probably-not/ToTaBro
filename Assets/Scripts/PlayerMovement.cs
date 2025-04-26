@@ -134,18 +134,19 @@ public class PlayerMovement : MonoBehaviour
     {
         Physics2D.IgnoreCollision(a, b, true);
         yield return new WaitForSeconds(time);
+        if (a == null || b == null) yield break;
         Physics2D.IgnoreCollision(a, b, false);
     }
     private IEnumerator Dash()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
 
         isDashing = true;
         rb.linearVelocity = directionDash * dashPower;
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         rb.linearVelocity = directionDash * speed * 0.8f;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }

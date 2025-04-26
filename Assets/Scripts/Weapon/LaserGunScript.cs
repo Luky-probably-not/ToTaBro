@@ -5,7 +5,7 @@ public class LaserGun : MonoBehaviour, IWeapon
 {
     public new string name { get; } = "LaserGun";
     [SerializeField] private GameObject bulletObj;
-    public float fireRate { get; set; } = 1f;
+    public float fireRate { get; set; } = 2f;
     public float bulletSpeed { get; set; } = 0;
     public GameObject bullet
     {
@@ -22,6 +22,7 @@ public class LaserGun : MonoBehaviour, IWeapon
         set => _lastShotTime = value;
     }
     public float bulletDisparitionTime { get; set; } = 0.2f;
+    public int bulletDamage { get; set; } = 5;
 
     public bool isLegendary { get; set; } = false;
     public SpriteRenderer sprite { get; set; }
@@ -62,6 +63,6 @@ public class LaserGun : MonoBehaviour, IWeapon
         var positionWeapon = gameObject != null ? gameObject.transform : null;
 
         GameObject newBullet = Instantiate(bullet);
-        (this as IWeapon).Shoot(directionShoot, angle, transform.rotation, positionWeapon, newBullet);
+        (this as IWeapon).Shoot(directionShoot, angle, transform.rotation, positionWeapon, newBullet, bulletDamage);
     }
 }

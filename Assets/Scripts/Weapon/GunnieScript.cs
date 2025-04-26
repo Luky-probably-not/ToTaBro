@@ -1,13 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class Shotgun : MonoBehaviour, IWeapon
+public class Gunnie : MonoBehaviour, IWeapon
 {
-
-    public new string name { get; } = "Shotgun";
+    public new string name { get; set; } = "Gunnie";
     [SerializeField] private GameObject bulletObj;
-    public float fireRate { get; set; } = 1f;
-    public float bulletSpeed { get; set; } = 20;
+    public float fireRate { get; set; } = 0.5f;
+    public float bulletSpeed { get; set; } = 7;
     public GameObject bullet
     {
         get => bulletObj;
@@ -22,14 +21,13 @@ public class Shotgun : MonoBehaviour, IWeapon
         get => _lastShotTime;
         set => _lastShotTime = value;
     }
-    public float bulletDisparitionTime { get; set; } = 0.2f;
+    public int bulletDamage { get; set; } = 1;
 
-
-    public bool isLegendary { get; set; } = true;
+    public float bulletDisparitionTime { get; set; } = 1.5f;
+    public bool isLegendary { get; set; } = false;
     public SpriteRenderer sprite { get; set; }
     public Color currentColor { get; set; }
     public float hueOffSet { get; set; }
-
     public void Start()
     {
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -58,20 +56,10 @@ public class Shotgun : MonoBehaviour, IWeapon
     public void ShootWeapon(Vector2 directionShoot)
     {
         if (Time.time < lastShotTime + fireRate) return;
-        lastShotTime = Time.time;
-        int numberBullet = 5;
-        float spreadAngle = 20;
-        float startAngle = -spreadAngle / 2f;
-        float angleStep = spreadAngle / (numberBullet - 1);
-        for (float i = 0; i < numberBullet; i++)
-        {
-            float angle = startAngle + i * angleStep;
-            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
-            var positionWeapon = gameObject != null ? gameObject.transform : null;
 
-            GameObject newBullet = Instantiate(bullet);
-            print(angle);
-            (this as IWeapon).Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection), positionWeapon, newBullet);
-        }
+        lastShotTime = Time.time;
+        var positionWeapon = gameObject != null ? gameObject.transform : null;
+        GameObject newBullet = Instantiate(bullet);
+        (this as IWeapon).Shoot(directionShoot, 0, transform.rotation, positionWeapon, newBullet, bulletDamage);
     }
 }

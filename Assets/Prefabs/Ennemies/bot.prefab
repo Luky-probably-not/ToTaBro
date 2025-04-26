@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3774082349218680163}
   - component: {fileID: 9068762938286062139}
   - component: {fileID: 2688100109542323793}
-  - component: {fileID: -8469869407147531725}
   m_Layer: 0
   m_Name: bot
   m_TagString: Ennemy
@@ -126,7 +125,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.2, y: 2.3}
   m_Direction: 0
 --- !u!50 &9068762938286062139
 Rigidbody2D:
@@ -164,44 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2531796429475434387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d41c8d5c38a5f44e86d7ffeb72cde26, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a67e165872b4f8428021c12cdc9f6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 9068762938286062139}
---- !u!70 &-8469869407147531725
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2531796429475434387}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999999}
-  m_Direction: 0
