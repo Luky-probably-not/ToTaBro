@@ -69,8 +69,6 @@ public class Ennemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    //Damge moyen method m*x+p +/-50%
     
     //Getter
     
