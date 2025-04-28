@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: a3bddc6ba9d00c85ab6ebab394b0866f, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -287,18 +287,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4860983917505171159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395a3105c75b82f4c9c243dd5323fa34, type: 3}
+  m_Script: {fileID: 11500000, guid: 874dc63b34b58741f878e83b54fee717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3520886302648262291}
   speed: 5
-  directionDash: {x: 0, y: 0}
-  canDash: 1
-  isDashing: 0
-  dashPower: 20
-  dashTime: 0.3
-  dashCooldown: 1
-  weaponObject: {fileID: 27389037025994534, guid: 83890fbf7b73bbe4bbc41c1d5fe48f23, type: 3}
-  startedShoot: 0
-  directionShoot: {x: 0, y: 0}
   LifePoint: 5

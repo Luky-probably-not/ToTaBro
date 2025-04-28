@@ -43,10 +43,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 27389037025994534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbbc6252e5c532142b0b4a9fc3fe2a8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 396c4d7b26a9151ef89c019ef4f6eaf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 1464410677912618184, guid: 0d1d8bccb6529f640819de9bcc40640b, type: 3}
+  bulletObj: {fileID: 1464410677912618184, guid: a15d4d604515a34fdb97ff2d5d76412d, type: 3}
 --- !u!61 &6017034801290205119
 BoxCollider2D:
   m_ObjectHideFlags: 0
