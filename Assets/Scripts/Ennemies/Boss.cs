@@ -10,7 +10,7 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 250;
+        hp = 500;
         nickname = "Boss";
         difficulty = 10;
         damage = 3;
@@ -51,6 +51,7 @@ public class Slime : Ennemy
 	    yield return new WaitForSeconds(time);
 	    sr.color = Color.red;
 	}
+	rb.linearVelocity = Vector2.zero;
 	SlamAttack();
 	yield return new WaitForSeconds(0.5f);
 	sr.color = Color.green;
