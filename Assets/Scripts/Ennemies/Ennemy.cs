@@ -19,7 +19,6 @@ public class Ennemy : MonoBehaviour
         this.speed = speed;
     }
 
-
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,7 +47,7 @@ public class Ennemy : MonoBehaviour
     {
         if(collision.CompareTag("SmallBulletPlayer") || collision.CompareTag("LaserBulletPlayer") || collision.CompareTag("SwordSlashPlayer"))
         {
-            IBullet bullet = collision.GetComponentInChildren<IBullet>();
+            Bullet bullet = collision.GetComponentInChildren<Bullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
         }
     }

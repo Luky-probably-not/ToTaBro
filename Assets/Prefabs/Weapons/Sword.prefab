@@ -179,4 +179,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7595c4e0aa133ae4081d735c478b2544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 4578958851480074096, guid: 635243582e15ed34a94b7230927df5eb, type: 3}
+  bullet: {fileID: 4578958851480074096, guid: 635243582e15ed34a94b7230927df5eb, type: 3}

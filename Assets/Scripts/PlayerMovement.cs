@@ -14,12 +14,12 @@ public class PlayerMovement : MonoBehaviour
     private float dashTime = 0.3f;
     private float dashCooldown = 1f;
 
-    private IWeapon? weapon; 
+    private Weapon? weapon; 
     private bool startedShoot = false;
     private Vector2 directionShoot;
 
     private bool isNearWeapon = false;
-    private IWeapon? weaponNear;
+    private Weapon? weaponNear;
 
     private bool isNearPotion = false;
     private IPotion? potionNear;
@@ -139,14 +139,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), true);
 
         isDashing = true;
         rb.linearVelocity = directionDash * dashPower;
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         rb.linearVelocity = directionDash * speed * 0.8f;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), false);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Weapon"))
         {
-            weaponNear = collision.GetComponent<IWeapon>();
+            weaponNear = collision.GetComponent<Weapon>();
             isNearWeapon = !weaponNear.isWielded;
         }
         if (collision.CompareTag("Potion"))
