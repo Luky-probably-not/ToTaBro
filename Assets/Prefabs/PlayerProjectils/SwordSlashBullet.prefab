@@ -44,10 +44,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4578958851480074096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5e6d50fa395edc49b2fa2553288f171, type: 3}
+  m_Script: {fileID: 11500000, guid: d04665af0e979c148b12b386b3ff1b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  StartedAngle: 0
+  Damage: 0
+  passThrough: 0
+  slash: 0
 --- !u!50 &2513457397345815536
 Rigidbody2D:
   serializedVersion: 5
