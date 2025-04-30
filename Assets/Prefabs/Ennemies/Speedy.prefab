@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1939983098370600228}
   - component: {fileID: 4585416633502546137}
   - component: {fileID: -5144983639518627464}
+  - component: {fileID: 1979689238814272375}
   m_Layer: 0
   m_Name: Speedy
   m_TagString: Ennemy
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.9952928, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -167,3 +168,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.2, y: 2.3}
   m_Direction: 0
+--- !u!114 &1979689238814272375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7588790100145448760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

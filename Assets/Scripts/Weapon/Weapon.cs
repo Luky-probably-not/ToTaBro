@@ -77,6 +77,7 @@ public abstract class Weapon : MonoBehaviour
     {
         this.player = null;
         this.isWielded = false;
+         GameManager.Instance.SetDroppedWeapon(this.gameObject);
     }
 
     public void LegendaryColor()

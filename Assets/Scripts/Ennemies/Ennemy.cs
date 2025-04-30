@@ -59,8 +59,9 @@ public class Ennemy : MonoBehaviour
             Die();
     }
 
-    protected void Die()
+    protected virtual void Die()
     {
+        GameManager.Instance.EnemyDefeated(1f);
         Destroy(gameObject);
     }
 

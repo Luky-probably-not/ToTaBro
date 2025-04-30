@@ -30,9 +30,11 @@ public class GameManager : MonoBehaviour
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
 
+    private GameObject droppedWeapon;
+    private int dropWeaponWave = -1;
     private GameObject currentUI;
     private int currentWave = 1;
-    private int enemiesAlive;
+    private float enemiesAlive;
     private List<GameObject> normalEnemies = new List<GameObject>();
     private List<GameObject> weapons = new List<GameObject>();
     private GameObject currentWeapon;
@@ -90,7 +92,7 @@ public class GameManager : MonoBehaviour
         currentWeapon = Instantiate(gunniePrefab, Vector3.zero, Quaternion.identity);
 
         currentWave = 1;
-        StartCoroutine(SpawnWave());
+        StartCoroutine(SpawnWave(1f));
     }
 
     public void LoadScene(GameObject scenePrefab)
@@ -99,9 +101,9 @@ public class GameManager : MonoBehaviour
         currentUI = Instantiate(scenePrefab, FindObjectOfType<Canvas>().transform);
     }
 
-    private IEnumerator SpawnWave()
+    private IEnumerator SpawnWave(float wait)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(wait);
 
         if (currentWave > 50)
         {
@@ -128,12 +130,13 @@ public class GameManager : MonoBehaviour
                 enemiesAlive++;
             }
         }
+        Debug.Log("Vague " + currentWave);
     }
 
-    public void EnemyDefeated()
+    public void EnemyDefeated(float minus)
     {
-        enemiesAlive--;
-
+        enemiesAlive=enemiesAlive-minus;
+        Debug.Log("Enemy defeated. Restants: " + enemiesAlive);
         if (enemiesAlive <= 0)
         {
             if (currentWave % 10 == 0)
@@ -142,35 +145,50 @@ public class GameManager : MonoBehaviour
             }
 
             currentWave++;
-            StartCoroutine(SpawnWave());
+            if (droppedWeapon != null && currentWave >= dropWeaponWave + 3)
+            {
+                Destroy(droppedWeapon);
+                droppedWeapon = null;
+                Debug.Log("Arme dropée non ramassée détruite après 3 vagues.");
+            }
+            StartCoroutine(SpawnWave(3f));
         }
     }
-
+    public void SetDroppedWeapon(GameObject weapon)
+    {
+        droppedWeapon = weapon;
+        Debug.Log("Arme déposée : " + weapon.name);
+    }
     private void DropNewWeapon()
     {
         List<GameObject> availableWeapons = weapons.FindAll(w => w.name != currentWeapon.name.Replace("(Clone)", ""));
-
         if (availableWeapons.Count > 0)
         {
             GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
-            Destroy(currentWeapon);
-            currentWeapon = Instantiate(newWeapon, Vector3.zero, Quaternion.identity);
+            droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
+            dropWeaponWave = currentWave;
+
+            Debug.Log("Nouvelle arme dropée : " + newWeapon.name);
         }
     }
 
     private Vector3 GetRandomPosition()
     {
+        Camera cam = Camera.main;
         Vector3 randomPosition = Vector3.zero;
         bool validPosition = false;
 
-        while (!validPosition)
+        while(!validPosition)
         {
-            float x = Random.Range(-18f, 18f); 
-            float y = Random.Range(-18f, 18f); 
+            float x = Random.Range(0.1f, 0.9f);
+            float y = Random.Range(0.1f, 0.9f);
+            Vector3 screenPos = new Vector3(x * Screen.width, y * Screen.height, cam.nearClipPlane);
+            Vector3 worldPos = cam.ScreenToWorldPoint(screenPos);
+            worldPos.z = 0;
 
-            if (Mathf.Abs(x) > 2f || Mathf.Abs(y) > 2f)
+            if (Mathf.Abs(worldPos.x) > 2f || Mathf.Abs(worldPos.y) > 2f)
             {
-                randomPosition = new Vector3(x, y, 0f);
+                randomPosition = worldPos;
                 validPosition = true;
             }
         }

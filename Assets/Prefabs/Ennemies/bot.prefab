@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3774082349218680163}
   - component: {fileID: 9068762938286062139}
   - component: {fileID: 227786954321264555}
+  - component: {fileID: 2768755187316692011}
   m_Layer: 0
   m_Name: bot
   m_TagString: Ennemy
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.21529014, g: 0.34441155, b: 0.7735849, a: 1}
   m_FlipX: 0
@@ -167,3 +168,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 9068762938286062139}
+--- !u!114 &2768755187316692011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531796429475434387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
