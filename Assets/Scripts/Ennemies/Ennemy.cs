@@ -38,6 +38,7 @@ public class Ennemy : MonoBehaviour
         FindTarget(targetTag);
         if (target != null)
         {
+	    //rb.bodyType = RigidbodyType2D.Kinematic;
             Vector2 direction = (target.position - transform.position).normalized;
             transform.position += (Vector3)direction * speed * Time.deltaTime;
         }
@@ -49,7 +50,11 @@ public class Ennemy : MonoBehaviour
         {
             Bullet bullet = collision.GetComponentInChildren<Bullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
-        }
+        }else if (collision.CompareTag("Player"))
+	{
+	    TakeDamage(1);
+	    rb.linearVelocity = Vector2.zero;
+	}
     }
 
     protected void TakeDamage(int amount)
