@@ -65,14 +65,47 @@ public class GameManager : MonoBehaviour
 
     public void LoadAccueil()
     {
+        Reset();
+        LoadScene(accueilUIPrefab);
+    }
+    public void Reset() {
+        //réinitialisation des vagues
         currentWave = 1;
+        //suppression du joueur
+        PlayerController existingPlayer = FindObjectOfType<PlayerController>();
+        if (existingPlayer != null)
+        {
+            Destroy(existingPlayer.gameObject);
+        }
+        //suppression des ennemies
+        foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            Destroy(enemy);
+        }
+        enemiesAlive = 0;
+        // supression des armes
         if (currentWeapon != null)
         {
             Destroy(currentWeapon);
             currentWeapon = null;
         }
+        if (droppedWeapon != null)
+        {
+            Destroy(droppedWeapon);
+            droppedWeapon = null;
+        }
+        //suppression de l'exp
+        foreach (var xp in GameObject.FindGameObjectsWithTag("XP"))
+        {
+            Destroy(xp);
+        }
+        // supression de l'argent
+        foreach (var gold in GameObject.FindGameObjectsWithTag("Gold"))
+        {
+            Destroy(gold);
+        }
+        //reinitialisation de la map
         selectedGameScenePrefab = null;
-        LoadScene(accueilUIPrefab);
     }
     public void StartGame()
     {
