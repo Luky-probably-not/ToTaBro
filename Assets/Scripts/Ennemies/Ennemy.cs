@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Ennemy : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Ennemy : MonoBehaviour
     protected int damage;
     protected int speed;
     protected Transform target;
+    [SerializeField] protected GameObject xp;
+    [SerializeField] protected GameObject coin;
     [SerializeField] protected Rigidbody2D rb;
 
     public void Init(int hp, string nickname, int difficulty, int damage, int speed)
@@ -18,8 +21,7 @@ public class Ennemy : MonoBehaviour
         this.damage = damage;
         this.speed = speed;
     }
-
-
+    
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -57,16 +59,54 @@ public class Ennemy : MonoBehaviour
 	    rb.linearVelocity = Vector2.zero;
 	}
     }
+    
+    protected void DropXp(float posX)
+    {
+	float x = transform.position.x-posX;
+	float y = transform.position.y;
+	Vector2 pos = new Vector2(x,y);	
+	Instantiate(xp, pos, transform.rotation);
+    }
+
+    protected void DropCoin()
+    {
+	float x = transform.position.x+0.4F;
+	float y = transform.position.y;
+	Vector2 pos = new Vector2(x,y);
+	Instantiate(coin, pos, transform.rotation);
+    }
+
+    protected bool isCoinDroped()
+    {
+    	System.Random rnd = new System.Random();
+	int rndNumber = rnd.Next(0,100);
+	if(rndNumber >= 40)
+	{
+	    return true;
+	}
+	return false;
+    }
 
     protected void TakeDamage(int amount)
     {
         hp -= amount;
-        if(hp <= 0)
+    }
+
+    protected void isDead()
+    {
+	if(hp <= 0)
             Die();
     }
 
     protected void Die()
     {
+	float posX = 0;
+	if(isCoinDroped())
+	{
+	    posX = 0.4F;
+	    DropCoin();
+	}
+	DropXp(posX);
         Destroy(gameObject);
     }
     
