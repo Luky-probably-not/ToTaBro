@@ -98,14 +98,15 @@ public class Ennemy : MonoBehaviour
     }
 
     protected virtual void Die()
-    {
-	float posX = 0;
-	if(isCoinDroped())
-	{
-	    posX = 0.4F;
-	    DropCoin();
-	}
-	DropXp(posX);
+        {
+        float posX = 0;
+        if(isCoinDroped())
+        {
+            posX = 0.4F;
+            DropCoin();
+        }
+        DropXp(posX);
+        GameManager.Instance.EnemyDefeated(1f);
         Destroy(gameObject);
     }
     
