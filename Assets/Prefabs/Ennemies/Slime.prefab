@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1435829544345076211}
   - component: {fileID: 7514089474353338454}
   - component: {fileID: 3673144917332427490}
+  - component: {fileID: 6886785881324358504}
   m_Layer: 0
   m_Name: slime
   m_TagString: Untagged
@@ -179,3 +180,15 @@ MonoBehaviour:
   coin: {fileID: 802149453490952212, guid: e95bd9f1c2674a94f8aa8ef97d73701c, type: 3}
   rb: {fileID: 1435829544345076211}
   attack: {fileID: 586383963554175198, guid: c3e4b1ac022fa024a8d9c4dff364b044, type: 3}
+--- !u!114 &6886785881324358504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5533624478527953507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
