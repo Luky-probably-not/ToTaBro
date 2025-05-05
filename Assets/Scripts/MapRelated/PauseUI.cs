@@ -11,13 +11,14 @@ public class PauseUI : MonoBehaviour
         resumeButton.onClick.AddListener(OnResumeClicked);
         returnButton.onClick.AddListener(OnReturnClicked);
         Time.timeScale = 0f;
-        Debug.Log(gameObject);
+        GameManager.Instance.setInGame(false);
     }
 
     void OnResumeClicked()
     {
         Time.timeScale = 1f;
         Destroy(gameObject);
+        GameManager.Instance.setInGame(true);
     }
 
     void OnReturnClicked()
