@@ -111,6 +111,7 @@ public class GameManager : MonoBehaviour
         {
             if (pauseUIPrefab != null)
             {
+                Debug.Log(currentUI);
                 Instantiate(pauseUIPrefab, FindObjectOfType<Canvas>().transform);
             }
         }

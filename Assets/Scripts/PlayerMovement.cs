@@ -192,4 +192,8 @@ public class PlayerMovement : MonoBehaviour
             isNearPotion = false;
         }
     }
+
+    public void OnPause(){
+        GameManager.Instance.TogglePause();
+    }
 }

@@ -11,6 +11,7 @@ public class PauseUI : MonoBehaviour
         resumeButton.onClick.AddListener(OnResumeClicked);
         returnButton.onClick.AddListener(OnReturnClicked);
         Time.timeScale = 0f;
+        Debug.Log(gameObject);
     }
 
     void OnResumeClicked()
@@ -23,5 +24,6 @@ public class PauseUI : MonoBehaviour
     {
         Time.timeScale = 1f;
         GameManager.Instance.LoadAccueil();
+        Destroy(gameObject);
     }
 }
