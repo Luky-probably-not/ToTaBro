@@ -60,22 +60,24 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        LoadAccueil();
+        LoadAccueil(0);
     }
 
-    public void LoadAccueil()
+    public void LoadAccueil(int accueil)
     {
-        Reset();
+        if (accueil!=0){
+            Reset();
+        }
         LoadScene(accueilUIPrefab);
     }
     public void Reset() {
         //réinitialisation des vagues
         currentWave = 1;
         //suppression du joueur
-        PlayerController existingPlayer = FindObjectOfType<PlayerController>();
+        GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
         if (existingPlayer != null)
         {
-            Destroy(existingPlayer.gameObject);
+            Destroy(existingPlayer);
         }
         //suppression des ennemies
         foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
