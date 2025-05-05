@@ -9,7 +9,7 @@ public class Bot : Ennemy
         nickname = "Bot";
         difficulty = 1;
         damage = 1;
-        speed = 3;
+        speed = 2;
     }
     
     void Update()

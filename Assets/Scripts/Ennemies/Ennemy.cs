@@ -25,6 +25,7 @@ public class Ennemy : MonoBehaviour
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+	rb.mass = 9999f;
     }
 
     protected void FindTarget(string targetTag)
@@ -41,7 +42,6 @@ public class Ennemy : MonoBehaviour
         FindTarget(targetTag);
         if (target != null)
         {
-	    //rb.bodyType = RigidbodyType2D.Kinematic;
             Vector2 direction = (target.position - transform.position).normalized;
             transform.position += (Vector3)direction * speed * Time.deltaTime;
         }
@@ -56,7 +56,6 @@ public class Ennemy : MonoBehaviour
         }else if (collision.CompareTag("Player"))
 	{
 	    TakeDamage(1);
-	    rb.linearVelocity = Vector2.zero;
 	}
     }
     
