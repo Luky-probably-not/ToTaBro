@@ -9,11 +9,12 @@ public class Bot : Ennemy
         nickname = "Bot";
         difficulty = 1;
         damage = 1;
-        speed = 3;
+        speed = 2;
     }
     
     void Update()
     {
+	isDead();
         GoTo("Player");
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,4 +22,3 @@ public class Bot : Ennemy
         HandleCollision(collision);
     }
 }
-
