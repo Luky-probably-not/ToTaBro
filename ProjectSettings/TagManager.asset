@@ -16,6 +16,7 @@ TagManager:
   - EnnemyAttack
   - Xp
   - Coin
+  - RangedEnemy
   layers:
   - Default
   - TransparentFX
