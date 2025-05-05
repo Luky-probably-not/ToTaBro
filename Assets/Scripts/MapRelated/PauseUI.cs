@@ -23,7 +23,7 @@ public class PauseUI : MonoBehaviour
     void OnReturnClicked()
     {
         Time.timeScale = 1f;
-        GameManager.Instance.LoadAccueil(1);
+        GameManager.Instance.LoadAccueil();
         Destroy(gameObject);
     }
 }

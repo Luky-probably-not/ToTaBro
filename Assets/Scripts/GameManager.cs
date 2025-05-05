@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     private int currentWave = 1;
     private List<GameObject> normalEnemies = new List<GameObject>();
 
+    private bool inGame = false;
+
     [Header("Boss Enemies Prefabs")]
     public GameObject slimeyPrefab;
 
@@ -44,7 +46,9 @@ public class GameManager : MonoBehaviour
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
     
-
+    public void setInGame(bool set) {
+        inGame = set;
+    }
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -60,32 +64,43 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        LoadAccueil(0);
+        LoadAccueil();
     }
 
-    public void LoadAccueil(int accueil)
+    public void LoadAccueil()
     {
-        if (accueil!=0){
+        setInGame(false);
+        if (selectedGameScenePrefab != null)
+        {
             Reset();
         }
         LoadScene(accueilUIPrefab);
+        
     }
-    public void Reset() {
-        //réinitialisation des vagues
+    public void Reset()
+    {
+        // Réinitialisation des vagues
         currentWave = 1;
-        //suppression du joueur
+
+        // Suppression du joueur
         GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
         if (existingPlayer != null)
         {
             Destroy(existingPlayer);
         }
-        //suppression des ennemies
-        foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+
+        // Suppression des ennemis
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Ennemy");
+        if (enemies.Length > 0)
         {
-            Destroy(enemy);
+            foreach (GameObject enemy in enemies)
+            {
+                Destroy(enemy);
+            }
         }
         enemiesAlive = 0;
-        // supression des armes
+
+        // Suppression des armes
         if (currentWeapon != null)
         {
             Destroy(currentWeapon);
@@ -96,21 +111,34 @@ public class GameManager : MonoBehaviour
             Destroy(droppedWeapon);
             droppedWeapon = null;
         }
-        //suppression de l'exp
-        foreach (var xp in GameObject.FindGameObjectsWithTag("XP"))
+
+        // Suppression de l'XP
+        GameObject[] xpOrbs = GameObject.FindGameObjectsWithTag("Xp");
+        if (xpOrbs.Length > 0)
         {
-            Destroy(xp);
+            foreach (GameObject xp in xpOrbs)
+            {
+                Destroy(xp);
+            }
         }
-        // supression de l'argent
-        foreach (var gold in GameObject.FindGameObjectsWithTag("Gold"))
+
+        // Suppression de l'argent
+        GameObject[] goldCoins = GameObject.FindGameObjectsWithTag("Coin");
+        if (goldCoins.Length > 0)
         {
-            Destroy(gold);
+            foreach (GameObject gold in goldCoins)
+            {
+                Destroy(gold);
+            }
         }
-        //reinitialisation de la map
+
+        // Réinitialisation de la map
         selectedGameScenePrefab = null;
     }
+
     public void StartGame()
     {
+        setInGame(true);
         selectedGameScenePrefab = (Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
 
         LoadScene(selectedGameScenePrefab);
@@ -154,34 +182,36 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnWave(float wait)
     {
-        yield return new WaitForSeconds(wait);
+        if (inGame) {
+            yield return new WaitForSeconds(wait);
 
-        if (currentWave > 50)
-        {
-            LoadAccueil();
-            yield break;
-        }
-
-        enemiesAlive = 0;
-
-        if (currentWave % 10 == 0)
-        {
-            Instantiate(slimeyPrefab, GetRandomPosition(), Quaternion.identity);
-            enemiesAlive = 1;
-        }
-        else
-        {
-            int enemyCount = 2 + (currentWave - 1);
-            int maxEnemyTypes = Mathf.Min(currentWave, normalEnemies.Count);
-
-            for (int i = 0; i < enemyCount; i++)
+            if (currentWave > 50)
             {
-                GameObject enemyPrefab = normalEnemies[Random.Range(0, maxEnemyTypes)];
-                Instantiate(enemyPrefab, GetRandomPosition(), Quaternion.identity);
-                enemiesAlive++;
+                LoadAccueil();
+                yield break;
             }
+
+            enemiesAlive = 0;
+
+            if (currentWave % 10 == 0)
+            {
+                Instantiate(slimeyPrefab, GetRandomPosition(), Quaternion.identity);
+                enemiesAlive = 1;
+            }
+            else
+            {
+                int enemyCount = 2 + (currentWave - 1);
+                int maxEnemyTypes = Mathf.Min(currentWave, normalEnemies.Count);
+
+                for (int i = 0; i < enemyCount; i++)
+                {
+                    GameObject enemyPrefab = normalEnemies[Random.Range(0, maxEnemyTypes)];
+                    Instantiate(enemyPrefab, GetRandomPosition(), Quaternion.identity);
+                    enemiesAlive++;
+                }
+            }
+            Debug.Log("Vague " + currentWave);
         }
-        Debug.Log("Vague " + currentWave);
     }
 
     public void EnemyDefeated(float minus)
