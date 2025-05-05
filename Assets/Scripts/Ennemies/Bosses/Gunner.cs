@@ -1,41 +1,42 @@
 using UnityEngine;
 using System.Collections;
 
-public class Ranged : Ennemy
+public class Gunner : Ennemy
 {
-    [SerializeField] private float fireRate = 3;
-    public GameObject bullet;
-    [SerializeField] private int bulletSpeed = 4;
-    [SerializeField] private int bulletDamage = 3;
+    [SerializeField] protected GameObject bullet;
+    [SerializeField] private int bulletSpeed = 6;
+    [SerializeField] private int bulletDamage = 2;
     [SerializeField] private int bulletDisparitionTime = 2;
     private bool hasStartedShooting = false;
     [SerializeField] private float preferredDistance = 5f;
     [SerializeField] private float distanceTolerance = 0.5f;
+    [SerializeField] private float fireRate = 0.4f;
+
 
     protected override void Awake()
     {
         base.Awake();
-        hp = 1;
-        nickname = "Ranged";
-        difficulty = 3;
+        hp = 400;
+        nickname = "Gunner";
+        difficulty = 20;
         damage = 2;
-        speed = 1;
+        speed = 4;
     }
     
+    void Start()
+    {
+	InvokeRepeating(nameof(WarningCall), 0f, 7f);
+    }
+
     void Update()
     {
 	isDead();
-        GoTo("Player");
+	GoTo("Player");
 	if (!hasStartedShooting)
 	{
 	    StartCoroutine(ShootRoutine());
 	    hasStartedShooting = !hasStartedShooting;
 	}
-    }
-    
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        HandleCollision(collision);
     }
 
     protected override void GoTo(string targetTag)
@@ -57,6 +58,29 @@ public class Ranged : Ennemy
 		transform.position += (Vector3)direction * speed * Time.deltaTime;
 	    }
         }
+    }
+
+    public void WarningCall()
+    {
+	StartCoroutine(Warning());
+    }
+        public IEnumerator Warning()
+    {
+	float time = 0.5f;
+	SpriteRenderer sr = GetComponent<SpriteRenderer>();
+	for(int i = 0; i <= 6; i++)
+	{
+	    time -= 0.1f;
+	    sr.color = Color.red;
+	    yield return new WaitForSeconds(time);
+	    sr.color = Color.green;
+	    yield return new WaitForSeconds(time);
+	    sr.color = Color.red;
+	}
+	rb.linearVelocity = Vector2.zero;
+	//BulletRain();
+	yield return new WaitForSeconds(0.5f);
+	sr.color = Color.green;
     }
 
     public IEnumerator ShootRoutine()

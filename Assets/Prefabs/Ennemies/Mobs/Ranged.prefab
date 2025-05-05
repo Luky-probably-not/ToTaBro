@@ -169,10 +169,10 @@ MonoBehaviour:
   xp: {fileID: 2536741290688542782, guid: 98d53ba36cff6e4a89a0d1f6ebffa593, type: 3}
   coin: {fileID: 802149453490952212, guid: 80a60b408718ffc61827900a13d92771, type: 3}
   rb: {fileID: 6827143002600406525}
-  fireRate: 2
+  fireRate: 3
   bullet: {fileID: 1464410677912618184, guid: 896be02ad710d15589c39c0620f73981, type: 3}
-  bulletSpeed: 2
+  bulletSpeed: 4
   bulletDamage: 3
-  bulletDisparitionTime: 1
+  bulletDisparitionTime: 2
   preferredDistance: 5
   distanceTolerance: 0.5

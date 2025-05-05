@@ -11,7 +11,7 @@ public class Slime : Ennemy
     {
         base.Awake();
         hp = 500;
-        nickname = "Boss";
+        nickname = "Slime";
         difficulty = 10;
         damage = 3;
         speed = 1;
