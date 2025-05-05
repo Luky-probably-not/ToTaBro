@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,12 +12,17 @@ public class GameManager : MonoBehaviour
     public GameObject gameScenePrefab1;
     public GameObject gameScenePrefab2;
     private GameObject selectedGameScenePrefab;
+    public GameObject pauseUIPrefab;
+    private GameObject currentUI;
 
     [Header("Normals Enemies Prefabs")]
     public GameObject botPrefab; 
     public GameObject speedyPrefab;
     public GameObject tankPrefab;
     public GameObject rangedPrefab;
+    private float enemiesAlive;
+    private int currentWave = 1;
+    private List<GameObject> normalEnemies = new List<GameObject>();
 
     [Header("Boss Enemies Prefabs")]
     public GameObject slimeyPrefab;
@@ -26,18 +32,18 @@ public class GameManager : MonoBehaviour
     public GameObject laserPrefab;
     public GameObject shotgunPrefab;
     public GameObject swordPrefab;
+    private GameObject droppedWeapon;
+    private int dropWeaponWave = -1;
+    private List<GameObject> weapons = new List<GameObject>();
+    private GameObject currentWeapon;
+    [Header("Potion Prefabs")]
+    public GameObject healthPotionPrefab;
+    public GameObject speedPotionPrefab;
+    public GameObject fireRatePotionPrefab;
 
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
-
-    private GameObject droppedWeapon;
-    private int dropWeaponWave = -1;
-    private GameObject currentUI;
-    private int currentWave = 1;
-    private float enemiesAlive;
-    private List<GameObject> normalEnemies = new List<GameObject>();
-    private List<GameObject> weapons = new List<GameObject>();
-    private GameObject currentWeapon;
+    
 
     void Awake()
     {
@@ -68,7 +74,6 @@ public class GameManager : MonoBehaviour
         selectedGameScenePrefab = null;
         LoadScene(accueilUIPrefab);
     }
-
     public void StartGame()
     {
         selectedGameScenePrefab = (Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
@@ -99,6 +104,16 @@ public class GameManager : MonoBehaviour
     {
         if (currentUI != null) Destroy(currentUI);
         currentUI = Instantiate(scenePrefab, FindObjectOfType<Canvas>().transform);
+    }
+    public void TogglePause()
+    {
+        if (Time.timeScale == 1f)
+        {
+            if (pauseUIPrefab != null)
+            {
+                Instantiate(pauseUIPrefab, FindObjectOfType<Canvas>().transform);
+            }
+        }
     }
 
     private IEnumerator SpawnWave(float wait)

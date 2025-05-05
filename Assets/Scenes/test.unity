@@ -166,6 +166,7 @@ MonoBehaviour:
   accueilUIPrefab: {fileID: 2576705689476503812, guid: cc0db6c85e6b033449475e160b5212ff, type: 3}
   gameScenePrefab1: {fileID: 1170187838826901828, guid: 252d989c0b224ed48a208741e470f962, type: 3}
   gameScenePrefab2: {fileID: 3528727173199777687, guid: c01f2f36cf8a65f49b979ad777ae9838, type: 3}
+  pauseUIPrefab: {fileID: 967074685292934243, guid: c8188dd2fc877ca4c91cd9fa0beaa405, type: 3}
   botPrefab: {fileID: 2531796429475434387, guid: 24292e603575a7842a5dcce5f5a38847, type: 3}
   speedyPrefab: {fileID: 7588790100145448760, guid: b0d1ef96733361943aeda084b6f058be, type: 3}
   tankPrefab: {fileID: 3563056678435589891, guid: c3f7d937d2ae51a4ab8d03ec3ed82b52, type: 3}
@@ -175,6 +176,9 @@ MonoBehaviour:
   laserPrefab: {fileID: 6727898705481714353, guid: 39d08518b57d5f848aeba74c1429596e, type: 3}
   shotgunPrefab: {fileID: 27389037025994534, guid: 5df8df481500f3f4d870fc4e27cac27b, type: 3}
   swordPrefab: {fileID: 5293207848443451457, guid: fd73981c193f9304389974d3cddf7e51, type: 3}
+  healthPotionPrefab: {fileID: 7778169325436302301, guid: 8d1aef9b4e4ab8d40aef7a07ba0bac8f, type: 3}
+  speedPotionPrefab: {fileID: 7778169325436302301, guid: b94a859e48967a744a96b0a9aba2e8ad, type: 3}
+  fireRatePotionPrefab: {fileID: 7778169325436302301, guid: 14e1bf5d8d8cadb4186de04bf67e1783, type: 3}
   playerPrefab: {fileID: 4860983917505171159, guid: f63332fd99a6f0e4181a9ac2c571257f, type: 3}
 --- !u!1 &1191792328
 GameObject:

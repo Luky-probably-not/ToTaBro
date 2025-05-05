@@ -4,19 +4,30 @@ using UnityEngine.UI;
 public class AccueilUI : MonoBehaviour
 {
     public Button startButton;
+    public Button quitButton;
 
-    private void Start()
+    void Start()
     {
-        if (startButton == null)
-        {
-            Debug.LogError("Le bouton startButton n'a pas été assigné dans l'Inspector !");
-        }
-        startButton.onClick.AddListener(OnStartButtonClicked);
+        if (startButton != null)
+            startButton.onClick.AddListener(OnStartClicked);
+
+        if (quitButton != null)
+            quitButton.onClick.AddListener(OnQuitClicked);
     }
 
-    private void OnStartButtonClicked()
+    void OnStartClicked()
     {
-        Debug.Log("Le bouton de démarrage a été cliqué !");
+        Debug.Log("Start button clicked");
         GameManager.Instance.StartGame();
+    }
+
+    void OnQuitClicked()
+    {
+        Debug.Log("Quit button clicked");
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
