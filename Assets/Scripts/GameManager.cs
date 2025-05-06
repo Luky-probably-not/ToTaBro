@@ -46,6 +46,14 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
+
+    [Header("Merchant")]
+    public GameObject merchantPrefab;
+    public Transform merchantSpawnPoint;
+    public Transform[] itemSpawnParent;
+    public GameObject healthPotionPrefab;
+    private List<GameObject> currentMerchantItems = new List<GameObject>();
+    private GameObject currentMerchantInstance;
     
     public void setInGame(bool set) {
         inGame = set;
@@ -180,7 +188,11 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    private void TriggerMerchant()
+    {
+        setInGame(false);
+        currentMerchantInstance = Instantiate(merchantPrefab, merchantSpawnPoint.position, Quaternion.identity);
+    }
     private IEnumerator SpawnWave(float wait)
     {
         if (inGame) {
@@ -198,6 +210,11 @@ public class GameManager : MonoBehaviour
             {
                 Instantiate(slimePrefab, GetRandomPosition(), Quaternion.identity);
                 enemiesAlive = 1;
+            }
+            else if (currentWave % 5 == 0)
+            {
+                TriggerMerchant();
+                return;
             }
             else
             {
@@ -276,5 +293,45 @@ public class GameManager : MonoBehaviour
         }
 
         return randomPosition;
+    }
+
+    public void EnterMerchant(Merchant merchant)
+    {
+        currentMerchantItems.Clear();
+        GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0]);
+        currentMerchantItems.Add(potion);
+        GameObject weapon = weapons[Random.Range(0, weapons.Count)];
+        GameObject weaponObj = Instantiate(weapon, itemSpawnParent[1]);
+        currentMerchantItems.Add(weaponObj);
+        bool giveWeapon = Random.value < 0.5f;
+        GameObject randObj = giveWeapon ? weapons[Random.Range(0, weapons.Count)] : GetRandomPotion();
+        GameObject randItem = Instantiate(randObj, itemSpawnParent[2]);
+        currentMerchantItems.Add(randItem);
+    }
+    public void ExitMerchant()
+    {
+        foreach (GameObject item in currentMerchantItems)
+        {
+            if (item != null)
+                Destroy(item);
+        }
+
+        currentMerchantItems.Clear();
+        if (currentMerchantInstance != null)
+        {
+            Destroy(currentMerchantInstance);
+        }
+        setInGame(true);
+        StartCoroutine(SpawnWave(3f));
+    }
+    private GameObject GetRandomPotion()
+    {
+        int rand = Random.Range(0, 3);
+        switch (rand)
+        {
+            case 0: return healthPotionPrefab;
+            case 1: return speedPotionPrefab;
+            default: return fireRatePotionPrefab;
+        }
     }
 }
