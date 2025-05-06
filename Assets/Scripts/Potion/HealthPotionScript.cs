@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour, IPotion
+public class HealthPotion : Potion
 {
-    public string type { get; set; } = "Health";
-    public float value { get; set; } = 3;
-
-    public void Use()
+    protected override void Awake()
     {
-        Destroy(gameObject);
+        base.Awake();
+        type = "Health";
+        value = 3;
+        description = "Heal your character for xxxxx health points";
     }
 }

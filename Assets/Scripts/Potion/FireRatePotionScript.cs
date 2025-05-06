@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class FireRatePotion : MonoBehaviour, IPotion
+public class FireRatePotion : Potion
 {
-    public string type { get; set; } = "FireRate";
-    public float value { get; set; } = 5;
-
-    public void Use()
+    protected override void Awake()
     {
-        Destroy(gameObject);
+        base.Awake();
+        type = "FireRate";
+        value = 5;
+        description = "Increase the fire rate of your weapon during xxxxx seconds";
     }
 }

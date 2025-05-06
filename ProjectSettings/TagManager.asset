@@ -13,6 +13,8 @@ TagManager:
   - Potion
   - Ennemy
   - SwordSlashPlayer
+  - Xp
+  - Coin
   layers:
   - Default
   - TransparentFX

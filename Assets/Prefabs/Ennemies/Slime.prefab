@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6648818588400472016}
   - component: {fileID: 6880761220593206825}
   - component: {fileID: 2829441682534205519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7844714343569432502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fadffab209c6b009965f43f7ebf0872, type: 3}
+  m_Script: {fileID: 11500000, guid: da4e4f4b49954204f9bb39ebcdc8c766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6648818588400472016}
-  attack: {fileID: 586383963554175198, guid: 7349b900efe71d6dcb8114901349e6a6, type: 3}
+  attack: {fileID: 586383963554175198, guid: f1ae812ce6590b14b884b2ca18aed3b4, type: 3}

@@ -51,14 +51,15 @@ public class Ennemy : MonoBehaviour
             Bullet bullet = collision.GetComponentInChildren<Bullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
         }else if (collision.CompareTag("Player"))
-	{
-	    TakeDamage(1);
-	    rb.linearVelocity = Vector2.zero;
-	}
+	    {
+	        TakeDamage(1);
+	        rb.linearVelocity = Vector2.zero;
+	    }
     }
 
     protected void TakeDamage(int amount)
     {
+        print(hp);
         hp -= amount;
         if(hp <= 0)
             Die();

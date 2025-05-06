@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5931385409324633116}
   - component: {fileID: 8886438200436059675}
   - component: {fileID: 5058598677882777393}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tank
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3563056678435589891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 762262ffc7ac0e1ac8fed28c7b4f79d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f01803ee2bba6d408251d318efaaf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8886438200436059675}

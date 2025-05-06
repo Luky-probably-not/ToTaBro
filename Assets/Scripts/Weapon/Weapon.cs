@@ -1,5 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
+using static UnityEngine.Rendering.DebugUI;
+using static System.Math;
 
 public abstract class Weapon : MonoBehaviour
 {
@@ -13,18 +16,27 @@ public abstract class Weapon : MonoBehaviour
     public float bulletDisparitionTime { get; set; }
     public int bulletDamage { get; set; }
 
+
     public float hueOffSet {  get; set; }
     public Color currentColor { get; set; }
     public bool isLegendary { get; set; }
     public SpriteRenderer sprite { get; set; }
 
-    public void Init(string name, float fireRate, float bulletSpeed, float disparitionTime, int bulletDamage)
+    public Canvas popupCanvas;
+    public TMP_Text nameTMP;
+    public TMP_Text damageTMP;
+    public TMP_Text fireRateTMP;
+
+    public bool canBuy = false;
+    public int cost = 0;
+    public void Init(string name, float fireRate, float bulletSpeed, float disparitionTime, int baseDamage)
     {
         this.name = name;
         this.fireRate = fireRate;
         this.bulletSpeed = bulletSpeed;
         this.bulletDisparitionTime = disparitionTime;
         this.bulletDamage = bulletDamage;
+
     }
 
     protected virtual void Awake()
@@ -40,7 +52,11 @@ public abstract class Weapon : MonoBehaviour
 
         int random = Random.Range(0, 5);
         this.isLegendary = random == 0;
+        popupCanvas = GetComponentInChildren<Canvas>();
+        popupCanvas.gameObject.SetActive(false);
+
     }
+
     protected void Update()
     {
         if (isWielded && player != null)
@@ -71,6 +87,7 @@ public abstract class Weapon : MonoBehaviour
     {
         this.player = player;
         this.isWielded = true;
+        this.ClosePopup();
     }
 
     public void Desequip()
@@ -94,4 +111,38 @@ public abstract class Weapon : MonoBehaviour
         this.fireRate *= 2;
     }
     public abstract void ShootWeapon(Vector2 directionShoot);
+
+    public void ShowPopup()
+    {
+        if (isWielded) return;
+        popupCanvas.gameObject.SetActive(true);
+        GetTMP();
+        nameTMP.SetText(name);
+        damageTMP.SetText( bulletDamage.ToString());
+        fireRateTMP.SetText((Truncate((1 / fireRate)*10)/10).ToString());
+
+    }
+
+    public void ClosePopup()
+    {
+        popupCanvas.gameObject.SetActive(false);
+    }
+
+    public void GetTMP()
+    {
+        foreach (TMP_Text tmp in GetComponentsInChildren<TMP_Text>())
+        {
+            switch (tmp.name)
+            {
+                case "Name":
+                    nameTMP = tmp; break;
+                case "Damage":
+                    damageTMP = tmp; break;
+                case "FireRate":
+                    fireRateTMP = tmp; break;
+                default:
+                    break;
+            }
+        }
+    }
 }
