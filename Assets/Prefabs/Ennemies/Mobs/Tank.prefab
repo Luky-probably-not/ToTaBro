@@ -100,7 +100,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3563056678435589891}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Assets/Prefabs/Ennemies/Mobs/Tank.prefab
   m_Script: {fileID: 11500000, guid: fbb4184f432bae54b8e51ee034edadc8, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4f01803ee2bba6d408251d318efaaf5f, type: 3}
+>>>>>>> origin/feat/Player:Assets/Prefabs/Ennemies/Tank.prefab
   m_Name: 
   m_EditorClassIdentifier: 
   xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
