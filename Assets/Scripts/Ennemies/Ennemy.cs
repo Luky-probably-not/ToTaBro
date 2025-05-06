@@ -37,7 +37,7 @@ public class Ennemy : MonoBehaviour
         }
     }
 
-    protected void GoTo(string targetTag)
+    protected virtual void GoTo(string targetTag)
     {
         FindTarget(targetTag);
         if (target != null)

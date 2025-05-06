@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 3673144917332427490}
   - component: {fileID: 6886785881324358504}
   m_Layer: 0
-  m_Name: slime
-  m_TagString: Untagged
+  m_Name: Slime
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &3673144917332427490
 MonoBehaviour:
