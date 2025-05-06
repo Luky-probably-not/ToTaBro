@@ -3,14 +3,14 @@ using System.Collections;
 
 public class Ranged : Ennemy
 {
-    [SerializeField] private float fireRate = 3;
+    private float fireRate = 3;
     public GameObject bullet;
-    [SerializeField] private int bulletSpeed = 4;
-    [SerializeField] private int bulletDamage = 3;
-    [SerializeField] private int bulletDisparitionTime = 2;
+    private int bulletSpeed = 4;
+    private int bulletDamage = 3;
+    private int bulletDisparitionTime = 2;
     private bool hasStartedShooting = false;
-    [SerializeField] private float preferredDistance = 5f;
-    [SerializeField] private float distanceTolerance = 0.5f;
+    private float preferredDistance = 5f;
+    private float distanceTolerance = 0.5f;
 
     protected override void Awake()
     {

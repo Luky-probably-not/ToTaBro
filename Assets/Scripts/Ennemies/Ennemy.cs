@@ -3,11 +3,14 @@ using System;
 
 public class Ennemy : MonoBehaviour
 {
+    [Header("Enemy Data")]
     protected int hp;
     protected string nickname;
     protected int difficulty;
     protected int damage;
     protected int speed;
+
+    [Header("Object")]
     protected Transform target;
     [SerializeField] protected GameObject xp;
     [SerializeField] protected GameObject coin;

@@ -3,14 +3,19 @@ using System.Collections;
 
 public class Gunner : Ennemy
 {
+    [Header("Bullet Object")]
     [SerializeField] protected GameObject bullet;
-    [SerializeField] private int bulletSpeed = 6;
-    [SerializeField] private int bulletDamage = 2;
-    [SerializeField] private int bulletDisparitionTime = 2;
+    
+    [Header("Bullet Data")]
+    private int bulletSpeed = 6;
+    private int bulletDamage = 2;
+    private int bulletDisparitionTime = 2;
     private bool hasStartedShooting = false;
-    [SerializeField] private float preferredDistance = 5f;
-    [SerializeField] private float distanceTolerance = 0.5f;
-    [SerializeField] private float fireRate = 0.4f;
+    private float fireRate = 0.4f;
+
+    [Header("Disante Data")]
+    private float preferredDistance = 5f;
+    private float distanceTolerance = 0.5f;
 
 
     protected override void Awake()
