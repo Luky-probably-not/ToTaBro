@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
     public GameObject merchantPrefab;
     public Transform merchantSpawnPoint;
     public Transform[] itemSpawnParent;
-    public GameObject healthPotionPrefab;
     private List<GameObject> currentMerchantItems = new List<GameObject>();
     private GameObject currentMerchantInstance;
     
@@ -214,7 +213,6 @@ public class GameManager : MonoBehaviour
             else if (currentWave % 5 == 0)
             {
                 TriggerMerchant();
-                return;
             }
             else
             {
