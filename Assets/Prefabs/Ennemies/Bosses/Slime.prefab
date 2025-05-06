@@ -173,13 +173,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5533624478527953507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea08edf6cd93fce4ba45cd29fdfc8e28, type: 3}
+  m_Script: {fileID: 11500000, guid: 929b3003ad673b441a2c2aa8ab16b279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: a4266a11cc1246044b88d00ba1bf0f4e, type: 3}
-  coin: {fileID: 802149453490952212, guid: e95bd9f1c2674a94f8aa8ef97d73701c, type: 3}
+  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
+  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
   rb: {fileID: 1435829544345076211}
-  attack: {fileID: 586383963554175198, guid: c3e4b1ac022fa024a8d9c4dff364b044, type: 3}
+  attack: {fileID: 586383963554175198, guid: 9b74412333db80843978b11bbca1b5e2, type: 3}
 --- !u!114 &6886785881324358504
 MonoBehaviour:
   m_ObjectHideFlags: 0

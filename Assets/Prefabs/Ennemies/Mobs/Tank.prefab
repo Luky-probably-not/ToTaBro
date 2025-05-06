@@ -100,11 +100,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3563056678435589891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44155c5ab8e8e5d449a9dcdf46301b85, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb4184f432bae54b8e51ee034edadc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: a4266a11cc1246044b88d00ba1bf0f4e, type: 3}
-  coin: {fileID: 802149453490952212, guid: e95bd9f1c2674a94f8aa8ef97d73701c, type: 3}
+  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
+  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
   rb: {fileID: 8886438200436059675}
 --- !u!50 &8886438200436059675
 Rigidbody2D:

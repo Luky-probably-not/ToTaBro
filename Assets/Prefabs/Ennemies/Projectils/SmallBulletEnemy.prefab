@@ -117,11 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464410677912618184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e22b8e329106bed91b5f2329aa988e98, type: 3}
+  m_Script: {fileID: 11500000, guid: 236f9be9d1267124d88bf034cdd7f8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartedAngle: 0
-  Damage: 3
+  Damage: 0
   passThrough: 0
   slash: 0
 --- !u!1 &6361510763533983907

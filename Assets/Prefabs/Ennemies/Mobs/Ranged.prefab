@@ -163,14 +163,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8108144937143440761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7c6d519a60d13508574614ab96f316, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b81892e8a0e65b4d9bbd5e9ff3fbc50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: 98d53ba36cff6e4a89a0d1f6ebffa593, type: 3}
-  coin: {fileID: 802149453490952212, guid: 80a60b408718ffc61827900a13d92771, type: 3}
+  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
+  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
   rb: {fileID: 6827143002600406525}
   fireRate: 3
-  bullet: {fileID: 1464410677912618184, guid: 896be02ad710d15589c39c0620f73981, type: 3}
+  bullet: {fileID: 1464410677912618184, guid: 3a10eecd5079d024aa89f981620cdbc0, type: 3}
   bulletSpeed: 4
   bulletDamage: 3
   bulletDisparitionTime: 2

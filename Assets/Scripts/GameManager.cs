@@ -23,11 +23,11 @@ public class GameManager : MonoBehaviour
     private float enemiesAlive;
     private int currentWave = 1;
     private List<GameObject> normalEnemies = new List<GameObject>();
-
     private bool inGame = false;
 
     [Header("Boss Enemies Prefabs")]
-    public GameObject slimeyPrefab;
+    public GameObject slimePrefab;
+    public GameObject gunnerPrefab;
 
     [Header("Weapon Prefabs")]
     public GameObject gunniePrefab;
@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     private int dropWeaponWave = -1;
     private List<GameObject> weapons = new List<GameObject>();
     private GameObject currentWeapon;
+
     [Header("Potion Prefabs")]
     public GameObject healthPotionPrefab;
     public GameObject speedPotionPrefab;
@@ -195,7 +196,7 @@ public class GameManager : MonoBehaviour
 
             if (currentWave % 10 == 0)
             {
-                Instantiate(slimeyPrefab, GetRandomPosition(), Quaternion.identity);
+                Instantiate(slimePrefab, GetRandomPosition(), Quaternion.identity);
                 enemiesAlive = 1;
             }
             else
