@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class SpeedPotion : MonoBehaviour, IPotion
+public class SpeedPotion : Potion
 {
-    public string type { get; set; } = "Speed";
-    public float value { get; set; } = 5;
-
-    public void Use()
+    protected override void Awake()
     {
-        Destroy(gameObject);
+        base.Awake();
+        type = "Speed";
+        value = 5;
+        description = "Increase your movement speed for xxxxx seconds";
     }
 }

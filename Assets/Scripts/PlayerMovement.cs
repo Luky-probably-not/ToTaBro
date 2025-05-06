@@ -22,11 +22,18 @@ public class PlayerMovement : MonoBehaviour
     private Weapon? weaponNear;
 
     private bool isNearPotion = false;
-    private IPotion? potionNear;
+    private Potion? potionNear;
 
-    public float LifePoint = 5;
+    public float LifePoint = 10;
     private float MaxLifePoint = 10;
 
+    private int goldValue = 1;
+    public int money = 0;
+
+    private int currentLvl = 1;
+    private float xpNeeded = 100;
+    private float currentXp = 0;
+    private int xpValue = 1;
     void Start()
     {
         directionShoot = transform.right;
@@ -35,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (isDashing) return;
-
+        LvlUp();
     }
 
     public void OnMove(InputValue value)
@@ -96,6 +103,10 @@ public class PlayerMovement : MonoBehaviour
                     if (weapon != null) StartCoroutine(weapon.IncreaseFireRate(potionNear.value));
                     potionNear.Use(); 
                     break;
+                case "Gold" or "XP":
+                    StartCoroutine(IncreaseDropValue(potionNear.value,potionNear.type));
+                    potionNear.Use();
+                    break;
                 default:
                     break;
             } 
@@ -124,9 +135,15 @@ public class PlayerMovement : MonoBehaviour
         this.dashCooldown *= 2;
     }
 
+    public IEnumerator IncreaseDropValue(float time,string type)
+    {
+        if (type == "XP") this.xpValue *= 3; else this.goldValue *= 3;
+        yield return new WaitForSeconds(time);
+        if (type == "XP") this.xpValue /= 3; else this.goldValue /= 3;
+    }
     public void ReceiveDamage(Collider2D collider)
     {
-        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().GetDamage(), 0, MaxLifePoint);
+        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().GetDamage(), 0, MaxLifePoint*0.7f);
         StartCoroutine(IgnoreCollision(collider, GetComponent<Collider2D>(), 1f));
     }
 
@@ -139,14 +156,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
 
         isDashing = true;
         rb.linearVelocity = directionDash * dashPower;
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         rb.linearVelocity = directionDash * speed * 0.8f;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemies"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
@@ -160,22 +177,42 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void LvlUp()
+    {
+        if (currentXp >= xpNeeded)
+        {
+            currentLvl++;
+            currentXp = currentXp - xpNeeded;
+            xpNeeded = (2 * currentLvl ^ 2 + 40 * currentLvl) + 100;
+        }
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Weapon"))
+        print(collision.tag);
+        switch (collision.tag)
         {
-            weaponNear = collision.GetComponent<Weapon>();
-            isNearWeapon = !weaponNear.isWielded;
-        }
-        if (collision.CompareTag("Potion"))
-        {
-            potionNear = collision.GetComponent<IPotion>();
-            isNearPotion = true;
-        }
-        if (collision.CompareTag("Ennemy"))
-        {
-            ReceiveDamage(collision);
+            case "Weapon":
+                weaponNear = collision.GetComponent<Weapon>();
+                isNearWeapon = !weaponNear.isWielded;
+                weaponNear.ShowPopup();
+                break;
+            case "Potion":
+                potionNear = collision.GetComponent<Potion>();
+                isNearPotion = true;
+                potionNear.ShowPopup();
+                break;
+            case "Ennemy" or "EnnemyAttack":
+                ReceiveDamage(collision);
+                break;
+            case "Xp":
+                currentXp += collision.GetComponent<Xp>().value * xpValue;
+                break;
+            case "Coin":
+                money += collision.GetComponent<Coin>().value * goldValue;
+                break;
+            default:
+                break;
         }
     }
 
@@ -183,11 +220,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Weapon"))
         {
+            if (weaponNear) weaponNear.ClosePopup();
             weaponNear = null;
             isNearWeapon = false;
+
         }
         if (collision.CompareTag("Potion"))
         {
+            if (potionNear) potionNear.ClosePopup();
             potionNear = null;
             isNearPotion = false;
         }

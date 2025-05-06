@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Gunnie : Weapon
 {
-    protected override void Awake()
+        protected override void Awake()
     {
         base.Awake();
         Name = "Gunnie";
@@ -15,7 +15,6 @@ public class Gunnie : Weapon
 
     public override void ShootWeapon(Vector2 directionShoot)
     {
-        if (isLegendary) fireRate = 0.1f;
         if (Time.time < lastShotTime + fireRate) return;
 
         lastShotTime = Time.time;

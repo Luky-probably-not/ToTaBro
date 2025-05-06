@@ -84,10 +84,15 @@ public class Ennemy : MonoBehaviour
 	    return true;
 	}
 	return false;
+	    {
+	        TakeDamage(1);
+	        rb.linearVelocity = Vector2.zero;
+	    }
     }
 
     protected void TakeDamage(int amount)
     {
+        print(hp);
         hp -= amount;
     }
 

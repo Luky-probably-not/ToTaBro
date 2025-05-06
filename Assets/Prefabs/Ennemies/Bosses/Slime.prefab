@@ -173,6 +173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5533624478527953507}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Assets/Prefabs/Ennemies/Bosses/Slime.prefab
   m_Script: {fileID: 11500000, guid: 929b3003ad673b441a2c2aa8ab16b279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -192,3 +193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Script: {fileID: 11500000, guid: da4e4f4b49954204f9bb39ebcdc8c766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 6648818588400472016}
+  attack: {fileID: 586383963554175198, guid: f1ae812ce6590b14b884b2ca18aed3b4, type: 3}
+>>>>>>> origin/feat/Player:Assets/Prefabs/Ennemies/Slime.prefab
