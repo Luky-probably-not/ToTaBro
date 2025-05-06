@@ -78,7 +78,9 @@ public class Gunner : Ennemy
 	    sr.color = Color.red;
 	}
 	rb.linearVelocity = Vector2.zero;
-	//BulletRain();
+	Vector2 direction = (target.position - transform.position).normalized;
+	float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+	Barrage(direction, -40, 5F);
 	yield return new WaitForSeconds(0.5f);
 	sr.color = Color.green;
     }
@@ -107,5 +109,16 @@ public class Gunner : Ennemy
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
         bulletObject.Damage = bulletDamage;
         return bulletObject;
+    }
+
+    public void Barrage(Vector2 directionShoot, float startAngle, float angleStep)
+    {
+        for (float i = 0; i < 16; i++)
+        {
+            float angle = startAngle + i * angleStep;
+            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
+
+            Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
+        }
     }
 }
