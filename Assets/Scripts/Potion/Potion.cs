@@ -29,6 +29,7 @@ public abstract class Potion : MonoBehaviour
     public void Use()
     {
         ClosePopup();
+        GameManager.Instance.removeFromMarchent(this.gameObject);
         Destroy(gameObject);
     }
 
