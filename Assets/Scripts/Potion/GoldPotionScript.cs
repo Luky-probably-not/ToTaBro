@@ -7,7 +7,7 @@ public class GoldPotion : Potion
     {
         base.Awake();
         type = "Gold";
-        value = 5;
+        value = 50;
         description = "Increase the coin value for xxxxx seconds";
     }
 }

@@ -10,7 +10,7 @@ public class LaserGun : Weapon
         fireRate = 2f;
         bulletSpeed = 0;
         bulletDisparitionTime = 0.2f;
-        bulletDamage = 5;
+        baseDamage = 5;
     }
 
     public override void ShootWeapon(Vector2 directionShoot)

@@ -3,14 +3,19 @@ using System.Collections;
 
 public class Gunner : Ennemy
 {
+    [Header("Bullet Object")]
     [SerializeField] protected GameObject bullet;
-    [SerializeField] private int bulletSpeed = 6;
-    [SerializeField] private int bulletDamage = 2;
-    [SerializeField] private int bulletDisparitionTime = 2;
+    
+    [Header("Bullet Data")]
+    private int bulletSpeed = 6;
+    private int bulletDamage = 2;
+    private int bulletDisparitionTime = 2;
     private bool hasStartedShooting = false;
-    [SerializeField] private float preferredDistance = 5f;
-    [SerializeField] private float distanceTolerance = 0.5f;
-    [SerializeField] private float fireRate = 0.4f;
+    private float fireRate = 0.4f;
+
+    [Header("Disante Data")]
+    private float preferredDistance = 5f;
+    private float distanceTolerance = 0.5f;
 
 
     protected override void Awake()
@@ -78,7 +83,9 @@ public class Gunner : Ennemy
 	    sr.color = Color.red;
 	}
 	rb.linearVelocity = Vector2.zero;
-	//BulletRain();
+	Vector2 direction = (target.position - transform.position).normalized;
+	float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+	Barrage(direction, -40, 5F);
 	yield return new WaitForSeconds(0.5f);
 	sr.color = Color.green;
     }
@@ -107,5 +114,16 @@ public class Gunner : Ennemy
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
         bulletObject.Damage = bulletDamage;
         return bulletObject;
+    }
+
+    public void Barrage(Vector2 directionShoot, float startAngle, float angleStep)
+    {
+        for (float i = 0; i < 16; i++)
+        {
+            float angle = startAngle + i * angleStep;
+            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
+
+            Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
+        }
     }
 }

@@ -63,8 +63,8 @@ public class Slime : Ennemy
     
     public void SlamAttack()
     {
-	GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
-	Destroy(attackInstance, 0.5f);
+		GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+		Destroy(attackInstance, 0.5f);
     }
 
 

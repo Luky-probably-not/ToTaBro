@@ -10,7 +10,7 @@ public class Gunnie : Weapon
         fireRate = 0.5f;
         bulletSpeed = 7;
         bulletDisparitionTime = 1.5f;
-        bulletDamage = 2;
+        baseDamage = 2;
     }
 
     public override void ShootWeapon(Vector2 directionShoot)

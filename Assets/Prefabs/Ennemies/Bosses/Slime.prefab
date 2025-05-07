@@ -8,6 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 6744444127341742717}
+  - component: {fileID: 6764234462754043077}
+  - component: {fileID: 6648818588400472016}
+  - component: {fileID: 6880761220593206825}
+  - component: {fileID: 2829441682534205519}
+  m_Layer: 10
+=======
   - component: {fileID: 3009719947621174759}
   - component: {fileID: 617994130265988752}
   - component: {fileID: 1435829544345076211}
@@ -15,8 +23,9 @@ GameObject:
   - component: {fileID: 3673144917332427490}
   - component: {fileID: 6886785881324358504}
   m_Layer: 0
+>>>>>>> origin/feat/wave
   m_Name: Slime
-  m_TagString: Ennemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,9 +88,18 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD
   m_SortingOrder: 1
+=======
+  m_SortingOrder: 0
+<<<<<<< HEAD
+  m_Sprite: {fileID: 8015462337681509117, guid: cee8c49070785649db91b878d105cb26, type: 3}
+  m_Color: {r: 0.024230955, g: 0.69305015, b: 0.044505678, a: 1}
+=======
+>>>>>>> origin/feat/Player
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.03196448, g: 0.6792453, b: 0, a: 1}
+>>>>>>> origin/feat/wave
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -155,8 +173,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.49090907, y: -0.14583334}
+    oldSize: {x: 0.55, y: 0.48}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

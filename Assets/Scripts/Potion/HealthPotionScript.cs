@@ -7,7 +7,7 @@ public class HealthPotion : Potion
     {
         base.Awake();
         type = "Health";
-        value = 3;
-        description = "Heal your character for xxxxx health points";
+        value = 60;
+        description = "Heal your character for xxxxx% health points";
     }
 }

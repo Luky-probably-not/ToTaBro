@@ -79,9 +79,15 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7991521273734161198, guid: f7529d394e92ed4f791246c369f9cb16, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
   m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> origin/feat/wave
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,7 +97,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!50 &259000905957497416
+=======
+--- !u!114 &5931385409324633116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563056678435589891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD:Assets/Prefabs/Ennemies/Mobs/Tank.prefab
+  m_Script: {fileID: 11500000, guid: fbb4184f432bae54b8e51ee034edadc8, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4f01803ee2bba6d408251d318efaaf5f, type: 3}
+>>>>>>> origin/feat/Player:Assets/Prefabs/Ennemies/Tank.prefab
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  xp: {fileID: 2536741290688542782, guid: 98d53ba36cff6e4a89a0d1f6ebffa593, type: 3}
+  coin: {fileID: 0}
+=======
+  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
+  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
+>>>>>>> origin/feat/wave
+  rb: {fileID: 8886438200436059675}
+--- !u!50 &8886438200436059675
+>>>>>>> origin/feat/Player
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -153,7 +187,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.2, y: 2.3}
+  m_Size: {x: 1.2, y: 1.2}
   m_Direction: 0
 --- !u!114 &3450531844360213568
 MonoBehaviour:

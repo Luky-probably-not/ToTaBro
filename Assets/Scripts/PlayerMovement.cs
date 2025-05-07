@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float speed = 5;
@@ -24,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isNearPotion = false;
     private Potion? potionNear;
 
-    public float LifePoint = 10;
+    [SerializeField] private float LifePoint = 1;
     private float MaxLifePoint = 10;
+    private bool canBeDamaged = true;
 
     private int goldValue = 1;
     public int money = 0;
@@ -85,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
                 weapon.Desequip();
                 weaponNear.Equip(this.transform);
                 weapon = weaponNear;
+                weapon.LevelUp(2);
             }
         }
         if (isNearPotion)
@@ -123,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Heal(float heal)
     {
-        this.LifePoint = Mathf.Clamp(this.LifePoint+heal, 0, MaxLifePoint);
+        this.LifePoint = Mathf.Clamp(this.LifePoint+heal*0.01f*MaxLifePoint, 0, MaxLifePoint);
     }
 
     public IEnumerator IncreaseSpeed(float time)
@@ -143,20 +145,35 @@ public class PlayerMovement : MonoBehaviour
     }
     public void ReceiveDamage(Collider2D collider)
     {
-        this.LifePoint = Mathf.Clamp(this.LifePoint - collider.GetComponent<Ennemy>().GetDamage(), 0, MaxLifePoint*0.7f);
-        StartCoroutine(IgnoreCollision(collider, GetComponent<Collider2D>(), 1f));
+        if (!canBeDamaged) return;
+        int damage = 0;
+        switch (collider.tag)
+        {
+            case "Ennemy" or "Boss":
+                damage = collider.GetComponent<Ennemy>().GetDamage();
+                break;
+            case "BossAttack":
+                damage = GameObject.FindGameObjectWithTag("Boss").GetComponent<Ennemy>().GetDamage();
+                break;
+            default:
+                break;
+        }
+        print(damage);
+        this.LifePoint = Mathf.Clamp(this.LifePoint - damage, 0, MaxLifePoint*0.7f);
+        StartCoroutine(Invulnerabilty());
     }
 
-    private IEnumerator IgnoreCollision(Collider2D a, Collider2D b, float time)
+    private IEnumerator Invulnerabilty()
     {
-        Physics2D.IgnoreCollision(a, b, true);
-        yield return new WaitForSeconds(time);
-        if (a == null || b == null) yield break;
-        Physics2D.IgnoreCollision(a, b, false);
+        canBeDamaged = false;
+        yield return new WaitForSeconds(1);
+        canBeDamaged = true;
     }
     private IEnumerator Dash()
     {
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), true);
 
         isDashing = true;
         rb.linearVelocity = directionDash * dashPower;
@@ -164,6 +181,8 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
         rb.linearVelocity = directionDash * speed * 0.8f;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), false);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
@@ -202,9 +221,6 @@ public class PlayerMovement : MonoBehaviour
                 isNearPotion = true;
                 potionNear.ShowPopup();
                 break;
-            case "Ennemy" or "EnnemyAttack":
-                ReceiveDamage(collision);
-                break;
             case "Xp":
                 currentXp += collision.GetComponent<Xp>().getValue() * xpValue;
                 Destroy(collision.gameObject);
@@ -212,6 +228,9 @@ public class PlayerMovement : MonoBehaviour
             case "Coin":
                 money += collision.GetComponent<Coin>().getValue() * goldValue;
                 Destroy(collision.gameObject);
+                break;
+            case "BossAttack":
+                ReceiveDamage(collision);
                 break;
             default:
                 break;
@@ -232,6 +251,14 @@ public class PlayerMovement : MonoBehaviour
             if (potionNear) potionNear.ClosePopup();
             potionNear = null;
             isNearPotion = false;
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ennemy" || collision.gameObject.tag == "Boss")
+        {
+            ReceiveDamage(collision.gameObject.GetComponent<Collider2D>());
         }
     }
 
