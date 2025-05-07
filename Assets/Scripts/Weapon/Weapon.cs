@@ -28,7 +28,7 @@ public abstract class Weapon : MonoBehaviour
     public TMP_Text fireRateTMP;
 
     public bool canBuy = false;
-    public int cost = 0;
+    public int cost = 1;
     public void Init(string name, float fireRate, float bulletSpeed, float disparitionTime, int baseDamage)
     {
         this.name = name;
