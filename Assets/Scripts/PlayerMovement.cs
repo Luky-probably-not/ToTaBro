@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     private int currentLvl = 1;
     private float xpNeeded = 100;
-    private float currentXp = 0;
+    [SerializeField] private float currentXp = 0;
     private int xpValue = 1;
     void Start()
     {
@@ -206,10 +206,12 @@ public class PlayerMovement : MonoBehaviour
                 ReceiveDamage(collision);
                 break;
             case "Xp":
-                currentXp += collision.GetComponent<Xp>().value * xpValue;
+                currentXp += collision.GetComponent<Xp>().getValue() * xpValue;
+                Destroy(collision.gameObject);
                 break;
             case "Coin":
-                money += collision.GetComponent<Coin>().value * goldValue;
+                money += collision.GetComponent<Coin>().getValue() * goldValue;
+                Destroy(collision.gameObject);
                 break;
             default:
                 break;
@@ -235,5 +237,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnPause(){
         GameManager.Instance.TogglePause();
+    }
+
+    public void OnCrouch() 
+    {
+        GameManager.Instance.ExitMerchant();
     }
 }
