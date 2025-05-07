@@ -7,7 +7,7 @@ public class FireRatePotion : Potion
     {
         base.Awake();
         type = "FireRate";
-        value = 5;
+        value = 50;
         description = "Increase the fire rate of your weapon during xxxxx seconds";
     }
 }

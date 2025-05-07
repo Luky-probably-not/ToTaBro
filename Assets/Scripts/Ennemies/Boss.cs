@@ -10,7 +10,7 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 100;
+        hp = 300;
         nickname = "Boss";
         difficulty = 10;
         damage = 3;
@@ -59,8 +59,8 @@ public class Slime : Ennemy
     
     public void SlamAttack()
     {
-	GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
-	Destroy(attackInstance, 0.5f);
+		GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+		Destroy(attackInstance, 0.5f);
     }
 
 

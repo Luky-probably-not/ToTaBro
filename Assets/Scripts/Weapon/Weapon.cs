@@ -16,6 +16,8 @@ public abstract class Weapon : MonoBehaviour
     public float bulletDisparitionTime { get; set; }
     public int bulletDamage { get; set; }
 
+    public float baseDamage { get; set; }
+    public int level { get; set; }
 
     public float hueOffSet {  get; set; }
     public Color currentColor { get; set; }
@@ -26,6 +28,7 @@ public abstract class Weapon : MonoBehaviour
     public TMP_Text nameTMP;
     public TMP_Text damageTMP;
     public TMP_Text fireRateTMP;
+    public TMP_Text levelTMP;
 
     public bool canBuy = false;
     public int cost = 0;
@@ -35,7 +38,7 @@ public abstract class Weapon : MonoBehaviour
         this.fireRate = fireRate;
         this.bulletSpeed = bulletSpeed;
         this.bulletDisparitionTime = disparitionTime;
-        this.bulletDamage = bulletDamage;
+        this.baseDamage = baseDamage;
 
     }
 
@@ -117,10 +120,10 @@ public abstract class Weapon : MonoBehaviour
         if (isWielded) return;
         popupCanvas.gameObject.SetActive(true);
         GetTMP();
-        nameTMP.SetText(name);
+        nameTMP.SetText(Name);
         damageTMP.SetText( bulletDamage.ToString());
         fireRateTMP.SetText((Truncate((1 / fireRate)*10)/10).ToString());
-
+        levelTMP.SetText(level.ToString());
     }
 
     public void ClosePopup()
@@ -140,9 +143,17 @@ public abstract class Weapon : MonoBehaviour
                     damageTMP = tmp; break;
                 case "FireRate":
                     fireRateTMP = tmp; break;
+                case "Level":
+                    levelTMP = tmp; break;
                 default:
                     break;
             }
         }
+    }
+
+    public void LevelUp(int level)
+    {
+        bulletDamage = (int) Round(baseDamage + 1.1f * level);
+        this.level = level;
     }
 }

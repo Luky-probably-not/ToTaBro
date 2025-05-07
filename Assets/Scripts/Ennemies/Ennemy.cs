@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Ennemy : MonoBehaviour
@@ -52,14 +53,13 @@ public class Ennemy : MonoBehaviour
             TakeDamage(bullet.Damage); // Value of damage taken
         }else if (collision.CompareTag("Player"))
 	    {
-	        TakeDamage(1);
+            TakeDamage(1);
 	        rb.linearVelocity = Vector2.zero;
 	    }
     }
 
     protected void TakeDamage(int amount)
     {
-        print(hp);
         hp -= amount;
         if(hp <= 0)
             Die();

@@ -15,6 +15,9 @@ TagManager:
   - SwordSlashPlayer
   - Xp
   - Coin
+  - BossAttack
+  - Boss
+  - EnnemyAttack
   layers:
   - Default
   - TransparentFX
@@ -25,8 +28,8 @@ TagManager:
   - Player
   - Ennemy
   - BulletPlayer
-  - 
-  - 
+  - EnnemyAttack
+  - Boss
   - 
   - 
   - 

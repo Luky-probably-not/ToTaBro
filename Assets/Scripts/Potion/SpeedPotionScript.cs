@@ -7,7 +7,7 @@ public class SpeedPotion : Potion
     {
         base.Awake();
         type = "Speed";
-        value = 5;
+        value = 50;
         description = "Increase your movement speed for xxxxx seconds";
     }
 }

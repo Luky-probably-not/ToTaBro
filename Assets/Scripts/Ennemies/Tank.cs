@@ -11,7 +11,7 @@ public class Tank : Ennemy
         damage = 1;
         speed = 1;
     }
-    
+
     void Update()
     {
         GoTo("Player");

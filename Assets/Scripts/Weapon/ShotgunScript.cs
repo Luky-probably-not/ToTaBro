@@ -12,7 +12,7 @@ public class Shotgun : Weapon
         fireRate = 1.5f;
         bulletSpeed = 20;
         bulletDisparitionTime = 0.2f;
-        bulletDamage = 1;
+        baseDamage = 1;
     }
 
     public override void ShootWeapon(Vector2 directionShoot)

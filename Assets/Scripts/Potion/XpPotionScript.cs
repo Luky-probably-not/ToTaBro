@@ -7,7 +7,7 @@ public class XpPotion : Potion
     {
         base.Awake();
         type = "XP";
-        value = 5;
+        value = 50;
         description = "Increase the xp value for xxxxx seconds";
     }
 }
