@@ -167,11 +167,11 @@ MonoBehaviour:
   gameScenePrefab1: {fileID: 1170187838826901828, guid: 252d989c0b224ed48a208741e470f962, type: 3}
   gameScenePrefab2: {fileID: 3528727173199777687, guid: c01f2f36cf8a65f49b979ad777ae9838, type: 3}
   pauseUIPrefab: {fileID: 967074685292934243, guid: c8188dd2fc877ca4c91cd9fa0beaa405, type: 3}
-  botPrefab: {fileID: 2531796429475434387, guid: 4dd1db82074b4b64c94f774485d67a4b, type: 3}
-  speedyPrefab: {fileID: 4948536707151409798, guid: d37ff62fc5356c1408b51befb77f9ed7, type: 3}
-  tankPrefab: {fileID: 7877092568943433390, guid: e91425b8887abc843bbe27c9dcbba581, type: 3}
-  rangedPrefab: {fileID: 8108144937143440761, guid: 4ef8ad17c0ed8d24182e06b5c20352ee, type: 3}
-  slimePrefab: {fileID: 5533624478527953507, guid: bde39c9f349288d47960bbeafdca227c, type: 3}
+  botPrefab: {fileID: 6442907479092713114, guid: 4dd1db82074b4b64c94f774485d67a4b, type: 3}
+  speedyPrefab: {fileID: 2024771064146467906, guid: d37ff62fc5356c1408b51befb77f9ed7, type: 3}
+  tankPrefab: {fileID: 2447674485592129966, guid: e91425b8887abc843bbe27c9dcbba581, type: 3}
+  rangedPrefab: {fileID: 27556774066349876, guid: 4ef8ad17c0ed8d24182e06b5c20352ee, type: 3}
+  slimePrefab: {fileID: 4286072389633225011, guid: bde39c9f349288d47960bbeafdca227c, type: 3}
   gunnerPrefab: {fileID: 1272836381536657491, guid: 1a6f660745f0aaf4ea6d4a616b9c2880, type: 3}
   gunniePrefab: {fileID: 1483279583138333136, guid: 24689248e35f06c42a31bbf7dff532bc, type: 3}
   laserPrefab: {fileID: 6727898705481714353, guid: 39d08518b57d5f848aeba74c1429596e, type: 3}
@@ -185,10 +185,6 @@ MonoBehaviour:
   playerPrefab: {fileID: 4860983917505171159, guid: f63332fd99a6f0e4181a9ac2c571257f, type: 3}
   merchantPrefab: {fileID: 5418077429949508270, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
   merchantSpawnPoint: {fileID: 6673931091058273558, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
-  itemSpawnParent:
-  - {x: 1.6669074e+22, y: 5.69e-43, z: 1.6668768e+22}
-  - {x: 5.69e-43, y: 1.666911e+22, z: 5.69e-43}
-  - {x: 1.6668768e+22, y: 5.69e-43, z: 1.6669146e+22}
 --- !u!1 &1191792328
 GameObject:
   m_ObjectHideFlags: 0
