@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     [Header("Merchant")]
     public GameObject merchantPrefab;
     public Transform merchantSpawnPoint;
-    public Vector3[] itemSpawnParent = new Vector3[3];
+    private Vector3[] itemSpawnParent = new Vector3[3];
     private List<GameObject> currentMerchantItems = new List<GameObject>();
     private GameObject currentMerchantInstance;
     
