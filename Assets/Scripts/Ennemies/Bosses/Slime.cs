@@ -24,6 +24,7 @@ public class Slime : Ennemy
 
     void Update()
     {
+	isDead();
 	GoTo("Player");
 	Split();
     }
@@ -31,6 +32,11 @@ public class Slime : Ennemy
     void OnTriggerEnter2D(Collider2D collision)
     {
 	HandleCollision(collision);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
     }
 
     public void WarningCall()
@@ -41,7 +47,7 @@ public class Slime : Ennemy
     public IEnumerator Warning()
     {
 	float time = 0.5f;
-	SpriteRenderer sr = GetComponent<SpriteRenderer>();
+	SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
 	for(int i = 0; i <= 6; i++)
 	{
 	    time -= 0.1f;

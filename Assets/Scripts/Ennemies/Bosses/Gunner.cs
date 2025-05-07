@@ -44,6 +44,16 @@ public class Gunner : Ennemy
 	}
     }
 
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+	HandleCollision(collider);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
+    }
+
     protected override void GoTo(string targetTag)
     {
 	FindTarget(targetTag);
@@ -72,7 +82,7 @@ public class Gunner : Ennemy
         public IEnumerator Warning()
     {
 	float time = 0.5f;
-	SpriteRenderer sr = GetComponent<SpriteRenderer>();
+	SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
 	for(int i = 0; i <= 6; i++)
 	{
 	    time -= 0.1f;
@@ -120,10 +130,15 @@ public class Gunner : Ennemy
     {
         for (float i = 0; i < 16; i++)
         {
-            float angle = startAngle + i * angleStep;
-            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
+            float angleOff = startAngle + i * angleStep;
+	    
+            Vector2 rotateDirection = Quaternion.Euler(0, 0, angleOff) * directionShoot.normalized;
 
-            Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
+	    float fAngle = Mathf.Atan2(rotateDirection.y, rotateDirection.x) * Mathf.Rad2Deg;
+
+	    Quaternion rotation = Quaternion.Euler(0, 0, fAngle);
+
+            Shoot(rotateDirection.normalized, fAngle, rotation);
         }
     }
 }

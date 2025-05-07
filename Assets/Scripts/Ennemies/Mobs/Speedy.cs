@@ -17,9 +17,15 @@ public class Speedy : Ennemy
 	isDead();
         GoTo("Player");
     }
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleCollision(collision);
+	HandleCollision(collision);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
     }
 }
 

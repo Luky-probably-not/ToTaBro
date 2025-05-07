@@ -32,10 +32,15 @@ public class Ranged : Ennemy
 	    hasStartedShooting = !hasStartedShooting;
 	}
     }
-    
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleCollision(collision);
+	HandleCollision(collision);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
     }
 
     protected override void GoTo(string targetTag)
