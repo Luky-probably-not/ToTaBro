@@ -259,4 +259,8 @@ public class Player : MonoBehaviour
             ReceiveDamage(collision.gameObject.GetComponent<Collider2D>());
         }
     }
+
+    public void OnPause(){
+        GameManager.Instance.TogglePause();
+    }
 }

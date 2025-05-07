@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7940347226034007892}
   - component: {fileID: 6017034801290205119}
-  - component: {fileID: 4966682691126083543}
+  - component: {fileID: 6263580382663810725}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Weapon
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 27389037025994534}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1426948, y: -1.442505, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -81,7 +81,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4966682691126083543
+--- !u!114 &6263580382663810725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 27389037025994534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbbc6252e5c532142b0b4a9fc3fe2a8b, type: 3}
+  m_Script: {fileID: 11500000, guid: c6ff1a1c102468249962877709a88423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1464410677912618184, guid: 0d1d8bccb6529f640819de9bcc40640b, type: 3}

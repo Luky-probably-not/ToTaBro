@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3520886302648262291}
   - component: {fileID: -6736265411384160776}
   - component: {fileID: 6058039943772151049}
-  - component: {fileID: 4951174683883316333}
+  - component: {fileID: 8455820570566706741}
+  - component: {fileID: 7284545282391352739}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -176,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 51fe29321d93f9447913dffd87995eb8, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -274,7 +275,7 @@ MonoBehaviour:
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -287,9 +288,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4860983917505171159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395a3105c75b82f4c9c243dd5323fa34, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a1166f9f3b451a46b7d383c6a0016ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3520886302648262291}
   speed: 5
-  LifePoint: 10
+  LifePoint: 5
+--- !u!114 &7284545282391352739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860983917505171159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -44,10 +44,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 315561612708912388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c9d87b899be44b92b487d3b9c87d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 87808ec605399d54fbdeddd1fb81775a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  StartedAngle: 0
+  Damage: 0
+  passThrough: 0
+  slash: 0
 --- !u!50 &3505340134972593699
 Rigidbody2D:
   serializedVersion: 5
@@ -92,7 +95,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295

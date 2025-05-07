@@ -88,6 +88,10 @@ public class Ennemy : MonoBehaviour
 	    return true;
 	}
 	return false;
+	    {
+	        TakeDamage(1);
+	        rb.linearVelocity = Vector2.zero;
+	    }
     }
 
     protected void TakeDamage(int amount)
@@ -101,15 +105,16 @@ public class Ennemy : MonoBehaviour
             Die();
     }
 
-    protected void Die()
-    {
-	float posX = 0;
-	if(isCoinDroped())
-	{
-	    posX = 0.4F;
-	    DropCoin();
-	}
-	DropXp(posX);
+    protected virtual void Die()
+        {
+        float posX = 0;
+        if(isCoinDroped())
+        {
+            posX = 0.4F;
+            DropCoin();
+        }
+        DropXp(posX);
+        GameManager.Instance.EnemyDefeated(1f);
         Destroy(gameObject);
     }
     

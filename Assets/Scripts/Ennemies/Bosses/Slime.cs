@@ -5,18 +5,13 @@ public class Slime : Ennemy
 {
     [SerializeField] protected GameObject attack;
     protected bool hasSplit = false;
-    protected int maxHp = 500;
+    protected int maxHp = 50;
     
     protected override void Awake()
     {
         base.Awake();
-<<<<<<< HEAD:Assets/Scripts/Ennemies/Boss.cs
-        hp = 300;
-        nickname = "Boss";
-=======
         hp = 500;
         nickname = "Slime";
->>>>>>> origin/feat/ennemies:Assets/Scripts/Ennemies/Bosses/Slime.cs
         difficulty = 10;
         damage = 3;
         speed = 1;
@@ -37,7 +32,11 @@ public class Slime : Ennemy
     {
 	HandleCollision(collision);
     }
-
+	protected override void Die()
+    {
+        GameManager.Instance.EnemyDefeated(0.5f);
+        Destroy(gameObject);
+    }
     public void WarningCall()
     {
 	StartCoroutine(Warning());

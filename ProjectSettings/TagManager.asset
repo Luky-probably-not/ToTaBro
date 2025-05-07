@@ -14,17 +14,23 @@ TagManager:
   - Ennemy
   - SwordSlashPlayer
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Xp
   - Coin
   - BossAttack
   - Boss
   - EnnemyAttack
 =======
+=======
+>>>>>>> origin/feat/wave
   - EnnemyAttack
   - Xp
   - Coin
   - RangedEnemy
+<<<<<<< HEAD
 >>>>>>> origin/feat/ennemies
+=======
+>>>>>>> origin/feat/wave
   layers:
   - Default
   - TransparentFX
