@@ -10,8 +10,13 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
+<<<<<<< HEAD:Assets/Scripts/Ennemies/Boss.cs
         hp = 300;
         nickname = "Boss";
+=======
+        hp = 500;
+        nickname = "Slime";
+>>>>>>> origin/feat/ennemies:Assets/Scripts/Ennemies/Bosses/Slime.cs
         difficulty = 10;
         damage = 3;
         speed = 1;

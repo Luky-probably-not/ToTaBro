@@ -1,19 +1,20 @@
 using UnityEngine;
 
-public class Speedy : Ennemy
+public class Bot : Ennemy
 {
     protected override void Awake()
     {
         base.Awake();
-        hp = 1;
-        nickname = "Speedy";
-        difficulty = 2;
-        damage = 3;
-        speed = 6;
+        hp = 3;
+        nickname = "Bot";
+        difficulty = 1;
+        damage = 1;
+        speed = 2;
     }
     
     void Update()
     {
+	isDead();
         GoTo("Player");
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,4 +22,3 @@ public class Speedy : Ennemy
         HandleCollision(collision);
     }
 }
-

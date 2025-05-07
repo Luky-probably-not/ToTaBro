@@ -14,6 +14,7 @@ public class Tank : Ennemy
 
     void Update()
     {
+	isDead();
         GoTo("Player");
     }
     void OnTriggerEnter2D(Collider2D collision)

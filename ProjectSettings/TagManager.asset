@@ -13,11 +13,18 @@ TagManager:
   - Potion
   - Ennemy
   - SwordSlashPlayer
+<<<<<<< HEAD
   - Xp
   - Coin
   - BossAttack
   - Boss
   - EnnemyAttack
+=======
+  - EnnemyAttack
+  - Xp
+  - Coin
+  - RangedEnemy
+>>>>>>> origin/feat/ennemies
   layers:
   - Default
   - TransparentFX
