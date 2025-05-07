@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     private bool isNearPotion = false;
     private Potion? potionNear;
 
-    [SerializeField] private float LifePoint = 1;
+    [SerializeField] private float LifePoint = 10;
     private float MaxLifePoint = 10;
     private bool canBeDamaged = true;
 
