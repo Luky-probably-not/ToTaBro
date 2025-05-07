@@ -329,13 +329,12 @@ public class GameManager : MonoBehaviour
         currentWave +=1;
         StartCoroutine(SpawnWave(3f));
     }
-    public void ItemRecupere(GameObject item)
+    public void removeFromMarchent(GameObject item)
     {
         if (currentMerchantItems.Contains(item))
         {
             currentMerchantItems.Remove(item);
         }
-        item.SetActive(false);
     }
     private GameObject GetRandomPotion()
     {

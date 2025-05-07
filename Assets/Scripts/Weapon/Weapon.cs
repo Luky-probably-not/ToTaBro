@@ -86,6 +86,7 @@ public abstract class Weapon : MonoBehaviour
     public void Equip(Transform player)
     {
         this.player = player;
+        GameManager.Instance.removeFromMarchent(this.gameObject);
         this.isWielded = true;
         this.ClosePopup();
     }
@@ -94,7 +95,7 @@ public abstract class Weapon : MonoBehaviour
     {
         this.player = null;
         this.isWielded = false;
-         GameManager.Instance.SetDroppedWeapon(this.gameObject);
+        GameManager.Instance.SetDroppedWeapon(this.gameObject);
     }
 
     public void LegendaryColor()
