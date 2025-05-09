@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6938174164667606488}
   - component: {fileID: 2826142337711003375}
-  - component: {fileID: 3382150903822763716}
+  - component: {fileID: 3343648705889203007}
   m_Layer: 0
   m_Name: Gunnie
   m_TagString: Weapon
@@ -81,7 +81,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3382150903822763716
+--- !u!114 &3343648705889203007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483279583138333136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8d784cbaa0599648a8f8b7d87ff6b93, type: 3}
+  m_Script: {fileID: 11500000, guid: ed6b52397fd4a6b44920a21583b7dee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1464410677912618184, guid: 0d1d8bccb6529f640819de9bcc40640b, type: 3}
@@ -98,6 +98,9 @@ MonoBehaviour:
   nameTMP: {fileID: 0}
   damageTMP: {fileID: 0}
   fireRateTMP: {fileID: 0}
+  levelTMP: {fileID: 0}
+  canBuy: 0
+  cost: 0
 --- !u!1 &5108672174649817540
 GameObject:
   m_ObjectHideFlags: 0

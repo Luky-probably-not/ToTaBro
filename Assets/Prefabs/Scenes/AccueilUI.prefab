@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2576705689476503812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -959.64355, y: -541.2721, z: -10.026816}
+  m_LocalPosition: {x: 0, y: 0, z: -10.026816}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2576705689476503812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7950a4f60e43d4942a228d62e866c78f, type: 3}
+  m_Script: {fileID: 11500000, guid: 60127b9e8e51e5c428c709c18f5ffd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 3908180949515071586}
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2576705689476503812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2f83dc8698126946b05c5ee5f99af61, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c0f8ab75cacb744593c4db1194385d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttons:

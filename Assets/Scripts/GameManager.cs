@@ -166,6 +166,7 @@ public class GameManager : MonoBehaviour
         weapons.Add(shotgunPrefab);
         weapons.Add(swordPrefab);
         currentWeapon = Instantiate(gunniePrefab, Vector3.zero, Quaternion.identity);
+        currentWeapon.GetComponent<Weapon>().LevelUp(currentWave);
 
         currentWave = 1;
         StartCoroutine(SpawnWave(1f));
@@ -263,6 +264,7 @@ public class GameManager : MonoBehaviour
         {
             GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
             droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
+            droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
 
             Debug.Log("Nouvelle arme dropée : " + newWeapon.name);
@@ -300,6 +302,7 @@ public class GameManager : MonoBehaviour
         currentMerchantItems.Add(potion);
         GameObject weapon = weapons[Random.Range(0, weapons.Count)];
         GameObject weaponObj = Instantiate(weapon, itemSpawnParent[1]);
+        weaponObj.GetComponent<Weapon>().LevelUp(currentWave);
         currentMerchantItems.Add(weaponObj);
         bool giveWeapon = Random.value < 0.5f;
         GameObject randObj = giveWeapon ? weapons[Random.Range(0, weapons.Count)] : GetRandomPotion();

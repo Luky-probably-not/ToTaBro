@@ -97,7 +97,7 @@ public abstract class Weapon : MonoBehaviour
     {
         this.player = null;
         this.isWielded = false;
-         GameManager.Instance.SetDroppedWeapon(this.gameObject);
+        GameManager.Instance.SetDroppedWeapon(this.gameObject);
     }
 
     public void LegendaryColor()
@@ -121,7 +121,7 @@ public abstract class Weapon : MonoBehaviour
         if (isWielded) return;
         popupCanvas.gameObject.SetActive(true);
         GetTMP();
-        nameTMP.SetText(Name);
+        nameTMP.SetText(Name);        
         damageTMP.SetText( bulletDamage.ToString());
         fireRateTMP.SetText((Truncate((1 / fireRate)*10)/10).ToString());
         levelTMP.SetText(level.ToString());

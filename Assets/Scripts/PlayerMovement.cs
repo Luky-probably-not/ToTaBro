@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using TMPro;
+using System.Xml.Linq;
 
 public class Player : MonoBehaviour
 {
@@ -35,9 +37,15 @@ public class Player : MonoBehaviour
     private float xpNeeded = 100;
     private float currentXp = 0;
     private int xpValue = 1;
+
+    public Canvas popupCanvas;
+    public TMP_Text textPopUp;
+
     void Start()
     {
         directionShoot = transform.right;
+        popupCanvas = GetComponentInChildren<Canvas>();
+        popupCanvas.gameObject.SetActive(false);
     }
 
     void Update()
@@ -86,7 +94,6 @@ public class Player : MonoBehaviour
                 weapon.Desequip();
                 weaponNear.Equip(this.transform);
                 weapon = weaponNear;
-                weapon.LevelUp(2);
             }
         }
         if (isNearPotion)
@@ -208,7 +215,6 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        print(collision.tag);
         switch (collision.tag)
         {
             case "Weapon":
@@ -222,10 +228,16 @@ public class Player : MonoBehaviour
                 potionNear.ShowPopup();
                 break;
             case "Xp":
-                currentXp += collision.GetComponent<Xp>().value * xpValue;
+                int value = collision.GetComponent<Xp>().GetXp();
+                currentXp += value * xpValue;
+                StartCoroutine(ShowPopup("blue",value));
+                Destroy(collision.gameObject);
                 break;
             case "Coin":
-                money += collision.GetComponent<Coin>().value * goldValue;
+                value = collision.GetComponent<Coin>().GetCoin();
+                money += value * goldValue;
+                StartCoroutine(ShowPopup("yellow",value));
+                Destroy(collision.gameObject);
                 break;
             case "BossAttack":
                 ReceiveDamage(collision);
@@ -260,6 +272,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    public IEnumerator ShowPopup(string color, int value)
+    {
+        popupCanvas.gameObject.SetActive(true);
+        textPopUp = GetComponentInChildren<TMP_Text>();
+        textPopUp.SetText("+" + value.ToString());
+        if (color == "yellow") textPopUp.color = new Color(255, 255, 0);
+        else textPopUp.color = new Color(0, 0, 139);
+        yield return new WaitForSeconds(1f);
+        ClosePopup();
+    }
+
+    public void ClosePopup()
+    {
+        popupCanvas.gameObject.SetActive(false);
+    }
     public void OnPause(){
         GameManager.Instance.TogglePause();
     }

@@ -90,7 +90,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 27389037025994534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ff1a1c102468249962877709a88423, type: 3}
+  m_Script: {fileID: 11500000, guid: dbbc6252e5c532142b0b4a9fc3fe2a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1464410677912618184, guid: 0d1d8bccb6529f640819de9bcc40640b, type: 3}
@@ -98,6 +98,9 @@ MonoBehaviour:
   nameTMP: {fileID: 0}
   damageTMP: {fileID: 0}
   fireRateTMP: {fileID: 0}
+  levelTMP: {fileID: 0}
+  canBuy: 0
+  cost: 0
 --- !u!1 &3516325521313378118
 GameObject:
   m_ObjectHideFlags: 0

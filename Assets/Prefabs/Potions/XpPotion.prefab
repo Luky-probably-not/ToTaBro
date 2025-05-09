@@ -96,8 +96,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3278306662663867777}
-  - component: {fileID: 6783133883801653051}
   - component: {fileID: 6166427543692086815}
+  - component: {fileID: 5951273329647574907}
   m_Layer: 0
   m_Name: XpPotion
   m_TagString: Potion
@@ -122,23 +122,6 @@ Transform:
   - {fileID: 9097187719450481668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6783133883801653051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7778169325436302301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c67ac98cece8f4cab097439e5545bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popupCanvas: {fileID: 0}
-  nameTMP: {fileID: 0}
-  descTMP: {fileID: 0}
-  canBuy: 0
-  cost: 0
 --- !u!70 &6166427543692086815
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,6 +159,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.6, y: 1.1}
   m_Direction: 0
+--- !u!114 &5951273329647574907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778169325436302301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc5e94d17300d141aa2ca57aaa5098e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupCanvas: {fileID: 0}
+  nameTMP: {fileID: 0}
+  descTMP: {fileID: 0}
+  canBuy: 0
+  cost: 0
 --- !u!1001 &4069448573172978125
 PrefabInstance:
   m_ObjectHideFlags: 0
