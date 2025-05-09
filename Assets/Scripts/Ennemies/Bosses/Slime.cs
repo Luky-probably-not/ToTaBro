@@ -10,7 +10,7 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 500;
+        hp = 50;
         nickname = "Slime";
         difficulty = 10;
         damage = 3;
@@ -24,8 +24,9 @@ public class Slime : Ennemy
 
     void Update()
     {
-	GoTo("Player");
-	Split();
+		isDead();
+		GoTo("Player");
+		Split();
     }
 
     void OnTriggerEnter2D(Collider2D collision)

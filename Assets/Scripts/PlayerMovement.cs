@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     private bool isNearPotion = false;
     private Potion? potionNear;
 
-    [SerializeField] private float LifePoint = 1;
+    [SerializeField] private float LifePoint = 10;
     private float MaxLifePoint = 10;
     private bool canBeDamaged = true;
 
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     private int currentLvl = 1;
     private float xpNeeded = 100;
-    private float currentXp = 0;
+    [SerializeField] private float currentXp = 0;
     private int xpValue = 1;
 
     public Canvas popupCanvas;
@@ -228,13 +228,13 @@ public class Player : MonoBehaviour
                 potionNear.ShowPopup();
                 break;
             case "Xp":
-                int value = collision.GetComponent<Xp>().GetXp();
+                int value = collision.GetComponent<Xp>().getValue();
                 currentXp += value * xpValue;
                 StartCoroutine(ShowPopup("blue",value));
                 Destroy(collision.gameObject);
                 break;
             case "Coin":
-                value = collision.GetComponent<Coin>().GetCoin();
+                value = collision.GetComponent<Coin>().getValue();
                 money += value * goldValue;
                 StartCoroutine(ShowPopup("yellow",value));
                 Destroy(collision.gameObject);
@@ -289,5 +289,10 @@ public class Player : MonoBehaviour
     }
     public void OnPause(){
         GameManager.Instance.TogglePause();
+    }
+
+    public void OnCrouch() 
+    {
+        GameManager.Instance.ExitMerchant();
     }
 }

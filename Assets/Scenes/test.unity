@@ -167,11 +167,11 @@ MonoBehaviour:
   gameScenePrefab1: {fileID: 1170187838826901828, guid: 252d989c0b224ed48a208741e470f962, type: 3}
   gameScenePrefab2: {fileID: 3528727173199777687, guid: c01f2f36cf8a65f49b979ad777ae9838, type: 3}
   pauseUIPrefab: {fileID: 967074685292934243, guid: c8188dd2fc877ca4c91cd9fa0beaa405, type: 3}
-  botPrefab: {fileID: 2531796429475434387, guid: 4dd1db82074b4b64c94f774485d67a4b, type: 3}
-  speedyPrefab: {fileID: 7588790100145448760, guid: d37ff62fc5356c1408b51befb77f9ed7, type: 3}
-  tankPrefab: {fileID: 3563056678435589891, guid: e91425b8887abc843bbe27c9dcbba581, type: 3}
-  rangedPrefab: {fileID: 8108144937143440761, guid: 4ef8ad17c0ed8d24182e06b5c20352ee, type: 3}
-  slimePrefab: {fileID: 5533624478527953507, guid: bde39c9f349288d47960bbeafdca227c, type: 3}
+  botPrefab: {fileID: 6442907479092713114, guid: 4dd1db82074b4b64c94f774485d67a4b, type: 3}
+  speedyPrefab: {fileID: 2024771064146467906, guid: d37ff62fc5356c1408b51befb77f9ed7, type: 3}
+  tankPrefab: {fileID: 2447674485592129966, guid: e91425b8887abc843bbe27c9dcbba581, type: 3}
+  rangedPrefab: {fileID: 27556774066349876, guid: 4ef8ad17c0ed8d24182e06b5c20352ee, type: 3}
+  slimePrefab: {fileID: 4286072389633225011, guid: bde39c9f349288d47960bbeafdca227c, type: 3}
   gunnerPrefab: {fileID: 1272836381536657491, guid: 1a6f660745f0aaf4ea6d4a616b9c2880, type: 3}
   gunniePrefab: {fileID: 1483279583138333136, guid: 24689248e35f06c42a31bbf7dff532bc, type: 3}
   laserPrefab: {fileID: 6727898705481714353, guid: 39d08518b57d5f848aeba74c1429596e, type: 3}
@@ -180,75 +180,11 @@ MonoBehaviour:
   healthPotionPrefab: {fileID: 7778169325436302301, guid: 8d1aef9b4e4ab8d40aef7a07ba0bac8f, type: 3}
   speedPotionPrefab: {fileID: 7778169325436302301, guid: b94a859e48967a744a96b0a9aba2e8ad, type: 3}
   fireRatePotionPrefab: {fileID: 7778169325436302301, guid: 14e1bf5d8d8cadb4186de04bf67e1783, type: 3}
+  goldPotionPrefab: {fileID: 7274580869010148685, guid: e4f02183467717043bf3b4869be92dbd, type: 3}
+  xpPotionPrefab: {fileID: 7778169325436302301, guid: 5f35955624d106b45907b0c818ead618, type: 3}
   playerPrefab: {fileID: 4860983917505171159, guid: f63332fd99a6f0e4181a9ac2c571257f, type: 3}
   merchantPrefab: {fileID: 5418077429949508270, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
   merchantSpawnPoint: {fileID: 6673931091058273558, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
-  itemSpawnParent:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!1 &557736689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 557736690}
-  m_Layer: 0
-  m_Name: spawnItemMerchant1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &557736690
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557736689}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1068497960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068497961}
-  m_Layer: 0
-  m_Name: spawnItemMerchant2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1068497961
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068497960}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191792328
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,37 +356,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1981464672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1981464673}
-  m_Layer: 0
-  m_Name: spawnItemMerchant3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1981464673
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981464672}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060909140
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +465,3 @@ SceneRoots:
   - {fileID: 1636177348}
   - {fileID: 275997330}
   - {fileID: 2060909144}
-  - {fileID: 557736690}
-  - {fileID: 1068497961}
-  - {fileID: 1981464673}

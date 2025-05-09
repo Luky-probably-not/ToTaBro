@@ -13,7 +13,7 @@ public abstract class Potion : MonoBehaviour
     public TMP_Text descTMP;
 
     public bool canBuy = false;
-    public int cost = 0;
+    public int cost = 1;
     public void Init(string type, float value)
     {
         this.type = type;
@@ -29,6 +29,7 @@ public abstract class Potion : MonoBehaviour
     public void Use()
     {
         ClosePopup();
+        GameManager.Instance.removeFromMarchent(this.gameObject);
         Destroy(gameObject);
     }
 

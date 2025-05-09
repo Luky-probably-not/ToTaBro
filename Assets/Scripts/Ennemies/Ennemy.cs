@@ -5,7 +5,7 @@ using System;
 public class Ennemy : MonoBehaviour
 {
     [Header("Enemy Data")]
-    protected int hp;
+    [SerializeField] protected int hp;
     protected string nickname;
     protected int difficulty;
     protected int damage;

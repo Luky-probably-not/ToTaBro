@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
     public GameObject healthPotionPrefab;
     public GameObject speedPotionPrefab;
     public GameObject fireRatePotionPrefab;
+    public GameObject goldPotionPrefab;
+    public GameObject xpPotionPrefab;
 
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
     [Header("Merchant")]
     public GameObject merchantPrefab;
     public Transform merchantSpawnPoint;
-    public Transform[] itemSpawnParent;
+    private Vector3[] itemSpawnParent = new Vector3[3];
     private List<GameObject> currentMerchantItems = new List<GameObject>();
     private GameObject currentMerchantInstance;
     
@@ -72,6 +74,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        itemSpawnParent[0] = new Vector3(-5f, 0f, 0f);
+        itemSpawnParent[1] = new Vector3(0f, 0f, 0f);
+        itemSpawnParent[2] = new Vector3(5f, 0f, 0f);
         LoadAccueil();
     }
 
@@ -166,6 +171,7 @@ public class GameManager : MonoBehaviour
         weapons.Add(shotgunPrefab);
         weapons.Add(swordPrefab);
         currentWeapon = Instantiate(gunniePrefab, Vector3.zero, Quaternion.identity);
+        currentWeapon.GetComponent<Weapon>().LevelUp(currentWave);
         currentWeapon.GetComponent<Weapon>().LevelUp(currentWave);
 
         currentWave = 1;
@@ -265,6 +271,7 @@ public class GameManager : MonoBehaviour
             GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
             droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
             droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
+            droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
 
             Debug.Log("Nouvelle arme dropée : " + newWeapon.name);
@@ -297,8 +304,9 @@ public class GameManager : MonoBehaviour
 
     public void EnterMerchant(Merchant merchant)
     {
+        
         currentMerchantItems.Clear();
-        GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0]);
+        GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0], Quaternion.identity);
         currentMerchantItems.Add(potion);
         GameObject weapon = weapons[Random.Range(0, weapons.Count)];
         GameObject weaponObj = Instantiate(weapon, itemSpawnParent[1]);
@@ -306,7 +314,11 @@ public class GameManager : MonoBehaviour
         currentMerchantItems.Add(weaponObj);
         bool giveWeapon = Random.value < 0.5f;
         GameObject randObj = giveWeapon ? weapons[Random.Range(0, weapons.Count)] : GetRandomPotion();
-        GameObject randItem = Instantiate(randObj, itemSpawnParent[2]);
+        GameObject randItem = Instantiate(randObj, itemSpawnParent[2], Quaternion.identity);
+        if(giveWeapon)
+        {
+            randItem.GetComponent<Weapon>().LevelUp(currentWave);
+        }
         currentMerchantItems.Add(randItem);
     }
     public void ExitMerchant()
@@ -323,15 +335,25 @@ public class GameManager : MonoBehaviour
             Destroy(currentMerchantInstance);
         }
         setInGame(true);
+        currentWave +=1;
         StartCoroutine(SpawnWave(3f));
+    }
+    public void removeFromMarchent(GameObject item)
+    {
+        if (currentMerchantItems.Contains(item))
+        {
+            currentMerchantItems.Remove(item);
+        }
     }
     private GameObject GetRandomPotion()
     {
-        int rand = Random.Range(0, 3);
+        int rand = Random.Range(0, 5);
         switch (rand)
         {
             case 0: return healthPotionPrefab;
             case 1: return speedPotionPrefab;
+            case 2: return goldPotionPrefab;
+            case 3: return xpPotionPrefab;
             default: return fireRatePotionPrefab;
         }
     }
