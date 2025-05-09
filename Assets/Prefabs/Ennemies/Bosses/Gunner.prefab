@@ -184,7 +184,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.2, y: 2.3}
+  m_Size: {x: 1, y: 1.8}
   m_Direction: 0
 --- !u!114 &4938186737044448733
 MonoBehaviour:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33dd6da24eec7d408d2618bc77f552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 802149453490952212, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
+  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
   rb: {fileID: 495803994746468037}
-  bullet: {fileID: 6409845008592801788, guid: 8a79113a635e4f5448aa028d9ec0b9ac, type: 3}
+  bullet: {fileID: 3147869943508483296, guid: 8a79113a635e4f5448aa028d9ec0b9ac, type: 3}
