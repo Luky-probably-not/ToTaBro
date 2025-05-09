@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3668938499985076069, guid: 5fd0bc1f21991841c962f29c665ebf66, type: 3}
+  m_Sprite: {fileID: 3668938499985076069, guid: eb6c832a700170a41b199572be4e7e0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.34, y: 0.59}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -195,10 +195,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1272836381536657491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deab742cec85a9d86ab08c7227e5b6c7, type: 3}
+  m_Script: {fileID: 11500000, guid: a33dd6da24eec7d408d2618bc77f552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: 98d53ba36cff6e4a89a0d1f6ebffa593, type: 3}
-  coin: {fileID: 802149453490952212, guid: 80a60b408718ffc61827900a13d92771, type: 3}
+  xp: {fileID: 2536741290688542782, guid: a8526a29657fd1d47a351a541c199052, type: 3}
+  coin: {fileID: 802149453490952212, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
   rb: {fileID: 495803994746468037}
-  bullet: {fileID: 6409845008592801788, guid: 36f56d8e2f9bdafa5a87382bb9247bcc, type: 3}
+  bullet: {fileID: 6409845008592801788, guid: 8a79113a635e4f5448aa028d9ec0b9ac, type: 3}
