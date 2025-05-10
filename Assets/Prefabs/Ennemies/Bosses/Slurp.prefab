@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5775549810735242604}
   - component: {fileID: 6293900761358627413}
   - component: {fileID: 4244897096869922023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slurp
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 611408425948460187, guid: 1c0ced82827ae2b4889d965fd5be80a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -153,7 +153,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &6293900761358627413
 Animator:
   serializedVersion: 7
@@ -188,7 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e4efd3b8d3b648b86f213fb768b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 0}
-  coin: {fileID: 0}
+  xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
+  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
   rb: {fileID: 5775549810735242604}
   laser: {fileID: 8148867781065095270, guid: 89b5c362f3bd2d2438132b2624443a0a, type: 3}
+  animator: {fileID: 6293900761358627413}

@@ -6,6 +6,10 @@ public class Slurp : Ennemy
     [SerializeField] protected GameObject laser;
     protected int maxHp = 700;
     private int currentPhase = 0;
+
+    [Header("Animator")]
+	public Animator animator;
+
     protected override void Awake()
     {
         base.Awake();
@@ -125,19 +129,26 @@ void SetPhase()
     if (currentPhase == 1)
     {
         DestroyAllWithName("LaserPivot");
+		animator.SetBool("IsAttacking", true);
+		yield return new WaitForSeconds(3.2f);
         FirstPhase();
+		animator.SetBool("IsAttacking", false);
     }
     else if (currentPhase == 2)
     {
         DestroyAllWithName("LaserPivot");
-        yield return new WaitForSeconds(2);
+        animator.SetBool("IsAttacking", true);
+		yield return new WaitForSeconds(3.2f);
         SecondPhase();
+		animator.SetBool("IsAttacking", false);
     }
     else if (currentPhase == 3)
     {
         DestroyAllWithName("LaserPivot");
-        yield return new WaitForSeconds(2);
+        animator.SetBool("IsAttacking", true);
+		yield return new WaitForSeconds(3.2f);
         FinalPhase();
+		animator.SetBool("IsAttacking", false);
     }
 }
 

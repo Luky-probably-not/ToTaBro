@@ -14,7 +14,7 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 500;
+        hp = 251;
         nickname = "Slime";
         difficulty = 10;
         damage = 3;
@@ -23,7 +23,7 @@ public class Slime : Ennemy
 
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 0f, 5f);
+	InvokeRepeating(nameof(WarningCall), 5f, 5f);
     }
 
     void Update()
@@ -50,30 +50,10 @@ public class Slime : Ennemy
     
     public IEnumerator Warning()
     {
-	// float time = 0.5f;
-	// SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
-	// for(int i = 0; i <= 6; i++)
-	// {
-	//     time -= 0.1f;
-	//     sr.color = Color.red;
-	//     yield return new WaitForSeconds(time);
-	//     sr.color = Color.green;
-	//     yield return new WaitForSeconds(time);
-	//     sr.color = Color.red;
-	// }
-	rb.linearVelocity = Vector2.zero;
-	SlamAttack();
-	yield return new WaitForSeconds(0.5f);
-	// sr.color = Color.green;
+		rb.linearVelocity = Vector2.zero;
+		SlamAttack();
+		yield return new WaitForSeconds(0.5f);
     }
-    
-    // public void SlamAttack()
-    // {
-	// 	animator.SetBool("IsAttacking", true);
-	// 	GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
-	// 	Destroy(attackInstance, 0.5f);
-	// 	animator.SetBool("IsAttacking", false);
-    // }
 
 	public void SlamAttack()
 	{

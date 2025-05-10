@@ -23,7 +23,7 @@ public class Shotgun : MonoBehaviour, IWeapon
         set => _lastShotTime = value;
     }
     public float bulletDisparitionTime { get; set; } = 0.2f;
-    public int bulletDamage { get; set; } = 1;
+    public int bulletDamage { get; set; } = 10;
 
 
     public bool isLegendary { get; set; } = false;
