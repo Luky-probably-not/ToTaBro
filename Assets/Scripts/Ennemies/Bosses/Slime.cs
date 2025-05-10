@@ -3,9 +3,13 @@ using System.Collections;
 
 public class Slime : Ennemy
 {
+	[Header("Attack")]
     [SerializeField] protected GameObject attack;
     protected bool hasSplit = false;
     protected int maxHp = 500;
+
+	[Header("Animator")]
+	public Animator animator;
     
     protected override void Awake()
     {
@@ -19,7 +23,7 @@ public class Slime : Ennemy
 
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 0f, 7f);
+	InvokeRepeating(nameof(WarningCall), 0f, 5f);
     }
 
     void Update()
@@ -46,28 +50,50 @@ public class Slime : Ennemy
     
     public IEnumerator Warning()
     {
-	float time = 0.5f;
-	SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
-	for(int i = 0; i <= 6; i++)
-	{
-	    time -= 0.1f;
-	    sr.color = Color.red;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.green;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.red;
-	}
+	// float time = 0.5f;
+	// SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+	// for(int i = 0; i <= 6; i++)
+	// {
+	//     time -= 0.1f;
+	//     sr.color = Color.red;
+	//     yield return new WaitForSeconds(time);
+	//     sr.color = Color.green;
+	//     yield return new WaitForSeconds(time);
+	//     sr.color = Color.red;
+	// }
 	rb.linearVelocity = Vector2.zero;
 	SlamAttack();
 	yield return new WaitForSeconds(0.5f);
-	sr.color = Color.green;
+	// sr.color = Color.green;
     }
     
-    public void SlamAttack()
-    {
-	GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
-	Destroy(attackInstance, 0.5f);
-    }
+    // public void SlamAttack()
+    // {
+	// 	animator.SetBool("IsAttacking", true);
+	// 	GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+	// 	Destroy(attackInstance, 0.5f);
+	// 	animator.SetBool("IsAttacking", false);
+    // }
+
+	public void SlamAttack()
+	{
+		StartCoroutine(PerformSlamAttack());
+	}
+
+	private IEnumerator PerformSlamAttack()
+	{
+		animator.SetBool("IsAttacking", true);
+
+		yield return new WaitForSeconds(1.3f);
+
+		GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+		Destroy(attackInstance, 0.5f);
+
+		yield return new WaitForSeconds(0.7f);
+
+
+		animator.SetBool("IsAttacking", false);
+	}
 
 
     public void Split()

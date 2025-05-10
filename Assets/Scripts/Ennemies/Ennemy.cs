@@ -4,17 +4,21 @@ using System;
 public class Ennemy : MonoBehaviour
 {
     [Header("Enemy Data")]
-    protected int hp;
+    protected float hp;
     protected string nickname;
     protected int difficulty;
-    protected int damage;
+    protected float damage;
     protected int speed;
-
-    [Header("Object")]
+    
+    [Header("Drops")]
     protected Transform target;
     [SerializeField] protected GameObject xp;
     [SerializeField] protected GameObject coin;
+
+    [Header("RigidBody")]
     [SerializeField] protected Rigidbody2D rb;
+
+
 
     public void Init(int hp, string nickname, int difficulty, int damage, int speed)
     {
@@ -28,7 +32,7 @@ public class Ennemy : MonoBehaviour
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-	rb.mass = 9999f;
+	    rb.mass = 9999f;
     }
 
     protected void FindTarget(string targetTag)
@@ -94,10 +98,14 @@ public class Ennemy : MonoBehaviour
         hp -= amount;
     }
 
-    protected void isDead()
+    protected bool isDead()
     {
-	if(hp <= 0)
+	    if(hp <= 0)
+        {
             Die();
+            return true;
+        }
+        return false;
     }
 
     protected void Die()
@@ -111,10 +119,16 @@ public class Ennemy : MonoBehaviour
 	DropXp(posX);
         Destroy(gameObject);
     }
+
+    protected void Evoluate(int wave)
+    {
+        this.hp *= 1.3f * wave;
+        this.damage *= 1.5f * wave;
+    }
     
     //Getter
     
-    public int GetHp()
+    public float GetHp()
     {
 	return this.hp;
     }
@@ -129,7 +143,7 @@ public class Ennemy : MonoBehaviour
 	return this.difficulty;
     }
 
-    public int GetDamage()
+    public float GetDamage()
     {
 	return this.damage;
     }

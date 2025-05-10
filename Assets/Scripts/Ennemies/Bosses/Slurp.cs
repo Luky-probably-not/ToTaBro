@@ -23,7 +23,9 @@ public class Slurp : Ennemy
 
     void Update()
     {
-        isDead();
+        if(isDead())
+            DestroyAllWithName("LaserPivot");
+
         GoTo("Player");
         SetPhase();
     }
@@ -114,23 +116,41 @@ void SetPhase()
     if (newPhase != currentPhase)
     {
         currentPhase = newPhase;
-        SwitchPhase();
+        StartCoroutine(SwitchPhase());
     }
 }
 
-    void SwitchPhase()
+    IEnumerator SwitchPhase()
 {
     if (currentPhase == 1)
     {
+        DestroyAllWithName("LaserPivot");
         FirstPhase();
     }
     else if (currentPhase == 2)
     {
+        DestroyAllWithName("LaserPivot");
+        yield return new WaitForSeconds(2);
         SecondPhase();
     }
     else if (currentPhase == 3)
     {
+        DestroyAllWithName("LaserPivot");
+        yield return new WaitForSeconds(2);
         FinalPhase();
     }
 }
+
+void DestroyAllWithName(string nameToDestroy)
+    {
+        GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.name == nameToDestroy)
+            {
+                Destroy(obj);
+            }
+        }
+    }
 }

@@ -21,6 +21,11 @@ public class Ranged : Ennemy
         damage = 2;
         speed = 1;
     }
+
+    void Start()
+    {
+        //Evoluate(currentWave);
+    }
     
     void Update()
     {

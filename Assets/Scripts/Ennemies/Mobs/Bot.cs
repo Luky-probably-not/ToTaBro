@@ -11,10 +11,15 @@ public class Bot : Ennemy
         damage = 1;
         speed = 2;
     }
-    
+
+    void Start()
+    {
+        //Evoluate(currentWave);
+    }
+
     void Update()
     {
-	isDead();
+	    isDead();
         GoTo("Player");
     }
     
