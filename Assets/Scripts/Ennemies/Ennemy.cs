@@ -15,6 +15,9 @@ public class Ennemy : MonoBehaviour
     [SerializeField] protected GameObject xp;
     [SerializeField] protected GameObject coin;
 
+    [Header("Animator")]
+	public Animator animator;
+
     [Header("RigidBody")]
     [SerializeField] protected Rigidbody2D rb;
 
@@ -50,6 +53,7 @@ public class Ennemy : MonoBehaviour
         if (target != null)
         {
             Vector2 direction = (target.position - transform.position).normalized;
+            SelectAnimation(direction);
             transform.position += (Vector3)direction * speed * Time.deltaTime;
         }
     }
@@ -120,10 +124,39 @@ public class Ennemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void Evoluate(int wave)
+    protected virtual void Evoluate(int wave)
     {
         this.hp *= 1.3f * wave;
         this.damage *= 1.5f * wave;
+    }
+
+    protected void SelectAnimation(Vector2 direction)
+    {
+        direction.Normalize();
+
+        animator.ResetTrigger("LookSide");
+        animator.ResetTrigger("LookUp");
+        animator.ResetTrigger("LookDown");
+
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            animator.SetTrigger("LookSide");
+            FlipSprite(direction.x < 0);
+        }
+        else
+        {
+            if (direction.y > 0)
+                animator.SetTrigger("LookUp");
+            else
+                animator.SetTrigger("LookDown");
+        }
+    }
+
+    public void FlipSprite(bool facingLeft)
+    {
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (facingLeft ? -1 : 1);
+        transform.localScale = scale;
     }
     
     //Getter

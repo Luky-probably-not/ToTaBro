@@ -3,11 +3,12 @@ using System.Collections;
 
 public class Ranged : Ennemy
 {
-    private float fireRate = 3;
+    private float fireRate;
+    private float baseFireRate = 3f;
     public GameObject bullet;
-    private int bulletSpeed = 4;
+    private int bulletSpeed = 6;
     private int bulletDamage = 3;
-    private int bulletDisparitionTime = 2;
+    private int bulletDisparitionTime = 4;
     private bool hasStartedShooting = false;
     private float preferredDistance = 5f;
     private float distanceTolerance = 0.5f;
@@ -24,18 +25,18 @@ public class Ranged : Ennemy
 
     void Start()
     {
-        //Evoluate(currentWave);
+        Evoluate(40);
     }
     
     void Update()
     {
-	isDead();
-        GoTo("Player");
-	if (!hasStartedShooting)
-	{
-	    StartCoroutine(ShootRoutine());
-	    hasStartedShooting = !hasStartedShooting;
-	}
+        isDead();
+            GoTo("Player");
+        if (!hasStartedShooting)
+        {
+            StartCoroutine(ShootRoutine());
+            hasStartedShooting = !hasStartedShooting;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -56,6 +57,8 @@ public class Ranged : Ennemy
 	    float distance = Vector2.Distance(transform.position, target.position);
 
 	    Vector2 direction = (transform.position - target.position).normalized;
+
+        FlipSprite(target.position.x < transform.position.x);
 
 	    if (distance < preferredDistance - distanceTolerance)
 	    {
@@ -93,5 +96,12 @@ public class Ranged : Ennemy
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
         bulletObject.Damage = bulletDamage;
         return bulletObject;
+    }
+
+    protected override void Evoluate(int wave)
+    {
+        this.hp *= 1.3f * wave;
+        this.damage *= 1.5f * wave;
+        this.fireRate = baseFireRate / (1f + 0.07f * wave);
     }
 }

@@ -8,13 +8,12 @@ public class Slime : Ennemy
     protected bool hasSplit = false;
     protected int maxHp = 500;
 
-	[Header("Animator")]
-	public Animator animator;
+	private bool canMove = true;
     
     protected override void Awake()
     {
         base.Awake();
-        hp = 251;
+        hp = 500;
         nickname = "Slime";
         difficulty = 10;
         damage = 3;
@@ -23,34 +22,34 @@ public class Slime : Ennemy
 
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 5f, 5f);
+		InvokeRepeating(nameof(WarningCall), 5f, 5f);
     }
 
     void Update()
     {
-	isDead();
-	GoTo("Player");
-	Split();
+		isDead();
+		if(canMove)
+			GoTo("Player");
+		Split();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-	HandleCollision(collision);
+		HandleCollision(collision);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-	HandleCollision(collision.collider);
+		HandleCollision(collision.collider);
     }
 
     public void WarningCall()
     {
-	StartCoroutine(Warning());
+		StartCoroutine(Warning());
     }
     
     public IEnumerator Warning()
     {
-		rb.linearVelocity = Vector2.zero;
 		SlamAttack();
 		yield return new WaitForSeconds(0.5f);
     }
@@ -66,10 +65,18 @@ public class Slime : Ennemy
 
 		yield return new WaitForSeconds(1.3f);
 
-		GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+		canMove = false;
+
+		float x = transform.position.x;
+		float y = transform.position.y-1f;
+		Vector2 pos = new Vector2(x,y);
+
+		GameObject attackInstance = Instantiate(attack, pos, transform.rotation);
 		Destroy(attackInstance, 0.5f);
 
 		yield return new WaitForSeconds(0.7f);
+
+		canMove = true;
 
 
 		animator.SetBool("IsAttacking", false);

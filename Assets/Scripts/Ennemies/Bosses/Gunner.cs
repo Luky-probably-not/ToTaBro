@@ -17,10 +17,6 @@ public class Gunner : Ennemy
     private float preferredDistance = 5f;
     private float distanceTolerance = 0.5f;
 
-    [Header("Animator")]
-	public Animator animator;
-
-
     protected override void Awake()
     {
         base.Awake();
@@ -33,7 +29,7 @@ public class Gunner : Ennemy
     
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 7f, 7f);
+	    InvokeRepeating(nameof(WarningCall), 7f, 7f);
     }
 
     void Update()
@@ -49,12 +45,12 @@ public class Gunner : Ennemy
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-	HandleCollision(collider);
+	    HandleCollision(collider);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-	HandleCollision(collision.collider);
+	    HandleCollision(collision.collider);
     }
 
     protected override void GoTo(string targetTag)
@@ -66,7 +62,7 @@ public class Gunner : Ennemy
 
 	    Vector2 direction = (transform.position - target.position).normalized;
 
-        FlipSprite(target.position.x < transform.position.x);
+        FlipSprite(target.position.x > transform.position.x);
 
 	    if (distance < preferredDistance - distanceTolerance)
 	    {
@@ -142,12 +138,4 @@ public class Gunner : Ennemy
     {
         StartCoroutine(PerformBarrage(directionShoot, startAngle, angleStep));
     }
-
-    public void FlipSprite(bool facingRight)
-    {
-        Vector3 scale = transform.localScale;
-        scale.x = Mathf.Abs(scale.x) * (facingRight ? 1 : -1);
-        transform.localScale = scale;
-    }
-
 }

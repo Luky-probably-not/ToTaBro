@@ -7,9 +7,6 @@ public class Slurp : Ennemy
     protected int maxHp = 700;
     private int currentPhase = 0;
 
-    [Header("Animator")]
-	public Animator animator;
-
     protected override void Awake()
     {
         base.Awake();
@@ -29,8 +26,7 @@ public class Slurp : Ennemy
     {
         if(isDead())
             DestroyAllWithName("LaserPivot");
-
-        GoTo("Player");
+            
         SetPhase();
     }
 

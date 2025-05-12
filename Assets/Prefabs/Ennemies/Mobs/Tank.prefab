@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
   coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  animator: {fileID: 2710529761571321623}
   rb: {fileID: 4254861275319360685}
 --- !u!95 &2710529761571321623
 Animator:
