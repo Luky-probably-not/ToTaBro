@@ -14,7 +14,7 @@ public class Speedy : Ennemy
     
     void Start()
     {
-        //Evoluate(currentWave);
+        Evoluate(currentWave);
     }
 
     void Update()
