@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 11e53979b3d19004793c85fcfb1351c1
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+=======
+guid: d75b8f41e959450c84ac6e967084d3e1
+timeCreated: 1426033972
+licenseType: Store
+NativeFormatImporter:
+>>>>>>> origin/feat/Player
   userData: 
   assetBundleName: 
   assetBundleVariant: 
