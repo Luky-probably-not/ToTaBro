@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator WaitThenLoadAccueil()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         LoadAccueil();
     }
     public void LoadAccueil()
@@ -200,7 +200,7 @@ public class GameManager : MonoBehaviour
     public void LoadScene(GameObject scenePrefab)
     {
         if (currentUI != null) Destroy(currentUI);
-        currentUI = Instantiate(scenePrefab, FindObjectOfType<Canvas>().transform);
+        currentUI = Instantiate(scenePrefab,  FindFirstObjectByType<Canvas>().transform);
     }
     public void TogglePause()
     {
@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour
             if (pauseUIPrefab != null)
             {
                 Debug.Log(currentUI);
-                Instantiate(pauseUIPrefab, FindObjectOfType<Canvas>().transform);
+                Instantiate(pauseUIPrefab,  FindFirstObjectByType<Canvas>().transform);
             }
         }
     }

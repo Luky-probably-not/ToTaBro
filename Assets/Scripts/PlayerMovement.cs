@@ -1,3 +1,4 @@
+#nullable enable
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
@@ -195,7 +196,9 @@ public class Player : MonoBehaviour
     {
         while (startedShoot)
         {
-            weapon.ShootWeapon(directionShoot);
+            if (weapon != null) {
+                weapon.ShootWeapon(directionShoot);
+            }
             yield return new WaitForSeconds(weapon.fireRate);
         }
     }
