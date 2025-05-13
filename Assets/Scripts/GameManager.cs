@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         setInGame(true);
-        selectedGameScenePrefab = (Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
+        selectedGameScenePrefab = gameScenePrefab1;//(Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
 
         LoadScene(selectedGameScenePrefab);
         if (playerPrefab != null)
@@ -309,7 +309,7 @@ public class GameManager : MonoBehaviour
         GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0], Quaternion.identity);
         currentMerchantItems.Add(potion);
         GameObject weapon = weapons[Random.Range(0, weapons.Count)];
-        GameObject weaponObj = Instantiate(weapon, itemSpawnParent[1]);
+        GameObject weaponObj = Instantiate(weapon/*, itemSpawnParent[1]*/);
         weaponObj.GetComponent<Weapon>().LevelUp(currentWave);
         currentMerchantItems.Add(weaponObj);
         bool giveWeapon = Random.value < 0.5f;

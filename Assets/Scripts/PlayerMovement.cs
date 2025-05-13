@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
 using System.Xml.Linq;
+using static System.Math;
 
 public class Player : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
     private int goldValue = 1;
     public int money = 0;
 
-    private int currentLvl = 1;
+    private int currentLvl = 0;
     private float xpNeeded = 100;
     [SerializeField] private float currentXp = 0;
     private int xpValue = 1;
@@ -41,17 +42,32 @@ public class Player : MonoBehaviour
     public Canvas popupCanvas;
     public TMP_Text textPopUp;
 
+    public SpriteRenderer hpBar;
+    public Sprite[] hpSprites;
+    public SpriteRenderer xpBar;
+    public Sprite[] xpSprites;
+
     void Start()
     {
         directionShoot = transform.right;
         popupCanvas = GetComponentInChildren<Canvas>();
         popupCanvas.gameObject.SetActive(false);
+        hpBar = GameObject.FindGameObjectWithTag("HpBar").GetComponent<SpriteRenderer>();
+        xpBar = GameObject.FindGameObjectWithTag("XpBar").GetComponent<SpriteRenderer>();
+        hpSprites = Resources.LoadAll<Sprite>("HealthBar");
+        xpSprites = Resources.LoadAll<Sprite>("XpBar");
     }
 
     void Update()
     {
         if (isDashing) return;
         LvlUp();
+        HealthBar();
+        XpBar();
+        if (LifePoint == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void OnMove(InputValue value)
@@ -132,7 +148,8 @@ public class Player : MonoBehaviour
 
     public void Heal(float heal)
     {
-        this.LifePoint = Mathf.Clamp(this.LifePoint+heal*0.01f*MaxLifePoint, 0, MaxLifePoint);
+        this.LifePoint = Mathf.Clamp(this.LifePoint+(float) Round(heal*0.01f*MaxLifePoint), 0, MaxLifePoint);
+        StartCoroutine(ShowPopup("red", (int) Round(heal * 0.01f * MaxLifePoint)));
     }
 
     public IEnumerator IncreaseSpeed(float time)
@@ -209,7 +226,10 @@ public class Player : MonoBehaviour
         {
             currentLvl++;
             currentXp = currentXp - xpNeeded;
-            xpNeeded = (2 * currentLvl ^ 2 + 40 * currentLvl) + 100;
+            xpNeeded = (currentLvl ^ 2) + 100;
+            LifePoint += 2;
+            MaxLifePoint += 2;
+            StartCoroutine(ShowPopup("red", 2));
         }
     }
 
@@ -277,8 +297,20 @@ public class Player : MonoBehaviour
         popupCanvas.gameObject.SetActive(true);
         textPopUp = GetComponentInChildren<TMP_Text>();
         textPopUp.SetText("+" + value.ToString());
-        if (color == "yellow") textPopUp.color = new Color(255, 255, 0);
-        else textPopUp.color = new Color(0, 0, 139);
+        switch (color)
+        {
+            case "yellow":
+                textPopUp.color = new Color(255, 255, 0);
+                break;
+            case "blue":
+                textPopUp.color = new Color(0, 0, 139);
+                break;
+            case "red":
+                textPopUp.color = new Color(255, 0, 0);
+                break;
+            default:
+                break;
+        }
         yield return new WaitForSeconds(1f);
         ClosePopup();
     }
@@ -294,5 +326,18 @@ public class Player : MonoBehaviour
     public void OnCrouch() 
     {
         GameManager.Instance.ExitMerchant();
+    }
+
+    public void HealthBar()
+    {
+        var percent = (int) Round(LifePoint * 100 / MaxLifePoint * 0.1);
+        print(percent);
+        hpBar.sprite = hpSprites[percent];
+    }
+
+    public void XpBar()
+    {
+        var percent = (int)Round(currentXp * 100 / xpNeeded * 0.1);
+        xpBar.sprite = xpSprites[percent];
     }
 }

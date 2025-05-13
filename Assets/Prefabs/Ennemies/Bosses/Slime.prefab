@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3205185431470905672}
   - component: {fileID: 5380004330157818863}
   m_Layer: 0
-  m_Name: slime
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -175,7 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c7c2292160b954b9a183adda4659e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
-  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
+  hp: 0
+  xp: {fileID: 2536741290688542782, guid: db61a8b5ee4f9c64984424180efa9eb1, type: 3}
+  coin: {fileID: 802149453490952212, guid: 59326c00518c254479a8f170674aee73, type: 3}
   rb: {fileID: 610537491489568626}
-  attack: {fileID: 586383963554175198, guid: 9b74412333db80843978b11bbca1b5e2, type: 3}
+  attack: {fileID: 586383963554175198, guid: d5b29618521142240a9ea5f52482d990, type: 3}

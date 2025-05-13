@@ -532,8 +532,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3520886302648262291}
   speed: 5
-  LifePoint: 1
+  LifePoint: 10
   money: 0
+  currentXp: 0
   popupCanvas: {fileID: 0}
   textPopUp: {fileID: 0}
 --- !u!114 &751840870290812272

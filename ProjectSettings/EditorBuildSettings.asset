@@ -5,19 +5,5 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 08edf46fce9771b40a000deadff9f582, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-=======
-    com.unity.input.settings: {fileID: 11400000, guid: 6fbda761b5f46fe4abef8a37df97cdff, type: 2}
-<<<<<<< HEAD
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 51fe29321d93f9447913dffd87995eb8, type: 3}
-=======
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a3bddc6ba9d00c85ab6ebab394b0866f, type: 3}
->>>>>>> origin/feat/ennemies
-=======
-    com.unity.input.settings: {fileID: 11400000, guid: 6fbda761b5f46fe4abef8a37df97cdff, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a3bddc6ba9d00c85ab6ebab394b0866f, type: 3}
->>>>>>> origin/feat/wave
->>>>>>> origin/feat/Player
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
