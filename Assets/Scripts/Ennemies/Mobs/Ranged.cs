@@ -25,7 +25,7 @@ public class Ranged : Ennemy
 
     void Start()
     {
-        Evoluate(currentWave);
+	//        Evoluate(currentWave);
     }
     
     void Update()
