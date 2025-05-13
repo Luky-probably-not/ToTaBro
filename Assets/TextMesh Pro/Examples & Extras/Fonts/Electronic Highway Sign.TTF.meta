@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d0a4a7c22c1a5624f90f2d34d4e939c2
+=======
+guid: 8a2b9e2a607dd2143b58c44bc32410b4
+>>>>>>> origin/feat/Player
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,6 +12,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
+<<<<<<< HEAD
+=======
+  fontName: Electronic Highway Sign
+>>>>>>> origin/feat/Player
   fontNames:
   - Electronic Highway Sign
   fallbackFontReferences: []

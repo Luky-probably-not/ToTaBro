@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bb7c6bf8768970844a5acac7a3d30990
+=======
+guid: 8809aece127390545bdb9fbebbe364bd
+>>>>>>> origin/feat/Player
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

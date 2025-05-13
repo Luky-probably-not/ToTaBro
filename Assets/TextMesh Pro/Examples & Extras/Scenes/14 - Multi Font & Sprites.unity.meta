@@ -1,7 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 528619d3696da5f4c9e05959eb2f0edf
 DefaultImporter:
   externalObjects: {}
+=======
+guid: 22a2fba786ad4c40ac0ba09f0b933100
+timeCreated: 1488062344
+licenseType: Pro
+DefaultImporter:
+>>>>>>> origin/feat/Player
   userData: 
   assetBundleName: 
   assetBundleVariant: 

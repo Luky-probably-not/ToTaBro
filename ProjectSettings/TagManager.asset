@@ -3,7 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - LaserBulletPlayer
+  - Weapon
+  - EnnemyAttack
+  - Potion
+  - SwordSlashPlayer
+  - BossAttack
+  - SmallBulletPlayer
+  - Ennemy
+  - Coin
+  - Xp
+  - DeadZone
+  - HpBar
+  - XpBar
+>>>>>>> origin/feat/Player
   layers:
   - Default
   - TransparentFX
@@ -11,10 +28,17 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
   - 
   - 
   - 
   - 
+=======
+  - Ennemy
+  - EnnemyAttack
+  - Boss
+  - Player
+>>>>>>> origin/feat/Player
   - 
   - 
   - 

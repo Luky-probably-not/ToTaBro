@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3995945323153934581}
-  - component: {fileID: 1807475225161493136}
   - component: {fileID: 2513457397345815536}
   - component: {fileID: 1362179364199868505}
+  - component: {fileID: 8878918940152410110}
   m_Layer: 8
   m_Name: SwordSlashBullet
   m_TagString: SwordSlashPlayer
@@ -35,22 +35,6 @@ Transform:
   - {fileID: 2432310506791200825}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1807475225161493136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4578958851480074096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d04665af0e979c148b12b386b3ff1b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartedAngle: 0
-  Damage: 0
-  passThrough: 0
-  slash: 0
 --- !u!50 &2513457397345815536
 Rigidbody2D:
   serializedVersion: 5
@@ -124,6 +108,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.6300302, y: 0.3}
   m_EdgeRadius: 0
+--- !u!114 &8878918940152410110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4578958851480074096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e6d50fa395edc49b2fa2553288f171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartedAngle: 0
+  Damage: 0
+  passThrough: 0
+  slash: 0
 --- !u!1 &4957916358872746769
 GameObject:
   m_ObjectHideFlags: 0

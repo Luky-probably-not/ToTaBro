@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 266475cb8ca897040b9bc383812cbd60
+=======
+guid: a0799597861023d42bdc15ec115ef97c
+>>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -129,6 +133,22 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +429,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      shotgun_1_0: 6043855864513616819
+      shotgun_1_1: 2492957541430179222
+      shotgun_1_10: 2134860147733075793
+      shotgun_1_11: -8245457340906260680
+      shotgun_1_2: 1581668945484102660
+      shotgun_1_3: 564492805263519977
+      shotgun_1_4: 5122168285747828496
+      shotgun_1_5: -2536518592893726936
+      shotgun_1_6: -2932469671943559332
+      shotgun_1_7: 6971271837169385177
+      shotgun_1_8: 6888009874986805626
+      shotgun_1_9: -2586358111159456415
+>>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

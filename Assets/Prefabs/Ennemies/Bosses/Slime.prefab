@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3205185431470905672}
   - component: {fileID: 5380004330157818863}
   m_Layer: 0
-  m_Name: slime
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -156,7 +156,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4286072389633225011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929b3003ad673b441a2c2aa8ab16b279, type: 3}
+  m_Script: {fileID: 11500000, guid: 51c7c2292160b954b9a183adda4659e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0

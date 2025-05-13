@@ -122,7 +122,7 @@ public abstract class Weapon : MonoBehaviour
         if (isWielded) return;
         popupCanvas.gameObject.SetActive(true);
         GetTMP();
-        nameTMP.SetText(Name);
+        nameTMP.SetText(Name);        
         damageTMP.SetText( bulletDamage.ToString());
         fireRateTMP.SetText((Truncate((1 / fireRate)*10)/10).ToString());
         levelTMP.SetText(level.ToString());

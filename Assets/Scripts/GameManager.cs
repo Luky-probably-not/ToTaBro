@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         setInGame(true);
-        selectedGameScenePrefab = (Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
+        selectedGameScenePrefab = gameScenePrefab1;//(Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
 
         LoadScene(selectedGameScenePrefab);
         if (playerPrefab != null)
@@ -191,6 +191,7 @@ public class GameManager : MonoBehaviour
         weapons.Add(shotgunPrefab);
         weapons.Add(swordPrefab);
         currentWeapon = Instantiate(gunniePrefab, Vector3.zero, Quaternion.identity);
+        currentWeapon.GetComponent<Weapon>().LevelUp(currentWave);
         currentWeapon.GetComponent<Weapon>().LevelUp(currentWave);
 
         currentWave = 1;
@@ -286,6 +287,7 @@ public class GameManager : MonoBehaviour
             GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
             droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
             droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
+            droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
         }
     }
@@ -321,7 +323,7 @@ public class GameManager : MonoBehaviour
         GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0], Quaternion.identity);
         currentMerchantItems.Add(potion);
         GameObject weapon = weapons[Random.Range(0, weapons.Count)];
-        GameObject weaponObj = Instantiate(weapon,itemSpawnParent[1], Quaternion.identity);
+        GameObject weaponObj = Instantiate(weapon/*, itemSpawnParent[1]*/);
         weaponObj.GetComponent<Weapon>().LevelUp(currentWave);
         currentMerchantItems.Add(weaponObj);
         bool giveWeapon = Random.value < 0.5f;

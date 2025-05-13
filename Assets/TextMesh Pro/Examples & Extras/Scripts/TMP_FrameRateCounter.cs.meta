@@ -1,2 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2dbc70595d40bd542b574501742a1f1b
+=======
+guid: 686ec78b56aa445795335fbadafcfaa4
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> origin/feat/Player

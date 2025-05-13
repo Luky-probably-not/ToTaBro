@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 357d8273f82aa3e4397415c23022252c
+=======
+guid: 4beb055f07aaff244873dec698d0363e
+>>>>>>> origin/feat/Player
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,6 +12,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
+<<<<<<< HEAD
+=======
+  fontName: Roboto
+>>>>>>> origin/feat/Player
   fontNames:
   - Roboto
   fallbackFontReferences: []
