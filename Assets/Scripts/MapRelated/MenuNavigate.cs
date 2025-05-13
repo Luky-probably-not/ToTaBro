@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PauseUI
+public class MenuNavigate
 {
     
 }
