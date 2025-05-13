@@ -98,7 +98,8 @@ MonoBehaviour:
   nameTMP: {fileID: 879764976781159143}
   damageTMP: {fileID: 8153929083426694659}
   fireRateTMP: {fileID: 2867363846889631548}
-  canBuy: 0
+  levelTMP: {fileID: 0}
+  canBuy: 1
   cost: 0
 --- !u!1 &5108672174649817540
 GameObject:

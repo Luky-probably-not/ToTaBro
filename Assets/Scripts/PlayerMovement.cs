@@ -76,17 +76,21 @@ public class Player : MonoBehaviour
     }
     public void OnInteract()
     {
-        if (isNearWeapon)
+        if (isNearWeapon && weaponNear != null)
         {
             if (weapon == null)
             {
                 weaponNear.Equip(this.transform);
                 weapon = weaponNear;
-            } else {
+                weaponNear = null;
+            } 
+            else if (weapon != weaponNear) 
+            {
                 weapon.Desequip();
                 weaponNear.Equip(this.transform);
                 weapon = weaponNear;
                 weapon.LevelUp(2);
+                weaponNear = null;
             }
         }
         if (isNearPotion)

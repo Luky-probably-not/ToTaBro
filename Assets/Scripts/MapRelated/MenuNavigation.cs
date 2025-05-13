@@ -40,6 +40,10 @@ public class MenuNavigation : MonoBehaviour
 
     private void SelectButton(Button button)
     {
+        if (button == null)
+        {
+            return;
+        }
         EventSystem.current.SetSelectedGameObject(button.gameObject);
     }
 }

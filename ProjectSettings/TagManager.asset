@@ -3,34 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Gunnie
-  - SmallBulletPlayer
-  - DeadZone
-  - Shotgun
-  - Weapon
-  - LaserBulletPlayer
-  - Potion
-  - Ennemy
-  - SwordSlashPlayer
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - Xp
-  - Coin
-  - BossAttack
-  - Boss
-  - EnnemyAttack
-=======
-=======
->>>>>>> origin/feat/wave
-  - EnnemyAttack
-  - Xp
-  - Coin
-  - RangedEnemy
-<<<<<<< HEAD
->>>>>>> origin/feat/ennemies
-=======
->>>>>>> origin/feat/wave
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -38,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Ennemy
-  - BulletPlayer
-  - EnnemyAttack
-  - Boss
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

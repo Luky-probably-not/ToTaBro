@@ -24,7 +24,7 @@ public class PauseUI : MonoBehaviour
     void OnReturnClicked()
     {
         Time.timeScale = 1f;
-        GameManager.Instance.LoadAccueil();
+        GameManager.Instance.GameOver();
         Destroy(gameObject);
     }
 }

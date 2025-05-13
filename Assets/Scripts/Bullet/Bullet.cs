@@ -15,10 +15,6 @@ public abstract class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("DeadZone"))
-        {
-            Destroy(gameObject);
-        }
         if (collision.CompareTag("Ennemy"))
         {
             StartCoroutine(IgnoreCollision(collision, GetComponent<Collider2D>(), 1f));

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Prefabs")]
     public GameObject accueilUIPrefab;
+    public GameObject GameOverUIPrefab;
     public GameObject gameScenePrefab1;
     public GameObject gameScenePrefab2;
     private GameObject selectedGameScenePrefab;
@@ -80,13 +81,32 @@ public class GameManager : MonoBehaviour
         LoadAccueil();
     }
 
+    void Update()
+    {
+        if (inGame)
+        {
+            GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (existingPlayer == null)
+            {
+                setInGame(false);
+                GameOver();
+            }
+        }
+    }
+    public void GameOver() 
+    {
+        Reset();
+        LoadScene(GameOverUIPrefab);
+        StartCoroutine(WaitThenLoadAccueil());
+    }
+
+    private IEnumerator WaitThenLoadAccueil()
+    {
+        yield return new WaitForSeconds(10);
+        LoadAccueil();
+    }
     public void LoadAccueil()
     {
-        setInGame(false);
-        if (selectedGameScenePrefab != null)
-        {
-            Reset();
-        }
         LoadScene(accueilUIPrefab);
         
     }
@@ -232,14 +252,12 @@ public class GameManager : MonoBehaviour
                     enemiesAlive++;
                 }
             }
-            Debug.Log("Vague " + currentWave);
         }
     }
 
     public void EnemyDefeated(float minus)
     {
         enemiesAlive=enemiesAlive-minus;
-        Debug.Log("Enemy defeated. Restants: " + enemiesAlive);
         if (enemiesAlive <= 0)
         {
             if (currentWave % 10 == 0)
@@ -252,7 +270,6 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(droppedWeapon);
                 droppedWeapon = null;
-                Debug.Log("Arme dropée non ramassée détruite après 3 vagues.");
             }
             StartCoroutine(SpawnWave(3f));
         }
@@ -260,7 +277,6 @@ public class GameManager : MonoBehaviour
     public void SetDroppedWeapon(GameObject weapon)
     {
         droppedWeapon = weapon;
-        Debug.Log("Arme déposée : " + weapon.name);
     }
     private void DropNewWeapon()
     {
@@ -271,8 +287,6 @@ public class GameManager : MonoBehaviour
             droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
             droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
-
-            Debug.Log("Nouvelle arme dropée : " + newWeapon.name);
         }
     }
 
