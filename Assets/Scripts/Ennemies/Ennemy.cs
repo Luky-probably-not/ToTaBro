@@ -65,9 +65,10 @@ public class Ennemy : MonoBehaviour
             IBullet bullet = collision.GetComponentInChildren<IBullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
         }else if (collision.CompareTag("Player"))
-	{
-	    TakeDamage(1);
-	}
+        {
+            animator.SetTrigger("IsAttack");
+            TakeDamage(1);
+        }
     }
     
     protected void DropXp(float posX)
