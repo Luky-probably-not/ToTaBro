@@ -172,11 +172,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4286072389633225011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51c7c2292160b954b9a183adda4659e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 929b3003ad673b441a2c2aa8ab16b279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
-  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
-  rb: {fileID: 610537491489568626}
-  attack: {fileID: 656914784967520443, guid: 9b74412333db80843978b11bbca1b5e2, type: 3}
+  xp: {fileID: 0}
+  coin: {fileID: 0}
+  rb: {fileID: 0}
+  attack: {fileID: 0}

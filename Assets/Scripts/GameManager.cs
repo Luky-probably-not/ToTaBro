@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [Header("UI Prefabs")]
     public GameObject accueilUIPrefab;
     public GameObject GameOverUIPrefab;
+    public GameObject CreditsUIPrefab;
     public GameObject gameScenePrefab1;
     public GameObject gameScenePrefab2;
     private GameObject selectedGameScenePrefab;
@@ -234,7 +235,8 @@ public class GameManager : MonoBehaviour
 
             if (currentWave % 10 == 0)
             {
-                Instantiate(slimePrefab, GetRandomPosition(), Quaternion.identity);
+                GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
+                Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
                 enemiesAlive = 1;
             }
             else if (currentWave % 5 == 0)
@@ -371,4 +373,10 @@ public class GameManager : MonoBehaviour
             default: return fireRatePotionPrefab;
         }
     }
+
+    public void Credits()
+    {
+        LoadScene(CreditsUIPrefab);
+    }
+
 }

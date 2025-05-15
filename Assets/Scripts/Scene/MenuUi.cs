@@ -5,6 +5,7 @@ public class AccueilUI : MonoBehaviour
 {
     public Button startButton;
     public Button quitButton;
+    public Button creditsButton;
 
     void Start()
     {
@@ -13,21 +14,27 @@ public class AccueilUI : MonoBehaviour
 
         if (quitButton != null)
             quitButton.onClick.AddListener(OnQuitClicked);
+            
+        if (creditsButton != null)
+            creditsButton.onClick.AddListener(OnCreditsClicked);
     }
 
     void OnStartClicked()
     {
-        Debug.Log("Start button clicked");
         GameManager.Instance.StartGame();
     }
 
     void OnQuitClicked()
     {
-        Debug.Log("Quit button clicked");
         Application.Quit();
 
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    void OnCreditsClicked()
+    {
+        GameManager.Instance.Credits();
     }
 }
