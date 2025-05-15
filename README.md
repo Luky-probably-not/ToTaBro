@@ -24,6 +24,10 @@ Le jeu ce joue a la manette, les commandes sont comme suis :
 - Dasher ce fait avec la gachette devant de gauche "RB".
 - Pour mettre le jeu en pause vous pouvez appuiez sur "Start".
 
+Voici un schéma pour vous y retrouver. Note, si vous utiliser une manette sony ou nintendo le boutton "A" reste celui du bas, et le boutton "B" reste le boutton de droite.
+
+![image manette](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flove2d.org%2Fw%2Fimages%2Fd%2Fd4%2F360_controller.png&f=1&nofb=1&ipt=737c15c9cbcad2f5854f92a1d9322ed6ad4fec785035e949d09766ccdafe4fe0)
+
 ## Gameplay
 Dans ToTabro l’objectif est de survivre à des vagues de monstres.  
 Le joueur ainsi que les ennemies deviennent de plus en plus fort au fur et à mesure des vagues.  
