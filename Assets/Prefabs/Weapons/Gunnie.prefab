@@ -90,10 +90,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483279583138333136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8d784cbaa0599648a8f8b7d87ff6b93, type: 3}
+  m_Script: {fileID: 11500000, guid: e540c318d9984c04fbf3682c80910aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1464410677912618184, guid: d62618b9fb44ae640a40cdc9997daf76, type: 3}
+  bullet: {fileID: 1464410677912618184, guid: 462c360214c23ce4b881200272251fa2, type: 3}
   popupCanvas: {fileID: 3442837121209781257}
   nameTMP: {fileID: 1642650518699056506}
   damageTMP: {fileID: 7770612786101096862}

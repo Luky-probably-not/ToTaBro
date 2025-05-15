@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7940347226034007892}
   - component: {fileID: 6017034801290205119}
-  - component: {fileID: 6263580382663810725}
+  - component: {fileID: 5265218028249040071}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Weapon
@@ -35,19 +35,6 @@ Transform:
   - {fileID: 6310909267161463043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5265218028249040071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27389037025994534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2b406046d252b4b8f6e55ea103e2b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletObj: {fileID: 1464410677912618184, guid: 462c360214c23ce4b881200272251fa2, type: 3}
 --- !u!61 &6017034801290205119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94,7 +81,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6263580382663810725
+--- !u!114 &5265218028249040071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,10 +90,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 27389037025994534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ff1a1c102468249962877709a88423, type: 3}
+  m_Script: {fileID: 11500000, guid: aa2b406046d252b4b8f6e55ea103e2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1464410677912618184, guid: d62618b9fb44ae640a40cdc9997daf76, type: 3}
+  bullet: {fileID: 1464410677912618184, guid: 462c360214c23ce4b881200272251fa2, type: 3}
   popupCanvas: {fileID: 1312739959766856767}
   nameTMP: {fileID: 3115221997077587276}
   damageTMP: {fileID: 6207758261694491048}

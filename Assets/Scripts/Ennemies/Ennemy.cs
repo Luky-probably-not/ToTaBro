@@ -6,10 +6,8 @@ public class Ennemy : MonoBehaviour
 {
     [Header("Enemy Data")]
     protected float hp;
-    protected float hp;
     protected string nickname;
     protected int difficulty;
-    protected float damage;
     protected float damage;
     protected int speed;
     
@@ -19,11 +17,6 @@ public class Ennemy : MonoBehaviour
     protected Transform target;
     [SerializeField] protected GameObject xp;
     [SerializeField] protected GameObject coin;
-
-    [Header("Animator")]
-	public Animator animator;
-
-    [Header("RigidBody")]
 
     [Header("Animator")]
 	public Animator animator;
@@ -120,20 +113,13 @@ public class Ennemy : MonoBehaviour
     {
         hp -= amount;
     }
-
-    protected bool isDead()
     protected bool isDead()
     {
-	    if(hp <= 0)
-        {
-	    if(hp <= 0)
-        {
-            Die();
-            return true;
-        }
-        return false;
-            return true;
-        }
+            if(hp <= 0)
+            {
+                Die();
+                return true;
+            }
         return false;
     }
 
@@ -186,8 +172,6 @@ public class Ennemy : MonoBehaviour
     }
     
     //Getter
-    
-    public float GetHp()
     public float GetHp()
     {
 	return this.hp;
@@ -202,8 +186,6 @@ public class Ennemy : MonoBehaviour
     {
 	return this.difficulty;
     }
-
-    public float GetDamage()
     public float GetDamage()
     {
 	return this.damage;
