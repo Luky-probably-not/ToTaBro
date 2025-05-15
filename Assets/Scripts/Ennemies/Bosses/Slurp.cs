@@ -13,7 +13,7 @@ public class Slurp : Ennemy
         hp = 700;
         nickname = "Slurp";
         difficulty = 50;
-        damage = 5f;
+        damage = 5;
         speed = 0;
     }
 

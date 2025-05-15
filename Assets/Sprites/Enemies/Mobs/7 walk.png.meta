@@ -1,9 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: e97e5a4f0f35ac14a84ce9497562afac
-TextureImporter:
-  internalIDToNameTable: []
-=======
 guid: 577db70d8329472449426947740a3139
 TextureImporter:
   internalIDToNameTable:
@@ -43,7 +38,6 @@ TextureImporter:
   - first:
       213: -7751362354439239421
     second: 7 walk_11
->>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,20 +70,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> origin/feat/enemies_animation
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 0
-=======
     wrapW: 1
->>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -98,11 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,26 +99,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-  applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 2
-=======
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
->>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,11 +121,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -163,9 +131,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: 7 walk_0
@@ -431,16 +396,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 
-=======
     spriteID: a0e57f102a822b34189cb84269ff87d8
->>>>>>> origin/feat/enemies_animation
     internalID: 0
     vertices: []
     indices: 
@@ -449,9 +409,6 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
       7 walk_0: 4628422984334842028
       7 walk_1: -4311414482397209671
@@ -465,7 +422,6 @@ TextureImporter:
       7 walk_7: 5052661198069013512
       7 walk_8: -6724986477187852471
       7 walk_9: 5351360431040321793
->>>>>>> origin/feat/enemies_animation
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

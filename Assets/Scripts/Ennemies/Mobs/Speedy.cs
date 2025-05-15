@@ -12,7 +12,6 @@ public class Speedy : Ennemy
         speed = 6;
     }
     
-
     void Update()
     {
 	isDead();

@@ -1,9 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 12f8ef7f873c2a640b66de144ffbf043
-TextureImporter:
-  internalIDToNameTable: []
-=======
 guid: 4fd3dd5dcc77d8248b8ac99cd702e1f9
 TextureImporter:
   internalIDToNameTable:
@@ -43,7 +38,6 @@ TextureImporter:
   - first:
       213: 6699823838709820334
     second: 10 walk_11
->>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,11 +75,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 0
-=======
     wrapW: 1
->>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -109,26 +99,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-  applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 2
-=======
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
->>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,11 +121,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -155,9 +131,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: 10 walk_0
@@ -423,7 +396,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []

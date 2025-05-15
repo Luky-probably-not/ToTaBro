@@ -1,9 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 42d6dd1904203bb4da333519aa9d4bf3
-TextureImporter:
-  internalIDToNameTable: []
-=======
 guid: bd50daaadd28dad4fa17fa22fc7e603c
 TextureImporter:
   internalIDToNameTable:
@@ -25,7 +20,6 @@ TextureImporter:
   - first:
       213: 3029412794828738655
     second: 1 idle_5
->>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,20 +52,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 0
-=======
     filterMode: 1
->>>>>>> origin/feat/enemies_animation
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 0
-=======
     wrapW: 1
->>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -95,26 +81,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-  applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 2
-=======
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
->>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,11 +103,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 0
-=======
     textureCompression: 1
->>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,9 +113,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: 1 idle_0
@@ -277,7 +246,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []

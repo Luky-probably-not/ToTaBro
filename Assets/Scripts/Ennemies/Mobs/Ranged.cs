@@ -22,6 +22,11 @@ public class Ranged : Ennemy
         damage = 2;
         speed = 1;
     }
+
+    void Start()
+    {
+        Evoluate(40);
+    }
     
     void Update()
     {
@@ -91,12 +96,5 @@ public class Ranged : Ennemy
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
         bulletObject.Damage = bulletDamage;
         return bulletObject;
-    }
-
-    public override void Evoluate(int wave)
-    {
-        this.hp *= 1.3f * wave;
-        this.damage *= 1.5f * wave;
-        this.fireRate = baseFireRate / (1f + 0.07f * wave);
     }
 }

@@ -6,10 +6,14 @@ public class Ennemy : MonoBehaviour
 {
     [Header("Enemy Data")]
     protected float hp;
+    protected float hp;
     protected string nickname;
     protected int difficulty;
     protected float damage;
+    protected float damage;
     protected int speed;
+    
+    [Header("Drops")]
     
     [Header("Drops")]
     protected Transform target;
@@ -20,7 +24,14 @@ public class Ennemy : MonoBehaviour
 	public Animator animator;
 
     [Header("RigidBody")]
+
+    [Header("Animator")]
+	public Animator animator;
+
+    [Header("RigidBody")]
     [SerializeField] protected Rigidbody2D rb;
+
+
 
 
 
@@ -36,6 +47,7 @@ public class Ennemy : MonoBehaviour
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+	    rb.mass = 9999f;
 	    rb.mass = 9999f;
     }
 
@@ -55,6 +67,7 @@ public class Ennemy : MonoBehaviour
         {
             Vector2 direction = (target.position - transform.position).normalized;
             SelectAnimation(direction);
+            SelectAnimation(direction);
             transform.position += (Vector3)direction * speed * Time.deltaTime;
         }
     }
@@ -66,6 +79,10 @@ public class Ennemy : MonoBehaviour
             Bullet bullet = collision.GetComponentInChildren<Bullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
         }else if (collision.CompareTag("Player"))
+        {
+            animator.SetTrigger("IsAttack");
+            TakeDamage(1);
+        }
         {
             animator.SetTrigger("IsAttack");
             TakeDamage(1);
@@ -105,10 +122,16 @@ public class Ennemy : MonoBehaviour
     }
 
     protected bool isDead()
+    protected bool isDead()
     {
 	    if(hp <= 0)
         {
+	    if(hp <= 0)
+        {
             Die();
+            return true;
+        }
+        return false;
             return true;
         }
         return false;
@@ -165,6 +188,7 @@ public class Ennemy : MonoBehaviour
     //Getter
     
     public float GetHp()
+    public float GetHp()
     {
 	return this.hp;
     }
@@ -179,6 +203,7 @@ public class Ennemy : MonoBehaviour
 	return this.difficulty;
     }
 
+    public float GetDamage()
     public float GetDamage()
     {
 	return this.damage;
