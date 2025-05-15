@@ -28,8 +28,8 @@ public class Player : MonoBehaviour
     private bool isNearPotion = false;
     private Potion? potionNear;
 
-    [SerializeField] private float LifePoint = 10;
-    private float MaxLifePoint = 10;
+    [SerializeField] private float LifePoint = 10f;
+    private float MaxLifePoint = 10f;
     private bool canBeDamaged = true;
 
     private int goldValue = 1;
@@ -176,7 +176,7 @@ public class Player : MonoBehaviour
     public void ReceiveDamage(Collider2D collider)
     {
         if (!canBeDamaged) return;
-        int damage = 0;
+        float damage = 0;
         switch (collider.tag)
         {
             case "Ennemy" or "Boss":

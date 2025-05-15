@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Slime : Ennemy
 {
+	[Header("Attack")]
     [SerializeField] protected GameObject attack;
     protected bool hasSplit = false;
-    protected int maxHp = 50;
+    protected int maxHp = 500;
+
+	private bool canMove = true;
     
     protected override void Awake()
     {
@@ -13,60 +16,71 @@ public class Slime : Ennemy
         hp = 50;
         nickname = "Slime";
         difficulty = 10;
-        damage = 3;
+        damage = 3f;
         speed = 1;
     }
 
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 0f, 7f);
+		InvokeRepeating(nameof(WarningCall), 5f, 5f);
     }
 
     void Update()
     {
 		isDead();
-		GoTo("Player");
+		if(canMove)
+			GoTo("Player");
 		Split();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-	HandleCollision(collision);
+		HandleCollision(collision);
     }
-	protected override void Die()
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.Instance.EnemyDefeated(0.5f);
-        Destroy(gameObject);
+		HandleCollision(collision.collider);
     }
+
     public void WarningCall()
     {
-	StartCoroutine(Warning());
+		StartCoroutine(Warning());
     }
     
     public IEnumerator Warning()
     {
-	float time = 0.5f;
-	SpriteRenderer sr = GetComponent<SpriteRenderer>();
-	for(int i = 0; i <= 6; i++)
+		SlamAttack();
+		yield return new WaitForSeconds(0.5f);
+    }
+
+	public void SlamAttack()
 	{
-	    time -= 0.1f;
-	    sr.color = Color.red;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.green;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.red;
+		StartCoroutine(PerformSlamAttack());
 	}
-	rb.linearVelocity = Vector2.zero;
-	SlamAttack();
-	yield return new WaitForSeconds(0.5f);
-	sr.color = Color.green;
-    }
-    
-    public void SlamAttack()
-    {
-		GameObject attackInstance = Instantiate(attack, transform.position, transform.rotation);
+
+	private IEnumerator PerformSlamAttack()
+	{
+		animator.SetBool("IsAttacking", true);
+
+		yield return new WaitForSeconds(1.3f);
+
+		canMove = false;
+
+		float x = transform.position.x;
+		float y = transform.position.y-1f;
+		Vector2 pos = new Vector2(x,y);
+
+		GameObject attackInstance = Instantiate(attack, pos, transform.rotation);
 		Destroy(attackInstance, 0.5f);
-    }
+
+		yield return new WaitForSeconds(0.7f);
+
+		canMove = true;
+
+
+		animator.SetBool("IsAttacking", false);
+	}
 
 
     public void Split()

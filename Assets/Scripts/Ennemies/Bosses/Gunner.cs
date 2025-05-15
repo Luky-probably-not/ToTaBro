@@ -17,31 +17,40 @@ public class Gunner : Ennemy
     private float preferredDistance = 5f;
     private float distanceTolerance = 0.5f;
 
-
     protected override void Awake()
     {
         base.Awake();
         hp = 400;
         nickname = "Gunner";
         difficulty = 20;
-        damage = 2;
+        damage = 2f;
         speed = 4;
     }
     
     void Start()
     {
-	InvokeRepeating(nameof(WarningCall), 0f, 7f);
+	    InvokeRepeating(nameof(WarningCall), 7f, 7f);
     }
 
     void Update()
     {
-	isDead();
-	GoTo("Player");
-	if (!hasStartedShooting)
-	{
-	    StartCoroutine(ShootRoutine());
-	    hasStartedShooting = !hasStartedShooting;
-	}
+        isDead();
+        GoTo("Player");
+        if (!hasStartedShooting)
+        {
+            StartCoroutine(ShootRoutine());
+            hasStartedShooting = !hasStartedShooting;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+	    HandleCollision(collider);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	    HandleCollision(collision.collider);
     }
 
     protected override void GoTo(string targetTag)
@@ -53,41 +62,31 @@ public class Gunner : Ennemy
 
 	    Vector2 direction = (transform.position - target.position).normalized;
 
+        FlipSprite(target.position.x > transform.position.x);
+
 	    if (distance < preferredDistance - distanceTolerance)
 	    {
-		transform.position += (Vector3)direction * speed * Time.deltaTime;
+		    transform.position += (Vector3)direction * speed * Time.deltaTime;
 	    }
 	    else if (distance > preferredDistance + distanceTolerance)
 	    {
-		direction = -direction;
-		transform.position += (Vector3)direction * speed * Time.deltaTime;
+            direction = -direction;
+            transform.position += (Vector3)direction * speed * Time.deltaTime;
 	    }
         }
     }
 
     public void WarningCall()
     {
-	StartCoroutine(Warning());
+	    StartCoroutine(Warning());
     }
-        public IEnumerator Warning()
+    public IEnumerator Warning()
     {
-	float time = 0.5f;
-	SpriteRenderer sr = GetComponent<SpriteRenderer>();
-	for(int i = 0; i <= 6; i++)
-	{
-	    time -= 0.1f;
-	    sr.color = Color.red;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.green;
-	    yield return new WaitForSeconds(time);
-	    sr.color = Color.red;
-	}
-	rb.linearVelocity = Vector2.zero;
-	Vector2 direction = (target.position - transform.position).normalized;
-	float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-	Barrage(direction, -40, 5F);
-	yield return new WaitForSeconds(0.5f);
-	sr.color = Color.green;
+        animator.SetBool("IsAttacking", true);
+		yield return new WaitForSeconds(1.12f);
+        Vector2 direction = (target.position - transform.position).normalized;
+        Barrage(direction, -40, 5F);
+        yield return new WaitForSeconds(0.5f);
     }
 
     public IEnumerator ShootRoutine()
@@ -116,14 +115,27 @@ public class Gunner : Ennemy
         return bulletObject;
     }
 
-    public void Barrage(Vector2 directionShoot, float startAngle, float angleStep)
+    public IEnumerator PerformBarrage(Vector2 directionShoot, float startAngle, float angleStep)
     {
         for (float i = 0; i < 16; i++)
         {
-            float angle = startAngle + i * angleStep;
-            Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
+            float angleOff = startAngle + i * angleStep;
+	    
+            Vector2 rotateDirection = Quaternion.Euler(0, 0, angleOff) * directionShoot.normalized;
 
-            Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
+	    float fAngle = Mathf.Atan2(rotateDirection.y, rotateDirection.x) * Mathf.Rad2Deg;
+
+	    Quaternion rotation = Quaternion.Euler(0, 0, fAngle);
+
+            Shoot(rotateDirection.normalized, fAngle, rotation);
         }
+		yield return new WaitForSeconds(0.8f);
+
+		animator.SetBool("IsAttacking", false);
+    }
+
+    void Barrage(Vector2 directionShoot, float startAngle, float angleStep)
+    {
+        StartCoroutine(PerformBarrage(directionShoot, startAngle, angleStep));
     }
 }

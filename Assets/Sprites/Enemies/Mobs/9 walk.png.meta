@@ -1,7 +1,37 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b3001c06abf58d64aaabbc79d3a18604
 TextureImporter:
   internalIDToNameTable: []
+=======
+guid: cd40bbe915895d54eaf088117bb77b21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -908194316932338501
+    second: 9 walk_0
+  - first:
+      213: 5765881572099526279
+    second: 9 walk_1
+  - first:
+      213: 6433950385510058682
+    second: 9 walk_2
+  - first:
+      213: -7423082830515293063
+    second: 9 walk_3
+  - first:
+      213: 7956728289665730832
+    second: 9 walk_4
+  - first:
+      213: -7356399979145150211
+    second: 9 walk_5
+  - first:
+      213: -8329041396704908149
+    second: 9 walk_6
+  - first:
+      213: -3647007560727200603
+    second: 9 walk_7
+>>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -39,7 +69,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 0
+=======
+    wrapW: 1
+>>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,16 +97,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 2
+=======
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+>>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +129,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +143,187 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: 9 walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc2830a4127563f0800000000000000
+      internalID: -908194316932338501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e86f9adb6840050800000000000000
+      internalID: 5765881572099526279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba80de79cbf94950800000000000000
+      internalID: 6433950385510058682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974b5dcae79ebf890800000000000000
+      internalID: -7423082830515293063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019c3df093afb6e60800000000000000
+      internalID: 7956728289665730832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0cc51e131d8e990800000000000000
+      internalID: -7356399979145150211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c61e59afc496c80800000000000000
+      internalID: -8329041396704908149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9 walk_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acf0b932f9336dc0800000000000000
+      internalID: -3647007560727200603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []

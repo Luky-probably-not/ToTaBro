@@ -1,7 +1,49 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e599280a172df93498b58182e4ebdac6
 TextureImporter:
   internalIDToNameTable: []
+=======
+guid: 0a90d9555530b484b9d5aaac37a28a6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -560595027308368596
+    second: 10 punch_0
+  - first:
+      213: 6101349804487397094
+    second: 10 punch_1
+  - first:
+      213: -8447624970689427037
+    second: 10 punch_2
+  - first:
+      213: 4255434145129948715
+    second: 10 punch_3
+  - first:
+      213: 5767414701069166354
+    second: 10 punch_4
+  - first:
+      213: 6994206226618276028
+    second: 10 punch_5
+  - first:
+      213: 6622964437847474380
+    second: 10 punch_6
+  - first:
+      213: 1106118070979457
+    second: 10 punch_7
+  - first:
+      213: -685119225388100202
+    second: 10 punch_8
+  - first:
+      213: 5230911958523764487
+    second: 10 punch_9
+  - first:
+      213: -4130731161657707033
+    second: 10 punch_10
+  - first:
+      213: -1553681322394314198
+    second: 10 punch_11
+>>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -39,7 +81,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 0
+=======
+    wrapW: 1
+>>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,16 +109,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 2
+=======
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+>>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +141,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +155,275 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: 10 punch_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 103
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d2f66facd5838f0800000000000000
+      internalID: -560595027308368596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 103
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeced222595ca450800000000000000
+      internalID: 6101349804487397094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9465ab8d104ca80800000000000000
+      internalID: -8447624970689427037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 71
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26e9890fc65e0b30800000000000000
+      internalID: 4255434145129948715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 71
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217e7911d19f90050800000000000000
+      internalID: 5767414701069166354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_5
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb858679189601160800000000000000
+      internalID: 6994206226618276028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc081f5f01f79eb50800000000000000
+      internalID: 6622964437847474380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b43be220ee30000800000000000000
+      internalID: 1106118070979457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69593f5c1b7fd76f0800000000000000
+      internalID: -685119225388100202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fd62336bee79840800000000000000
+      internalID: 5230911958523764487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e571ced4e1bca6c0800000000000000
+      internalID: -4130731161657707033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 punch_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a178ca117307ae0800000000000000
+      internalID: -1553681322394314198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []

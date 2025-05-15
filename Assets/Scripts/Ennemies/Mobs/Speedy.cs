@@ -12,14 +12,25 @@ public class Speedy : Ennemy
         speed = 6;
     }
     
+    void Start()
+    {
+        //Evoluate(currentWave);
+    }
+
     void Update()
     {
 	isDead();
         GoTo("Player");
     }
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleCollision(collision);
+	HandleCollision(collision);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
     }
 }
 

@@ -1,7 +1,31 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8f777ffbfca250248afce7862c453b62
 TextureImporter:
   internalIDToNameTable: []
+=======
+guid: 215c617b6424c5a45bceb0e0702d9fce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2069683548640925765
+    second: 10 idle_0
+  - first:
+      213: 946895296464895460
+    second: 10 idle_1
+  - first:
+      213: -767777521364427407
+    second: 10 idle_2
+  - first:
+      213: 8641276609395222893
+    second: 10 idle_3
+  - first:
+      213: 5246484844868299861
+    second: 10 idle_4
+  - first:
+      213: 3116115681653100219
+    second: 10 idle_5
+>>>>>>> origin/feat/enemies_animation
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -39,7 +63,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 0
+=======
+    wrapW: 1
+>>>>>>> origin/feat/enemies_animation
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,16 +91,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 2
+=======
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+>>>>>>> origin/feat/enemies_animation
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +123,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> origin/feat/enemies_animation
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +137,143 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: 10 idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7a9c537c10743e0800000000000000
+      internalID: -2069683548640925765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 idle_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed3749514c042d00800000000000000
+      internalID: 946895296464895460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 idle_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d1b84896e4855f0800000000000000
+      internalID: -767777521364427407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69e4e4fa4bfbe770800000000000000
+      internalID: 8641276609395222893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 idle_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c68d95b224fc840800000000000000
+      internalID: 5246484844868299861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10 idle_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe05fbd3baae3b20800000000000000
+      internalID: 3116115681653100219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 30022b13d2e187844bbaf4fec6178630
+=======
+guid: 6244b46d42f0f584e92c8854ddba8392
+>>>>>>> origin/feat/enemies_animation
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

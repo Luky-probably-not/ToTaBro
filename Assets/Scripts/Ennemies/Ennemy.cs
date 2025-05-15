@@ -5,17 +5,24 @@ using System;
 public class Ennemy : MonoBehaviour
 {
     [Header("Enemy Data")]
-    [SerializeField] protected int hp;
+    protected float hp;
     protected string nickname;
     protected int difficulty;
-    protected int damage;
+    protected float damage;
     protected int speed;
-
-    [Header("Object")]
+    
+    [Header("Drops")]
     protected Transform target;
     [SerializeField] protected GameObject xp;
     [SerializeField] protected GameObject coin;
+
+    [Header("Animator")]
+	public Animator animator;
+
+    [Header("RigidBody")]
     [SerializeField] protected Rigidbody2D rb;
+
+
 
     public void Init(int hp, string nickname, int difficulty, int damage, int speed)
     {
@@ -29,7 +36,7 @@ public class Ennemy : MonoBehaviour
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-	rb.mass = 9999f;
+	    rb.mass = 9999f;
     }
 
     protected void FindTarget(string targetTag)
@@ -47,6 +54,7 @@ public class Ennemy : MonoBehaviour
         if (target != null)
         {
             Vector2 direction = (target.position - transform.position).normalized;
+            SelectAnimation(direction);
             transform.position += (Vector3)direction * speed * Time.deltaTime;
         }
     }
@@ -58,9 +66,10 @@ public class Ennemy : MonoBehaviour
             Bullet bullet = collision.GetComponentInChildren<Bullet>();
             TakeDamage(bullet.Damage); // Value of damage taken
         }else if (collision.CompareTag("Player"))
-	{
-	    TakeDamage(1);
-	}
+        {
+            animator.SetTrigger("IsAttack");
+            TakeDamage(1);
+        }
     }
     
     protected void DropXp(float posX)
@@ -95,10 +104,14 @@ public class Ennemy : MonoBehaviour
         hp -= amount;
     }
 
-    protected void isDead()
+    protected bool isDead()
     {
-	if(hp <= 0)
+	    if(hp <= 0)
+        {
             Die();
+            return true;
+        }
+        return false;
     }
 
     protected virtual void Die()
@@ -113,10 +126,45 @@ public class Ennemy : MonoBehaviour
         GameManager.Instance.EnemyDefeated(1f);
         Destroy(gameObject);
     }
+
+    protected virtual void Evoluate(int wave)
+    {
+        this.hp *= 1.3f * wave;
+        this.damage *= 1.5f * wave;
+    }
+
+    protected void SelectAnimation(Vector2 direction)
+    {
+        direction.Normalize();
+
+        animator.ResetTrigger("LookSide");
+        animator.ResetTrigger("LookUp");
+        animator.ResetTrigger("LookDown");
+
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            animator.SetTrigger("LookSide");
+            FlipSprite(direction.x < 0);
+        }
+        else
+        {
+            if (direction.y > 0)
+                animator.SetTrigger("LookUp");
+            else
+                animator.SetTrigger("LookDown");
+        }
+    }
+
+    public void FlipSprite(bool facingLeft)
+    {
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (facingLeft ? -1 : 1);
+        transform.localScale = scale;
+    }
     
     //Getter
     
-    public int GetHp()
+    public float GetHp()
     {
 	return this.hp;
     }
@@ -131,7 +179,7 @@ public class Ennemy : MonoBehaviour
 	return this.difficulty;
     }
 
-    public int GetDamage()
+    public float GetDamage()
     {
 	return this.damage;
     }
