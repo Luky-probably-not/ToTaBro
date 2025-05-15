@@ -6,13 +6,13 @@
 - [Technologies Utilisées](#technologies-utilisées)
 - [Commande](#commande)
 - [Gameplay](#gameplay)
-- [Équipe](#equipe)
+- [Equipe](#equipe)
 
 
 ## Objectifs
 L'objectif de ce projet était de réaliser un jeu vidéo sur unity.
 
-## Technologies Utilisée
+## Technologies Utilisées
  - Unity/C#
 
 ## Commande
@@ -32,7 +32,7 @@ Toute les 10 vagues un boss apparais. Les vagues dit de "boss" ce font en 1 cont
 
 Le jeu se termine si les points de vie du joueur tombent à 0 ou s’il remporte la partie en finissant les 50 vagues (ou en quittant manuellement).
 
-## Équipe
+## Equipe
 - Jean-Baptiste Bodusseau
 - Cassian Joly
 - Aurélien Dugast
