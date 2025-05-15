@@ -12,10 +12,6 @@ public class Speedy : Ennemy
         speed = 6;
     }
     
-    void Start()
-    {
-        //Evoluate(currentWave);
-    }
 
     void Update()
     {

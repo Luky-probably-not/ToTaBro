@@ -12,10 +12,6 @@ public class Bot : Ennemy
         speed = 2;
     }
 
-    void Start()
-    {
-        //Evoluate(currentWave);
-    }
 
     void Update()
     {

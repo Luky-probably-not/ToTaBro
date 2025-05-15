@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     [Header("Boss Enemies Prefabs")]
     public GameObject slimePrefab;
     public GameObject gunnerPrefab;
+    public GameObject slurpPrefab;
 
     [Header("Weapon Prefabs")]
     public GameObject gunniePrefab;
@@ -221,6 +222,7 @@ public class GameManager : MonoBehaviour
     }
     private IEnumerator SpawnWave(float wait)
     {
+        int enemyCount = 2;
         if (inGame) {
             yield return new WaitForSeconds(wait);
 
@@ -234,8 +236,14 @@ public class GameManager : MonoBehaviour
 
             if (currentWave % 10 == 0)
             {
-                GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
-                Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
+                if (currentWave == 50) {
+                    Instantiate(slurpPrefab, GetRandomPosition(), Quaternion.identity);
+                }
+                else 
+                {
+                    GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
+                    Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
+                }
                 enemiesAlive = 1;
             }
             else if (currentWave % 5 == 0)
@@ -244,13 +252,16 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                int enemyCount = 2 + (currentWave - 1);
+                if (currentWave % 3 == 0) {
+                    enemyCount++;
+                }
                 int maxEnemyTypes = Mathf.Min(currentWave, normalEnemies.Count);
 
                 for (int i = 0; i < enemyCount; i++)
                 {
                     GameObject enemyPrefab = normalEnemies[Random.Range(0, maxEnemyTypes)];
-                    Instantiate(enemyPrefab, GetRandomPosition(), Quaternion.identity);
+                    GameObject enemyTmp = Instantiate(enemyPrefab, GetRandomPosition(), Quaternion.identity);
+                    enemyTmp.GetComponent<Ennemy>().Evoluate(currentWave);
                     enemiesAlive++;
                 }
             }
@@ -324,7 +335,7 @@ public class GameManager : MonoBehaviour
         GameObject potion = Instantiate(healthPotionPrefab, itemSpawnParent[0], Quaternion.identity);
         currentMerchantItems.Add(potion);
         GameObject weapon = weapons[Random.Range(0, weapons.Count)];
-        GameObject weaponObj = Instantiate(weapon/*, itemSpawnParent[1]*/);
+        GameObject weaponObj = Instantiate(weapon);
         weaponObj.GetComponent<Weapon>().LevelUp(currentWave);
         currentMerchantItems.Add(weaponObj);
         bool giveWeapon = Random.value < 0.5f;

@@ -22,11 +22,6 @@ public class Ranged : Ennemy
         damage = 2;
         speed = 1;
     }
-
-    void Start()
-    {
-        Evoluate(40);
-    }
     
     void Update()
     {
@@ -98,7 +93,7 @@ public class Ranged : Ennemy
         return bulletObject;
     }
 
-    protected override void Evoluate(int wave)
+    public override void Evoluate(int wave)
     {
         this.hp *= 1.3f * wave;
         this.damage *= 1.5f * wave;

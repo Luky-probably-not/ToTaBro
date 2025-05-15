@@ -127,7 +127,7 @@ public class Ennemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected virtual void Evoluate(int wave)
+    public virtual void Evoluate(int wave)
     {
         this.hp *= 1.3f * wave;
         this.damage *= 1.5f * wave;
