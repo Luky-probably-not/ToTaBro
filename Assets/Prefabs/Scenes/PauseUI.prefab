@@ -181,11 +181,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 967074685292934243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b36befc17e6c4ff4090b382bd374b61d, type: 3}
+  m_Script: {fileID: 11500000, guid: 34e316bfabc3ee74483f6ec679bfb760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resumeButton: {fileID: 6989096758011413225}
-  returnButton: {fileID: 994587683671720910}
+  buttons:
+  - {fileID: 6989096758011413225}
+  - {fileID: 994587683671720910}
 --- !u!114 &1635058034509182384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,12 +196,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 967074685292934243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0f8ab75cacb744593c4db1194385d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aa5a0139c185f943b9933f10a278b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 6989096758011413225}
-  - {fileID: 994587683671720910}
+  resumeButton: {fileID: 6989096758011413225}
+  returnButton: {fileID: 994587683671720910}
 --- !u!1 &1214389062357051851
 GameObject:
   m_ObjectHideFlags: 0

@@ -163,11 +163,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 27556774066349876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71cff04c81c00cc4f9de8e92d45114d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b81892e8a0e65b4d9bbd5e9ff3fbc50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  xp: {fileID: 2536741290688542782, guid: db61a8b5ee4f9c64984424180efa9eb1, type: 3}
-  coin: {fileID: 802149453490952212, guid: 59326c00518c254479a8f170674aee73, type: 3}
+  xp: {fileID: 2536741290688542782, guid: a991c93d40d975343a1e5e9a2eceb2c0, type: 3}
+  coin: {fileID: 802149453490952212, guid: 694858218db84fb4ebdb4c03e4539b8b, type: 3}
   rb: {fileID: 7026108491661437298}
-  bullet: {fileID: 1464410677912618184, guid: 18d03fcb57cf5454fb4e525a4b7697a5, type: 3}
+  bullet: {fileID: 1464410677912618184, guid: 3a10eecd5079d024aa89f981620cdbc0, type: 3}

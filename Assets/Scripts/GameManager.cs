@@ -11,8 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject accueilUIPrefab;
     public GameObject GameOverUIPrefab;
     public GameObject CreditsUIPrefab;
-    public GameObject gameScenePrefab1;
-    public GameObject gameScenePrefab2;
+    public GameObject gameScenePrefab;
     private GameObject selectedGameScenePrefab;
     public GameObject pauseUIPrefab;
     private GameObject currentUI;
@@ -173,7 +172,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         setInGame(true);
-        selectedGameScenePrefab = gameScenePrefab1;//(Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
+        selectedGameScenePrefab = gameScenePrefab;
 
         LoadScene(selectedGameScenePrefab);
         if (playerPrefab != null)

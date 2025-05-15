@@ -43,10 +43,10 @@ public class Player : MonoBehaviour
     public Canvas popupCanvas;
     public TMP_Text textPopUp;
 
-    public SpriteRenderer hpBar;
-    public Sprite[] hpSprites;
-    public SpriteRenderer xpBar;
-    public Sprite[] xpSprites;
+    private SpriteRenderer hpBar;
+    private Sprite[] hpSprites;
+    private SpriteRenderer xpBar;
+    private Sprite[] xpSprites;
 
     void Start()
     {

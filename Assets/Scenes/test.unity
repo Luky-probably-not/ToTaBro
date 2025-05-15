@@ -163,30 +163,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817fc06b267c4b94e9de7feee897909f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accueilUIPrefab: {fileID: 0}
-  GameOverUIPrefab: {fileID: 0}
-  CreditsUIPrefab: {fileID: 0}
-  gameScenePrefab1: {fileID: 0}
-  gameScenePrefab2: {fileID: 0}
-  pauseUIPrefab: {fileID: 0}
-  botPrefab: {fileID: 0}
-  speedyPrefab: {fileID: 0}
-  tankPrefab: {fileID: 0}
-  rangedPrefab: {fileID: 0}
-  slimePrefab: {fileID: 0}
-  gunnerPrefab: {fileID: 0}
-  gunniePrefab: {fileID: 0}
-  laserPrefab: {fileID: 0}
-  shotgunPrefab: {fileID: 0}
-  swordPrefab: {fileID: 0}
-  healthPotionPrefab: {fileID: 0}
-  speedPotionPrefab: {fileID: 0}
-  fireRatePotionPrefab: {fileID: 0}
-  goldPotionPrefab: {fileID: 0}
-  xpPotionPrefab: {fileID: 0}
-  playerPrefab: {fileID: 0}
-  merchantPrefab: {fileID: 0}
-  merchantSpawnPoint: {fileID: 0}
+  accueilUIPrefab: {fileID: 8664003549308043452, guid: cc0db6c85e6b033449475e160b5212ff, type: 3}
+  GameOverUIPrefab: {fileID: 6250123241050980302, guid: 996409bebb59af84e9410952240fc16a, type: 3}
+  CreditsUIPrefab: {fileID: 450737898587920738, guid: 37c82217133371f4fa34fee5db7f9d3f, type: 3}
+  gameScenePrefab: {fileID: 1170187838826901828, guid: 252d989c0b224ed48a208741e470f962, type: 3}
+  pauseUIPrefab: {fileID: 967074685292934243, guid: c8188dd2fc877ca4c91cd9fa0beaa405, type: 3}
+  botPrefab: {fileID: 6442907479092713114, guid: 4dd1db82074b4b64c94f774485d67a4b, type: 3}
+  speedyPrefab: {fileID: 2024771064146467906, guid: a1b8501715a97e14cad7cc6c9e69758c, type: 3}
+  tankPrefab: {fileID: 2447674485592129966, guid: 42f3f9faa6b0bd743a3ddf8f0eefa156, type: 3}
+  rangedPrefab: {fileID: 27556774066349876, guid: 4ef8ad17c0ed8d24182e06b5c20352ee, type: 3}
+  slimePrefab: {fileID: 4286072389633225011, guid: 950b843b3e6867843948180fd687967c, type: 3}
+  gunnerPrefab: {fileID: 1272836381536657491, guid: 1a6f660745f0aaf4ea6d4a616b9c2880, type: 3}
+  gunniePrefab: {fileID: 1483279583138333136, guid: 24689248e35f06c42a31bbf7dff532bc, type: 3}
+  laserPrefab: {fileID: 6727898705481714353, guid: 39d08518b57d5f848aeba74c1429596e, type: 3}
+  shotgunPrefab: {fileID: 27389037025994534, guid: 5df8df481500f3f4d870fc4e27cac27b, type: 3}
+  swordPrefab: {fileID: 5293207848443451457, guid: fd73981c193f9304389974d3cddf7e51, type: 3}
+  healthPotionPrefab: {fileID: 7778169325436302301, guid: 8d1aef9b4e4ab8d40aef7a07ba0bac8f, type: 3}
+  speedPotionPrefab: {fileID: 7778169325436302301, guid: b94a859e48967a744a96b0a9aba2e8ad, type: 3}
+  fireRatePotionPrefab: {fileID: 7778169325436302301, guid: 14e1bf5d8d8cadb4186de04bf67e1783, type: 3}
+  goldPotionPrefab: {fileID: 7274580869010148685, guid: e4f02183467717043bf3b4869be92dbd, type: 3}
+  xpPotionPrefab: {fileID: 7778169325436302301, guid: 5f35955624d106b45907b0c818ead618, type: 3}
+  playerPrefab: {fileID: 4860983917505171159, guid: e69d8a660807e4646a1b680fb2d7e6e0, type: 3}
+  merchantPrefab: {fileID: 5418077429949508270, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
+  merchantSpawnPoint: {fileID: 6673931091058273558, guid: 4a6969feabe686c45808f6868c5e60f4, type: 3}
 --- !u!1 &1191792328
 GameObject:
   m_ObjectHideFlags: 0
