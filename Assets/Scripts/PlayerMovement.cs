@@ -4,6 +4,7 @@ using System.Collections;
 using TMPro;
 using System.Xml.Linq;
 using static System.Math;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
     private float dashTime = 0.3f;
     private float dashCooldown = 1f;
 
-    private Weapon? weapon; 
+    private Weapon? weapon;
     private bool startedShoot = false;
     private Vector2 directionShoot;
 
@@ -47,6 +48,10 @@ public class Player : MonoBehaviour
     public SpriteRenderer xpBar;
     public Sprite[] xpSprites;
 
+    public Animator anim;
+    private float idleTime;
+    private bool alive;
+
     void Start()
     {
         directionShoot = transform.right;
@@ -56,26 +61,45 @@ public class Player : MonoBehaviour
         xpBar = GameObject.FindGameObjectWithTag("XpBar").GetComponent<SpriteRenderer>();
         hpSprites = Resources.LoadAll<Sprite>("HealthBar");
         xpSprites = Resources.LoadAll<Sprite>("XpBar");
+        anim = GetComponentInChildren<Animator>();
+        anim.SetBool("alive", true);
+        alive = true;
     }
 
     void Update()
     {
-        if (isDashing) return;
+        if (isDashing || !alive) return;
         LvlUp();
         HealthBar();
         XpBar();
         if (LifePoint == 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("alive", false);
+            alive = false;
+            Destroy(gameObject, 1f);
+            return;
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Debug.Log("Forcing dash animation");
+            anim.SetTrigger("dash");
+        }
+
     }
 
     public void OnMove(InputValue value)
     {
         if (isDashing) return;
         Vector2 input = value.Get<Vector2>();
+        FlipSprite(input.x < 0);
         directionDash = GetDirection(input);
         rb.linearVelocity = new Vector2(input.x * speed, input.y * speed);
+    }
+
+    public void FlipSprite(bool facingLeft)
+    {
+        SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
+        sprite.flipX = facingLeft;
     }
     public void OnLook(InputValue value)
     {
@@ -88,6 +112,7 @@ public class Player : MonoBehaviour
     public void OnDash()
     {
         if (!canDash) return;
+        anim.SetTrigger("dash");
         canDash = false;
         StartCoroutine(Dash());
     }
@@ -195,6 +220,8 @@ public class Player : MonoBehaviour
     }
     private IEnumerator Dash()
     {
+        //anim.SetBool("dash", true);
+
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), true);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), true);
@@ -207,8 +234,10 @@ public class Player : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), false);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), false);
+        //anim.SetBool("dash", false);
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+
     }
     
     public IEnumerator ShootRoutine()
@@ -331,7 +360,6 @@ public class Player : MonoBehaviour
     public void HealthBar()
     {
         var percent = (int) Round(LifePoint * 100 / MaxLifePoint * 0.1);
-        print(percent);
         hpBar.sprite = hpSprites[percent];
     }
 

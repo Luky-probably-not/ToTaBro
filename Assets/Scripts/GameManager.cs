@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         setInGame(true);
-        selectedGameScenePrefab = gameScenePrefab1;//(Random.value < 0.5f) ? gameScenePrefab1 : gameScenePrefab2;
+        selectedGameScenePrefab = gameScenePrefab1;
 
         LoadScene(selectedGameScenePrefab);
         if (playerPrefab != null)

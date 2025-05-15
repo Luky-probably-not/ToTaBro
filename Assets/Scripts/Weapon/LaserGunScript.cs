@@ -6,7 +6,7 @@ public class LaserGun : Weapon
     protected override void Awake()
     {
         base.Awake();
-        Name = "Laser";
+        Name = "Magic Staff";
         fireRate = 2f;
         bulletSpeed = 0;
         bulletDisparitionTime = 0.2f;

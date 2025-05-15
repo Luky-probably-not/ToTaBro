@@ -6,7 +6,7 @@ public class Gunnie : Weapon
         protected override void Awake()
     {
         base.Awake();
-        Name = "Gunnie";
+        Name = "Bow";
         fireRate = 0.5f;
         bulletSpeed = 7;
         bulletDisparitionTime = 1.5f;
@@ -18,6 +18,6 @@ public class Gunnie : Weapon
         if (Time.time < lastShotTime + fireRate) return;
 
         lastShotTime = Time.time;
-        Shoot(directionShoot, 0, transform.rotation);
+        Shoot(directionShoot, Mathf.Atan2(directionShoot.y, directionShoot.x) * Mathf.Rad2Deg, transform.rotation);
     }
 }

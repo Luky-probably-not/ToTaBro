@@ -78,7 +78,8 @@ public abstract class Weapon : MonoBehaviour
         newBullet.transform.SetPositionAndRotation(transform.position, rotateDirection);
         Rigidbody2D newBulletRb = newBullet.GetComponentInChildren<Rigidbody2D>();
         newBulletRb.linearVelocity = directionShoot * this.bulletSpeed;
-        newBullet.transform.rotation = Quaternion.Euler(0, 0, angle);
+        newBullet.transform.rotation = Quaternion.Euler(0, 0, rotateDirection.z+angle);
+        print(newBullet.transform.rotation);
         Bullet bulletObject = newBullet.GetComponent<Bullet>();
         bulletObject.StartedAngle = angle;
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);
