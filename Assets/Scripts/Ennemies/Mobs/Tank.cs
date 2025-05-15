@@ -11,14 +11,25 @@ public class Tank : Ennemy
         damage = 1;
         speed = 1;
     }
+    
+    void Start()
+    {
+        //Evoluate(currentWave);
+    }
 
     void Update()
     {
 	isDead();
         GoTo("Player");
     }
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleCollision(collision);
+	HandleCollision(collision);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+	HandleCollision(collision.collider);
     }
 }

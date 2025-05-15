@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d03ed43fc9d8a4f2e9fa70c1c7916eb9
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
+=======
+guid: 8708053273944df4599f393e96e18dd0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> origin/feat/enemies_animation
   userData: 
   assetBundleName: 
   assetBundleVariant: 

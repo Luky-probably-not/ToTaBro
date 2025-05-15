@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3fe7ec9d113992044b31e2a1521e817b
+=======
+guid: 5b1587bff17b7a74dbbcb0f4a809f933
+>>>>>>> origin/feat/enemies_animation
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -70,7 +74,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/feat/enemies_animation
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +92,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 16
+>>>>>>> origin/feat/enemies_animation
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,6 +141,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -142,6 +155,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -149,10 +164,17 @@ TextureImporter:
       name: 2 punch_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 7
         y: 103
         width: 18
         height: 18
+=======
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +193,17 @@ TextureImporter:
       name: 2 punch_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 39
         y: 103
         width: 18
         height: 18
+=======
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +222,17 @@ TextureImporter:
       name: 2 punch_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 73
         y: 103
         width: 14
         height: 18
+=======
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +251,17 @@ TextureImporter:
       name: 2 punch_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 7
         y: 71
         width: 18
         height: 18
+=======
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +280,17 @@ TextureImporter:
       name: 2 punch_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 39
         y: 71
         width: 18
         height: 18
+=======
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +309,17 @@ TextureImporter:
       name: 2 punch_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 73
         y: 71
         width: 14
         height: 18
+=======
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +338,17 @@ TextureImporter:
       name: 2 punch_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 7
         y: 36
         width: 18
         height: 21
+=======
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +367,17 @@ TextureImporter:
       name: 2 punch_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 39
         y: 39
         width: 18
         height: 18
+=======
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +396,17 @@ TextureImporter:
       name: 2 punch_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 73
         y: 39
         width: 16
         height: 18
+=======
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +425,17 @@ TextureImporter:
       name: 2 punch_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 7
         y: 5
         width: 18
         height: 20
+=======
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +454,17 @@ TextureImporter:
       name: 2 punch_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 39
         y: 7
         width: 18
         height: 18
+=======
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +483,17 @@ TextureImporter:
       name: 2 punch_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 73
         y: 7
         width: 16
         height: 18
+=======
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,7 +512,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: f1bac6b07d36b1f42946ecec63cab6a6
+>>>>>>> origin/feat/enemies_animation
     internalID: 0
     vertices: []
     indices: 
@@ -422,7 +525,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      2 punch_0: 1068543819060846754
+      2 punch_1: -1568228659705068294
+      2 punch_10: -5230494428856830617
+      2 punch_11: -8113877224177384940
+      2 punch_2: -1084283796677797845
+      2 punch_3: -8482259776964631499
+      2 punch_4: 3686600022399325280
+      2 punch_5: 4138383973461885772
+      2 punch_6: 8228469986417114593
+      2 punch_7: 6975722015434155732
+      2 punch_8: 1293084328250757611
+      2 punch_9: 1559250723002299018
+>>>>>>> origin/feat/enemies_animation
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

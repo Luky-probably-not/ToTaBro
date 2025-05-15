@@ -195,7 +195,7 @@ public class Player : MonoBehaviour
     public void ReceiveDamage(Collider2D collider)
     {
         if (!canBeDamaged) return;
-        int damage = 0;
+        float damage = 0;
         switch (collider.tag)
         {
             case "Ennemy" or "Boss":

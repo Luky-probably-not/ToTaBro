@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ebe073f20ae00e8499308d3deb73ceb7
+=======
+guid: 1fc8989f9585ec341bb23d272ddf7827
+>>>>>>> origin/feat/enemies_animation
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -52,7 +56,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/feat/enemies_animation
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +74,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 16
+>>>>>>> origin/feat/enemies_animation
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,6 +123,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -124,6 +137,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -132,9 +147,15 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+<<<<<<< HEAD
         y: 15
         width: 16
         height: 17
+=======
+        y: 16
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +174,17 @@ TextureImporter:
       name: 7 idle_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 0
         width: 16
         height: 15
+=======
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +203,17 @@ TextureImporter:
       name: 7 idle_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 16
         y: 15
         width: 16
         height: 17
+=======
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +232,17 @@ TextureImporter:
       name: 7 idle_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 16
         y: 0
         width: 16
         height: 15
+=======
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +261,17 @@ TextureImporter:
       name: 7 idle_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 33
         y: 15
         width: 14
         height: 17
+=======
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +290,17 @@ TextureImporter:
       name: 7 idle_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 33
         y: 0
         width: 14
         height: 15
+=======
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +319,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: e732f9de2032432448a17261f1a04c96
+>>>>>>> origin/feat/enemies_animation
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +332,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      7 idle_0: 9004235762611953134
+      7 idle_1: 4234360759163126361
+      7 idle_2: -7941047028434711596
+      7 idle_3: 3380265353869766964
+      7 idle_4: 6573211046910888035
+      7 idle_5: 5442929350388224275
+>>>>>>> origin/feat/enemies_animation
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
