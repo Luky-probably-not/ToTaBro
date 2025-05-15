@@ -85,10 +85,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.55, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &5217875718053802722
@@ -127,14 +127,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7748733315939736106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be3346942484f94494586ef49d347a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 51c7c2292160b954b9a183adda4659e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
-  rb: {fileID: 5217875718053802722}
-  attack: {fileID: 586383963554175198, guid: 6dd07ba1aaadc144bbac9e72a38f4961, type: 3}
+  xp: {fileID: 2288676109809363429, guid: db61a8b5ee4f9c64984424180efa9eb1, type: 3}
+  coin: {fileID: 4854603114208903869, guid: 59326c00518c254479a8f170674aee73, type: 3}
   animator: {fileID: 329624614110821547}
+  rb: {fileID: 5217875718053802722}
+  attack: {fileID: 586383963554175198, guid: d5b29618521142240a9ea5f52482d990, type: 3}
 --- !u!61 &3880707223145058899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,9 +172,9 @@ BoxCollider2D:
   m_Offset: {x: 0.010534704, y: -0.100344814}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.49090907, y: -0.14583334}
+    oldSize: {x: 0.55, y: 0.48}
+    newSize: {x: 0.55, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
