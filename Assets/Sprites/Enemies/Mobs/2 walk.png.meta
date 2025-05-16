@@ -1,21 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 4529965e4f5bf0f42936d71fc957d7c7
-=======
-<<<<<<< HEAD
-guid: 4529965e4f5bf0f42936d71fc957d7c7
-=======
-guid: f7c72f00763ca134585dc1ac8e33ce0d
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1244216785957562316
-    second: 2 walk_0
-  - first:
-      213: -5564768729662163693
-    second: 2 walk_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,20 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 1
-=======
-<<<<<<< HEAD
-    filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -70,16 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-
-  spritePixelsToUnits: 16
-=======
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,363 +93,14 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 2 walk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-        y: 0
-        width: 33
-        height: 64
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/feat/Player
-        y: 48
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
-<<<<<<< HEAD
->>>>>>> origin/feat/enemies_animation
-=======
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 438db61ec67abbee0800000000000000
-      internalID: -1244216785957562316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_1
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-        x: 33
-        y: 0
-        width: 14
-        height: 64
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/feat/Player
-        x: 16
-        y: 48
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
-<<<<<<< HEAD
->>>>>>> origin/feat/enemies_animation
-=======
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 315f843e258f5c2b0800000000000000
-      internalID: -5564768729662163693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/feat/Player
-    - serializedVersion: 2
-      name: 2 walk_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54b3e42ab9c5baa4d859c274434a1271
-      internalID: 1663949927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2c743ca73789a3449cd01afbbc0ee33
-      internalID: -1448407125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cc3aff5724ba7c45a0665f53e5bfd96
-      internalID: -598741716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10dad406d501b48408cfc3c6652fab07
-      internalID: -120663418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f76c596da28e88344a59650af0e2094a
-      internalID: -1280659422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76a63c3b2b76eca4684f8b70e0ba5d77
-      internalID: 1456741977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c8e2d5d341693b4eb5759538445905f
-      internalID: 2085280288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b4a34070fce71244ab42cabce9c76e8
-      internalID: -207830669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_10
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad0bd8872d0f72048baefc4744c76370
-      internalID: 569459548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 walk_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03521583df6403d41a3b4a25a518f6c3
-      internalID: 1104878898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
->>>>>>> origin/feat/enemies_animation
-<<<<<<< HEAD
->>>>>>> origin/feat/enemies_animation
-=======
->>>>>>> origin/feat/Player
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     spriteID: 
-=======
-=======
-    spriteID: f86f3f8ea805d91409f606f7a3e8a5a0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/enemies_animation
-=======
-    spriteID: 
-=======
-    spriteID: f86f3f8ea805d91409f606f7a3e8a5a0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     internalID: 0
     vertices: []
     indices: 
@@ -489,34 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     nameFileIdTable: {}
-=======
-=======
-=======
-    nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
-    nameFileIdTable:
-      2 walk_0: -1244216785957562316
-      2 walk_1: -5564768729662163693
-      2 walk_10: 569459548
-      2 walk_11: 1104878898
-      2 walk_2: 1663949927
-      2 walk_3: -1448407125
-      2 walk_4: -598741716
-      2 walk_5: -120663418
-      2 walk_6: -1280659422
-      2 walk_7: 1456741977
-      2 walk_8: 2085280288
-      2 walk_9: -207830669
->>>>>>> origin/feat/enemies_animation
-<<<<<<< HEAD
->>>>>>> origin/feat/enemies_animation
-=======
->>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

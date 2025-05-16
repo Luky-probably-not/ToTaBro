@@ -1,54 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 guid: 1fc8989f9585ec341bb23d272ddf7827
-=======
-<<<<<<< HEAD
-guid: ebe073f20ae00e8499308d3deb73ceb7
-=======
-guid: 1fc8989f9585ec341bb23d272ddf7827
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-guid: ebe073f20ae00e8499308d3deb73ceb7
-=======
-guid: 1fc8989f9585ec341bb23d272ddf7827
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-guid: ebe073f20ae00e8499308d3deb73ceb7
-=======
-guid: 1fc8989f9585ec341bb23d272ddf7827
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-guid: ebe073f20ae00e8499308d3deb73ceb7
-=======
-guid: 1fc8989f9585ec341bb23d272ddf7827
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 9004235762611953134
-    second: 7 idle_0
-  - first:
-      213: 4234360759163126361
-    second: 7 idle_1
-  - first:
-      213: -7941047028434711596
-    second: 7 idle_2
-  - first:
-      213: 3380265353869766964
-    second: 7 idle_3
-  - first:
-      213: 6573211046910888035
-    second: 7 idle_4
-  - first:
-      213: 5442929350388224275
-    second: 7 idle_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,41 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    filterMode: 0
-=======
-<<<<<<< HEAD
     filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -124,36 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  spritePixelsToUnits: 16
-=======
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -190,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -198,472 +93,14 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 7 idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        y: 16
-        width: 16
-        height: 16
-=======
-<<<<<<< HEAD
-        y: 15
-        width: 16
-        height: 17
-=======
-        y: 16
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-        y: 15
-        width: 16
-        height: 17
-=======
-        y: 16
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-        y: 15
-        width: 16
-        height: 17
-=======
-        y: 16
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-        y: 15
-        width: 16
-        height: 17
-=======
-        y: 16
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eed9a5838b875fc70800000000000000
-      internalID: 9004235762611953134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7 idle_1
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 0
-        y: 0
-        width: 16
-        height: 15
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95285c40da873ca30800000000000000
-      internalID: 4234360759163126361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7 idle_2
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 16
-        y: 15
-        width: 16
-        height: 17
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4db4a751dcbbbc190800000000000000
-      internalID: -7941047028434711596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7 idle_3
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 16
-        y: 0
-        width: 16
-        height: 15
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 431b7ff0e6d19ee20800000000000000
-      internalID: 3380265353869766964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7 idle_4
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 33
-        y: 15
-        width: 14
-        height: 17
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3680cccee9cb83b50800000000000000
-      internalID: 6573211046910888035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 7 idle_5
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 33
-        y: 0
-        width: 14
-        height: 15
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/Player
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3111073086b298b40800000000000000
-      internalID: 5442929350388224275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    spriteID: e732f9de2032432448a17261f1a04c96
-=======
-<<<<<<< HEAD
     spriteID: 
-=======
-    spriteID: e732f9de2032432448a17261f1a04c96
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    spriteID: 
-=======
-    spriteID: e732f9de2032432448a17261f1a04c96
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    spriteID: 
-=======
-    spriteID: e732f9de2032432448a17261f1a04c96
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
-    spriteID: 
-=======
-    spriteID: e732f9de2032432448a17261f1a04c96
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     internalID: 0
     vertices: []
     indices: 
@@ -672,50 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
-=======
-    nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
-=======
-    nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
-=======
-    nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
-    nameFileIdTable:
-      7 idle_0: 9004235762611953134
-      7 idle_1: 4234360759163126361
-      7 idle_2: -7941047028434711596
-      7 idle_3: 3380265353869766964
-      7 idle_4: 6573211046910888035
-      7 idle_5: 5442929350388224275
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

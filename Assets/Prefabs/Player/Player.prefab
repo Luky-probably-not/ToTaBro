@@ -472,21 +472,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4860983917505171159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395a3105c75b82f4c9c243dd5323fa34, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b585b85f8bbece4fa74915f2c7d917d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 3520886302648262291}
-  speed: 5
-  LifePoint: 10
-  money: 0
-  currentXp: 0
-  popupCanvas: {fileID: 0}
-  textPopUp: {fileID: 0}
-  hpBar: {fileID: 0}
-  hpSprites: []
-  xpBar: {fileID: 0}
-  xpSprites: []
-  anim: {fileID: 0}
 --- !u!114 &751840870290812272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +487,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc786d666f98343a38a8c0e5af9137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 3520886302648262291}
+  speed: 5
+  LifePoint: 10
+  money: 0
+  currentXp: 0
+  popupCanvas: {fileID: 3087444079664501037}
+  textPopUp: {fileID: 6023528679861549043}
+  anim: {fileID: 5362990621205786002}
 --- !u!1 &8340367896879395740
 GameObject:
   m_ObjectHideFlags: 0

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b9975dc92a1c64e9e043b74d6652f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 315561612708912388, guid: b499dec9945730546bc6b4f0eb314506, type: 3}
+  bullet: {fileID: 315561612708912388, guid: c0c109c5f4d442947bb2b7e6fb0774ab, type: 3}
   popupCanvas: {fileID: 3502103170744581283}
   nameTMP: {fileID: 690545701362871760}
   damageTMP: {fileID: 8397051051498873140}

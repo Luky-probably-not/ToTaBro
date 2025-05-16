@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  coin: {fileID: 4854603114208903869, guid: 59326c00518c254479a8f170674aee73, type: 3}
+  animator: {fileID: 8308546547999878437}
   rb: {fileID: 3487129419190426495}
   bullet: {fileID: 3147869943508483296, guid: 8a79113a635e4f5448aa028d9ec0b9ac, type: 3}
-  animator: {fileID: 8308546547999878437}
 --- !u!95 &8308546547999878437
 Animator:
   serializedVersion: 7

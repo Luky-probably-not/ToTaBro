@@ -1,51 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 46fde425963ef534395190e2b33e63b4
-=======
-<<<<<<< HEAD
-guid: 2d6bf9ff2b7043b4f8fffaa0ee8719a1
-=======
-guid: 46fde425963ef534395190e2b33e63b4
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2436335613962535542
-    second: 1 punch_0
-  - first:
-      213: 8810986418955048263
-    second: 1 punch_1
-  - first:
-      213: -1720837099033057957
-    second: 1 punch_2
-  - first:
-      213: 8152955965137572274
-    second: 1 punch_3
-  - first:
-      213: 5382525285588619000
-    second: 1 punch_4
-  - first:
-      213: -4647057331512489843
-    second: 1 punch_5
-  - first:
-      213: -2552911582226007785
-    second: 1 punch_6
-  - first:
-      213: 7581350850245761708
-    second: 1 punch_7
-  - first:
-      213: 7475079727870464228
-    second: 1 punch_8
-  - first:
-      213: 6138921789479430102
-    second: 1 punch_9
-  - first:
-      213: 1306019821631890082
-    second: 1 punch_10
-  - first:
-      213: -2509868812328666511
-    second: 1 punch_11
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -83,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -107,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,289 +93,9 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 1 punch_0
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8d3128daa5603ed0800000000000000
-      internalID: -2436335613962535542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 103
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7455b962779e64a70800000000000000
-      internalID: 8810986418955048263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 103
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5522db96cb5e18e0800000000000000
-      internalID: -1720837099033057957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_3
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 71
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b15d6b014e152170800000000000000
-      internalID: 8152955965137572274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_4
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 71
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fe411aba3292ba40800000000000000
-      internalID: 5382525285588619000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_5
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 71
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d88c2586af5528fb0800000000000000
-      internalID: -4647057331512489843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_6
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 36
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 719307e117c329cd0800000000000000
-      internalID: -2552911582226007785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_7
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 39
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: caa118a3e6e563960800000000000000
-      internalID: 7581350850245761708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_8
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 39
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e051776861dcb760800000000000000
-      internalID: 7475079727870464228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 5
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d7a3d597d4d13550800000000000000
-      internalID: 6138921789479430102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_10
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 7
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a2ecf1bb1aef1210800000000000000
-      internalID: 1306019821631890082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1 punch_11
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17a7150fc972b2dd0800000000000000
-      internalID: -2509868812328666511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -433,19 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      1 punch_0: -2436335613962535542
-      1 punch_1: 8810986418955048263
-      1 punch_10: 1306019821631890082
-      1 punch_11: -2509868812328666511
-      1 punch_2: -1720837099033057957
-      1 punch_3: 8152955965137572274
-      1 punch_4: 5382525285588619000
-      1 punch_5: -4647057331512489843
-      1 punch_6: -2552911582226007785
-      1 punch_7: 7581350850245761708
-      1 punch_8: 7475079727870464228
-      1 punch_9: 6138921789479430102
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

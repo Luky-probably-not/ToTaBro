@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
 guid: 3dc84a9941648b346a7c845803b3394f
-=======
-guid: 5c2fb79a389ef08489801ee1c65636a2
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6071595076165053127
-    second: KingSlimeAttack1_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -41,16 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
     filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -59,11 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 64
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,62 +93,14 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: KingSlimeAttack1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
-        y: 7
-        width: 64
-        height: 28
-=======
-        y: 0
-        width: 64
-        height: 64
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ca24d69d83a24450800000000000000
-      internalID: 6071595076165053127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
     spriteID: 
-=======
-    spriteID: e056f9fd8fe74d5458ef558371a171d4
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -172,12 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack/KingSlimeAttack1.png.meta
     nameFileIdTable: {}
-=======
-    nameFileIdTable:
-      KingSlimeAttack1_0: 6071595076165053127
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack/KingSlimeAttack1.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

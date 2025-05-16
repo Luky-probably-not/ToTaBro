@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
 guid: 886e7e6436bf88f44b0036f123b6ac94
-=======
-guid: ab7c35831774c2b41a72546ffeb4d071
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -597198538373006510
-    second: KingSlime_Moving2_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -41,16 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
     filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -59,11 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 64
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,63 +93,14 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: KingSlime_Moving2_0
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
-        x: 4
-        y: 22
-        width: 56
-        height: 42
-=======
-        x: 0
-        y: 0
-        width: 64
-        height: 64
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25bf4ebe71356b7f0800000000000000
-      internalID: -597198538373006510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
     spriteID: 
-=======
-    spriteID: 4ca1c171b5657f64e8772acf67d93cc8
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -173,12 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving2.png.meta
     nameFileIdTable: {}
-=======
-    nameFileIdTable:
-      KingSlime_Moving2_0: -597198538373006510
->>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
