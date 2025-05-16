@@ -379,7 +379,15 @@ public class GameManager : MonoBehaviour
         if (currentMerchantItems.Contains(item))
         {
             currentMerchantItems.Remove(item);
+            if (item.GetComponent<Weapon>() != null)
+            {
+                currentWeapon=weapon;
+            }
         }
+    }
+    public void EquipWeapon(GameObject weapon)
+    {
+        currentWeapon=weapon;
     }
     private GameObject GetRandomPotion()
     {
