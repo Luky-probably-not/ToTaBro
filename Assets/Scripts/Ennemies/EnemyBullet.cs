@@ -22,7 +22,7 @@ public class EnemyBullet : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             StartCoroutine(IgnoreCollision(collision, GetComponent<Collider2D>(), 1f));
-            if (!passThrough) Destroy(gameObject);
+            if (!passThrough) Destroy(gameObject,0.2f);
         }
     }
 

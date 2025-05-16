@@ -208,13 +208,20 @@ public class Player : MonoBehaviour
             case "Ennemy" or "Boss":
                 damage = collider.GetComponent<Ennemy>().GetDamage();
                 break;
+            case "EnnemyAttack":
+                damage = collider.GetComponent<EnemyBullet>().Damage;
+                break;
             case "BossAttack":
                 damage = GameObject.FindGameObjectWithTag("Boss").GetComponent<Ennemy>().GetDamage();
                 break;
             default:
                 break;
         }
-        this.LifePoint -= Mathf.Clamp(damage, 0, MaxLifePoint*0.7f);
+        print(damage);
+        damage = Mathf.Clamp(damage, 0, MaxLifePoint * 0.7f);
+        print(damage);
+        this.LifePoint = Mathf.Clamp(LifePoint - damage, 0, MaxLifePoint);
+        
         StartCoroutine(Invulnerabilty());
     }
 
@@ -296,7 +303,7 @@ public class Player : MonoBehaviour
                 StartCoroutine(ShowPopup("yellow", value * goldValue));
                 Destroy(collision.gameObject);
                 break;
-            case "EnnemyAttack":
+            case "EnnemyAttack" or "BossAttack":
                 ReceiveDamage(collision);
                 break;
             default:

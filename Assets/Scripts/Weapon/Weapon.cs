@@ -53,7 +53,7 @@ public abstract class Weapon : MonoBehaviour
         currentColor = this.sprite.color;
         hueOffSet = Random.value;
 
-        int random = Random.Range(0, 1);
+        int random = Random.Range(0, 10);
         this.isLegendary = random == 0;
         popupCanvas = GetComponentInChildren<Canvas>();
         popupCanvas.gameObject.SetActive(false);

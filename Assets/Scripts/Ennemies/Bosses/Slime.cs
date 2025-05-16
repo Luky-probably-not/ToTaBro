@@ -13,7 +13,7 @@ public class Slime : Ennemy
     protected override void Awake()
     {
         base.Awake();
-        hp = 50;
+        hp = 500;
         nickname = "Slime";
         difficulty = 10;
         damage = 3f;
