@@ -53,18 +53,6 @@ public class Player : MonoBehaviour
     private float idleTime;
     private bool alive;
 
-    public Animator anim;
-    private float idleTime;
-    private bool alive;
-
-    public Animator anim;
-    private float idleTime;
-    private bool alive;
-
-    public Animator anim;
-    private float idleTime;
-    private bool alive;
-
     void Start()
     {
         directionShoot = transform.right;

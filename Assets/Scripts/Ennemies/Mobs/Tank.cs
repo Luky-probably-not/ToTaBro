@@ -12,14 +12,6 @@ public class Tank : Ennemy
         speed = 1;
     }
     
-<<<<<<< HEAD
-=======
-    void Start()
-    {
-        //Evoluate(currentWave);
-    }
-
->>>>>>> origin/feat/Player
     void Update()
     {
 	isDead();
