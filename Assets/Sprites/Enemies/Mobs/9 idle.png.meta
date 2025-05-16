@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: cce768f71c8767347959bf2b725d8407
 =======
 <<<<<<< HEAD
+guid: 4b6f06425a7b9bc4da1ea6b61bcc11d9
+=======
+guid: cce768f71c8767347959bf2b725d8407
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
+=======
 guid: 4b6f06425a7b9bc4da1ea6b61bcc11d9
 =======
 guid: cce768f71c8767347959bf2b725d8407
@@ -122,8 +129,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/feat/Player
 =======
 >>>>>>> origin/feat/Player
   - serializedVersion: 4
@@ -142,6 +152,9 @@ TextureImporter:
 =======
 >>>>>>> origin/feat/enemies_animation
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/feat/Player
+=======
 >>>>>>> origin/feat/Player
 =======
 >>>>>>> origin/feat/Player

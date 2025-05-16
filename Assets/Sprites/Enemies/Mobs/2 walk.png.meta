@@ -122,13 +122,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         y: 0
         width: 33
         height: 64
 =======
+=======
         y: 48
         width: 16
         height: 16
+>>>>>>> origin/feat/enemies_animation
 >>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -149,15 +152,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
         x: 33
         y: 0
         width: 14
         height: 64
 =======
+=======
         x: 16
         y: 48
         width: 16
         height: 16
+>>>>>>> origin/feat/enemies_animation
 >>>>>>> origin/feat/enemies_animation
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,6 +179,8 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
     - serializedVersion: 2
@@ -396,14 +404,18 @@ TextureImporter:
       edges: []
       weights: []
 >>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/enemies_animation
     outline: []
     customData: 
     physicsShape: []
     bones: []
 <<<<<<< HEAD
+<<<<<<< HEAD
     spriteID: 
 =======
+=======
     spriteID: f86f3f8ea805d91409f606f7a3e8a5a0
+>>>>>>> origin/feat/enemies_animation
 >>>>>>> origin/feat/enemies_animation
     internalID: 0
     vertices: []
@@ -414,7 +426,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
 <<<<<<< HEAD
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
 =======
     nameFileIdTable:
       2 walk_0: -1244216785957562316
@@ -429,6 +443,7 @@ TextureImporter:
       2 walk_7: 1456741977
       2 walk_8: 2085280288
       2 walk_9: -207830669
+>>>>>>> origin/feat/enemies_animation
 >>>>>>> origin/feat/enemies_animation
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -110,6 +110,9 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -150,6 +153,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Slam_0: 335924325867934967
+<<<<<<< HEAD
 <<<<<<< HEAD
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
@@ -302,6 +306,8 @@ TextureImporter:
 =======
     nameFileIdTable:
       Slam_0: 335924325867934967
+>>>>>>> origin/feat/Player
+=======
 >>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
