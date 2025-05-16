@@ -248,6 +248,18 @@ public class GameManager : MonoBehaviour
             }
             else if (currentWave % 5 == 0)
             {
+                if (currentWave % 10 == 0)
+                {
+                    if (currentWave == 50) {
+                        Instantiate(slurpPrefab, GetRandomPosition(), Quaternion.identity);
+                    }
+                    else 
+                    {
+                        GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
+                        Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
+                    }
+                    enemiesAlive = 1;
+                }
                 TriggerMerchant();
             }
             else
