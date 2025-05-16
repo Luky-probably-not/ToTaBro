@@ -312,10 +312,9 @@ public class GameManager : MonoBehaviour
     }
     private void DropNewWeapon()
     {
-        List<GameObject> availableWeapons = weapons.FindAll(w => w != currentWeapon.GetComponent<Weapon>());
-        if (availableWeapons.Count > 0)
+        if (weapons.Count > 0)
         {
-            GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
+            GameObject newWeapon = weapons[Random.Range(0, weapons.Count)];
             GameObject dropped = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
             Weapon droppedComponent = dropped.GetComponent<Weapon>();
             droppedComponent.LevelUp(currentWave);
