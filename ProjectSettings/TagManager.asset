@@ -3,18 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - LaserBulletPlayer
+  - Potion
+  - Weapon
+  - Ennemy
+  - SwordSlashPlayer
+  - XpBar
+  - HpBar
+  - SmallBulletPlayer
+  - Xp
+  - Coin
+  - EnnemyAttack
+  - DeadZone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - EnemyAttack
+  - Boss
+  - Ennemy
+  - PlayerProjectile
   - 
   - 
   - 
