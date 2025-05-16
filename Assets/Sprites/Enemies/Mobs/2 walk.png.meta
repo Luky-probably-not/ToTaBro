@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: f7c72f00763ca134585dc1ac8e33ce0d
-=======
-<<<<<<< HEAD
 guid: 4529965e4f5bf0f42936d71fc957d7c7
-=======
-guid: f7c72f00763ca134585dc1ac8e33ce0d
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -48,15 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 0
-=======
-<<<<<<< HEAD
     filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,15 +54,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
+
   spritePixelsToUnits: 16
-=======
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,9 +100,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -139,9 +113,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -151,11 +122,6 @@ TextureImporter:
         serializedVersion: 2
         x: 0
 <<<<<<< HEAD
-        y: 48
-        width: 16
-        height: 16
-=======
-<<<<<<< HEAD
         y: 0
         width: 33
         height: 64
@@ -164,7 +130,6 @@ TextureImporter:
         width: 16
         height: 16
 >>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,22 +149,16 @@ TextureImporter:
       rect:
         serializedVersion: 2
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
         x: 33
         y: 0
         width: 14
         height: 64
 =======
->>>>>>> origin/feat/Player
         x: 16
         y: 48
         width: 16
         height: 16
-<<<<<<< HEAD
-=======
 >>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,9 +175,6 @@ TextureImporter:
       weights: []
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
     - serializedVersion: 2
       name: 2 walk_2
       rect:
@@ -439,23 +395,16 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
-=======
 >>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     outline: []
     customData: 
     physicsShape: []
     bones: []
 <<<<<<< HEAD
-    spriteID: f86f3f8ea805d91409f606f7a3e8a5a0
-=======
-<<<<<<< HEAD
     spriteID: 
 =======
     spriteID: f86f3f8ea805d91409f606f7a3e8a5a0
 >>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     internalID: 0
     vertices: []
     indices: 
@@ -465,11 +414,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
     nameFileIdTable: {}
 =======
->>>>>>> origin/feat/Player
     nameFileIdTable:
       2 walk_0: -1244216785957562316
       2 walk_1: -5564768729662163693
@@ -483,10 +429,7 @@ TextureImporter:
       2 walk_7: 1456741977
       2 walk_8: 2085280288
       2 walk_9: -207830669
-<<<<<<< HEAD
-=======
 >>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

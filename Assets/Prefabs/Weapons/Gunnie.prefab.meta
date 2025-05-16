@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 5facfd15b336eae42838acb3df6961ca
-=======
-<<<<<<< HEAD
 guid: c40c8dc8b5f310d47a4416ebc3f501e9
-=======
-guid: 5facfd15b336eae42838acb3df6961ca
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 PrefabImporter:
   externalObjects: {}
   userData: 

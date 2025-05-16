@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: f85db925382740f4cbfd7d303af9925e
-=======
-<<<<<<< HEAD
 guid: 1b5bd1ccd38c89941a817235835ffa22
-=======
-guid: f85db925382740f4cbfd7d303af9925e
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -54,15 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 0
-=======
-<<<<<<< HEAD
     filterMode: 1
-=======
-    filterMode: 0
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -76,15 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 16
-=======
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,9 +105,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -145,9 +118,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -156,21 +126,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD
-        y: 16
-        width: 16
-        height: 16
-=======
-<<<<<<< HEAD
         y: 15
         width: 33
         height: 17
-=======
-        y: 16
-        width: 16
-        height: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,21 +147,9 @@ TextureImporter:
       name: 2 idle_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 16
-        y: 16
-        width: 16
-=======
-<<<<<<< HEAD
         x: 0
         y: 0
         width: 33
-=======
-        x: 16
-        y: 16
-        width: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,23 +169,10 @@ TextureImporter:
       name: 2 idle_2
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         x: 33
         y: 15
         width: 14
         height: 17
-=======
->>>>>>> origin/feat/Player
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,21 +191,9 @@ TextureImporter:
       name: 2 idle_3
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 0
-        y: 0
-        width: 16
-=======
-<<<<<<< HEAD
         x: 33
         y: 0
         width: 14
-=======
-        x: 0
-        y: 0
-        width: 16
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,72 +209,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/Player
-    - serializedVersion: 2
-      name: 2 idle_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9976b704610ca734aabe1479630d03fb
-      internalID: -1171414065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 idle_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8447ff236635e1b4eb8e6e711603f136
-      internalID: -154037943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 04b0162378c241f41944a6a8a6780042
-=======
-<<<<<<< HEAD
-    spriteID: 
-=======
-    spriteID: 04b0162378c241f41944a6a8a6780042
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
     internalID: 0
     vertices: []
     indices: 
@@ -362,12 +221,6 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
->>>>>>> origin/feat/Player
     nameFileIdTable:
       2 idle_0: 4573709949219481538
       2 idle_1: 5110469098743909098
@@ -375,10 +228,6 @@ TextureImporter:
       2 idle_3: 412202324588561488
       2 idle_4: -1171414065
       2 idle_5: -154037943
-<<<<<<< HEAD
-=======
->>>>>>> origin/feat/enemies_animation
->>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
