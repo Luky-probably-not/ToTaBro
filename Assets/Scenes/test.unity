@@ -168,6 +168,7 @@ MonoBehaviour:
   CreditsUIPrefab: {fileID: 450737898587920738, guid: 8663f5c95a66187479e0fb336eca80b0, type: 3}
   gameScenePrefab: {fileID: 1170187838826901828, guid: 252d989c0b224ed48a208741e470f962, type: 3}
   pauseUIPrefab: {fileID: 967074685292934243, guid: c8188dd2fc877ca4c91cd9fa0beaa405, type: 3}
+  mainCanvas: {fileID: 1783176439}
   botPrefab: {fileID: 8123367732446019818, guid: b4eee490a4958f544b947ae82ec674db, type: 3}
   speedyPrefab: {fileID: 7496286276108436483, guid: 42d5836d04ac2ef488711540721cab03, type: 3}
   tankPrefab: {fileID: 16026415450306717, guid: 5f2241aa99693eb4b8bcd05739bebff9, type: 3}

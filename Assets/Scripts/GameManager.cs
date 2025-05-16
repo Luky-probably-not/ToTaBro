@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private GameObject selectedGameScenePrefab;
     public GameObject pauseUIPrefab;
     private GameObject currentUI;
+    public Canvas mainCanvas;
 
     [Header("Normals Enemies Prefabs")]
     public GameObject botPrefab; 
@@ -58,7 +59,9 @@ public class GameManager : MonoBehaviour
     private List<GameObject> currentMerchantItems = new List<GameObject>();
     private GameObject currentMerchantInstance;
     
-    public void setInGame(bool set) {
+    
+    public void setInGame(bool set)
+    {
         inGame = set;
     }
     void Awake()
@@ -96,6 +99,8 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver() 
     {
+        setInGame(false);
+        StopAllCoroutines();
         Reset();
         LoadScene(GameOverUIPrefab);
         StartCoroutine(WaitThenLoadAccueil());
@@ -202,7 +207,7 @@ public class GameManager : MonoBehaviour
     public void LoadScene(GameObject scenePrefab)
     {
         if (currentUI != null) Destroy(currentUI);
-        currentUI = Instantiate(scenePrefab,  FindFirstObjectByType<Canvas>().transform);
+        currentUI = Instantiate(scenePrefab,  mainCanvas.transform);
     }
     public void TogglePause()
     {
@@ -211,7 +216,7 @@ public class GameManager : MonoBehaviour
             if (pauseUIPrefab != null)
             {
                 Debug.Log(currentUI);
-                Instantiate(pauseUIPrefab,  FindFirstObjectByType<Canvas>().transform);
+                Instantiate(pauseUIPrefab,  mainCanvas.transform);
             }
         }
     }
