@@ -214,7 +214,6 @@ public class Player : MonoBehaviour
             default:
                 break;
         }
-        print(damage);
         this.LifePoint -= Mathf.Clamp(damage, 0, MaxLifePoint*0.7f);
         StartCoroutine(Invulnerabilty());
     }
