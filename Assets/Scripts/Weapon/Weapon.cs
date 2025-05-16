@@ -53,7 +53,7 @@ public abstract class Weapon : MonoBehaviour
         currentColor = this.sprite.color;
         hueOffSet = Random.value;
 
-        int random = Random.Range(0, 5);
+        int random = Random.Range(0, 1);
         this.isLegendary = random == 0;
         popupCanvas = GetComponentInChildren<Canvas>();
         popupCanvas.gameObject.SetActive(false);
@@ -79,7 +79,6 @@ public abstract class Weapon : MonoBehaviour
         Rigidbody2D newBulletRb = newBullet.GetComponentInChildren<Rigidbody2D>();
         newBulletRb.linearVelocity = directionShoot * this.bulletSpeed;
         newBullet.transform.rotation = Quaternion.Euler(0, 0, rotateDirection.z+angle);
-        print(newBullet.transform.rotation);
         Bullet bulletObject = newBullet.GetComponent<Bullet>();
         bulletObject.StartedAngle = angle;
         bulletObject.DieAfterSeconds(this.bulletDisparitionTime);

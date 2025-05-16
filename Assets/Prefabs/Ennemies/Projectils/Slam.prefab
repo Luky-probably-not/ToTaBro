@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4698084400047739655}
   - component: {fileID: 7783802195188472657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5796545023815578547}
   - component: {fileID: 3578732864913506451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slam
   m_TagString: EnnemyAttack
   m_Icon: {fileID: 0}

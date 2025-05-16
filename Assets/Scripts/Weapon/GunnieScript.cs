@@ -15,6 +15,7 @@ public class Gunnie : Weapon
 
     public override void ShootWeapon(Vector2 directionShoot)
     {
+        if (isLegendary) fireRate = 0.1f;
         if (Time.time < lastShotTime + fireRate) return;
 
         lastShotTime = Time.time;

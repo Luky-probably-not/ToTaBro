@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ranged : Ennemy
 {
-    private float fireRate;
+    private float fireRate = 1f;
     private float baseFireRate = 3f;
     public GameObject bullet;
     private int bulletSpeed = 6;
@@ -23,11 +23,6 @@ public class Ranged : Ennemy
         speed = 1;
     }
 
-    void Start()
-    {
-        //Evoluate(currentWave);
-    }
-    
     void Update()
     {
         isDead();
@@ -37,6 +32,14 @@ public class Ranged : Ennemy
             StartCoroutine(ShootRoutine());
             hasStartedShooting = !hasStartedShooting;
         }
+    }
+
+    public override void Evoluate(int wave)
+    {
+
+        this.hp += 1.3f * wave / ((wave - 1) == 0 ? 1 : wave - 1);
+        this.damage += 1.1f * wave / ((wave - 1) == 0 ? 1 : wave - 1);
+        this.fireRate = baseFireRate / (1f + 0.07f * wave);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -120,8 +120,9 @@ public class Player : MonoBehaviour
     public void OnShoot()
     {
 
-        if (isDashing || weapon == null) return;
+        if (weapon == null) return;
         startedShoot = !startedShoot;
+        if (isDashing) return;
         StartCoroutine(ShootRoutine());
     }
     public void OnInteract()
@@ -214,7 +215,7 @@ public class Player : MonoBehaviour
                 break;
         }
         print(damage);
-        this.LifePoint = Mathf.Clamp(this.LifePoint - damage, 0, MaxLifePoint*0.7f);
+        this.LifePoint -= Mathf.Clamp(damage, 0, MaxLifePoint*0.7f);
         StartCoroutine(Invulnerabilty());
     }
 
@@ -229,7 +230,7 @@ public class Player : MonoBehaviour
         //anim.SetBool("dash", true);
 
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), true);
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnemyAttack"), true);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), true);
 
         isDashing = true;
@@ -238,7 +239,7 @@ public class Player : MonoBehaviour
         isDashing = false;
         rb.linearVelocity = directionDash * speed * 0.8f;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ennemy"), false);
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnnemyAttack"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("EnemyAttack"), false);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Boss"), false);
         //anim.SetBool("dash", false);
         yield return new WaitForSeconds(dashCooldown);
@@ -287,16 +288,16 @@ public class Player : MonoBehaviour
             case "Xp":
                 int value = collision.GetComponent<Xp>().getValue();
                 currentXp += value * xpValue;
-                StartCoroutine(ShowPopup("blue",value));
+                StartCoroutine(ShowPopup("blue", value * xpValue));
                 Destroy(collision.gameObject);
                 break;
             case "Coin":
                 value = collision.GetComponent<Coin>().getValue();
                 money += value * goldValue;
-                StartCoroutine(ShowPopup("yellow",value));
+                StartCoroutine(ShowPopup("yellow", value * goldValue));
                 Destroy(collision.gameObject);
                 break;
-            case "BossAttack":
+            case "EnnemyAttack":
                 ReceiveDamage(collision);
                 break;
             default:
@@ -373,7 +374,7 @@ public class Player : MonoBehaviour
 
     public void XpBar()
     {
-        var percent = (int)Round(currentXp * 100 / xpNeeded * 0.1);
+        var percent = (int)Floor(currentXp * 100 / xpNeeded * 0.1);
         xpBar.sprite = xpSprites[percent];
     }
 }

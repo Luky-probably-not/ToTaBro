@@ -138,8 +138,9 @@ public class Ennemy : MonoBehaviour
 
     public virtual void Evoluate(int wave)
     {
-        this.hp *= 1.3f * wave;
-        this.damage *= 1.5f * wave;
+        
+        this.hp += 1.3f * wave / ((wave - 1) == 0 ? 1 : wave-1);
+        this.damage += 1.1f * wave / ((wave - 1) == 0 ? 1 : wave - 1);
     }
 
     protected void SelectAnimation(Vector2 direction)

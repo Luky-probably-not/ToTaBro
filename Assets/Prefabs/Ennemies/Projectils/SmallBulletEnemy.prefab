@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8109951874275643395}
   - component: {fileID: 7435938124344980476}
   - component: {fileID: 5607832944051349864}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmallBulletEnemy
   m_TagString: EnnemyAttack
   m_Icon: {fileID: 0}
@@ -134,9 +134,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4283065511963167000}
   - component: {fileID: 8702594030645593311}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Bullet
-  m_TagString: SmallBulletPlayer
+  m_TagString: EnnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

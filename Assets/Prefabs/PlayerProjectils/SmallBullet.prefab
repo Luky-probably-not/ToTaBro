@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3777682547412724597}
   - component: {fileID: 7435938124344980476}
   - component: {fileID: 3821525216942986384}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: SmallBullet
   m_TagString: SmallBulletPlayer
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4283065511963167000}
   - component: {fileID: 8702594030645593311}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Bullet
   m_TagString: SmallBulletPlayer
   m_Icon: {fileID: 0}

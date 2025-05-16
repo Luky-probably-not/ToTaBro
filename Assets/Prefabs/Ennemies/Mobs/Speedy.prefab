@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4553679543309169542}
   - component: {fileID: 6264825056242022396}
   - component: {fileID: 693388371016597626}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Speedy
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
