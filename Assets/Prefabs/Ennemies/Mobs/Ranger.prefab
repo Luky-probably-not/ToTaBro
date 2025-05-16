@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2484806862818839762, guid: 78d8519611771644ebb193237529089b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  coin: {fileID: 4854603114208903869, guid: 59326c00518c254479a8f170674aee73, type: 3}
   animator: {fileID: 7134983511559525263}
   rb: {fileID: 187441418813891421}
   bullet: {fileID: 1464410677912618184, guid: e95ad705a593e284a8a79c547db3e45e, type: 3}

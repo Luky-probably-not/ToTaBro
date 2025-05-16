@@ -79,13 +79,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 5869091261660124992, guid: 864b9e9eaaf34284e88507eb0f472a90, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1353654795, guid: 864b9e9eaaf34284e88507eb0f472a90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  coin: {fileID: 4854603114208903869, guid: 59326c00518c254479a8f170674aee73, type: 3}
   animator: {fileID: 2710529761571321623}
   rb: {fileID: 4254861275319360685}
 --- !u!95 &2710529761571321623

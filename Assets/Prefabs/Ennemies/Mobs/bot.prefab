@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2023541079291512146}
   - component: {fileID: 5923200777084304370}
   m_Layer: 7
-  m_Name: Bot
+  m_Name: bot
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,13 +79,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4573709949219481538, guid: f85db925382740f4cbfd7d303af9925e, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1984605301, guid: 1b5bd1ccd38c89941a817235835ffa22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xp: {fileID: 2288676109809363429, guid: a8526a29657fd1d47a351a541c199052, type: 3}
-  coin: {fileID: 4854603114208903869, guid: d92343b064a3cc64484d1489f607c5eb, type: 3}
+  coin: {fileID: 4854603114208903869, guid: 59326c00518c254479a8f170674aee73, type: 3}
   animator: {fileID: 5923200777084304370}
   rb: {fileID: 4238848961246972388}
 --- !u!95 &5923200777084304370
