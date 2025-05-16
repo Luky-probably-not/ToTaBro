@@ -8,7 +8,7 @@ public class Shotgun : Weapon
     protected override void Awake()
     {
         base.Awake();
-        Name = "Shotgun";
+        Name = "Mutli-Arrow";
         fireRate = 1.5f;
         bulletSpeed = 20;
         bulletDisparitionTime = 0.2f;
@@ -35,7 +35,7 @@ public class Shotgun : Weapon
             float angle = startAngle + i * angleStep;
             Vector2 rotateDirection = Quaternion.Euler(0, 0, angle) * directionShoot;
 
-            Shoot(rotateDirection.normalized, angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
+            Shoot(rotateDirection.normalized, Mathf.Atan2(directionShoot.y, directionShoot.x) * Mathf.Rad2Deg+angle, Quaternion.LookRotation(Vector3.forward, rotateDirection));
         }
         yield return null;
     }

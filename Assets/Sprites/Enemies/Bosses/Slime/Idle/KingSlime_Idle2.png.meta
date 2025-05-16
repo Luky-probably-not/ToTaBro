@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle/KingSlime_Idle2.png.meta
+guid: 300c0ddb96ade7d438cd32e67a42d857
+=======
 guid: 8d778a19ae724ba40891e33b4d0eb673
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle/KingSlime_Idle2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -37,7 +41,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle/KingSlime_Idle2.png.meta
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle/KingSlime_Idle2.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +59,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle/KingSlime_Idle2.png.meta
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 64
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle/KingSlime_Idle2.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,6 +108,22 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle/KingSlime_Idle2.png.meta
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle/KingSlime_Idle2.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -134,8 +162,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle/KingSlime_Idle2.png.meta
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       KingSlime_Idle2_0: -4655464283190111473
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle/KingSlime_Idle2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

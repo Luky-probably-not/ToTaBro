@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move.meta
+guid: aa30283648a82e141abddb1e217ab3d4
+=======
 guid: 5f83c06ec20fb4f4da7915d908d2af53
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

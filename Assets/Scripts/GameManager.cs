@@ -173,7 +173,11 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         setInGame(true);
+<<<<<<< HEAD
         selectedGameScenePrefab = gameScenePrefab;
+=======
+        selectedGameScenePrefab = gameScenePrefab1;
+>>>>>>> origin/feat/Player
 
         LoadScene(selectedGameScenePrefab);
         if (playerPrefab != null)

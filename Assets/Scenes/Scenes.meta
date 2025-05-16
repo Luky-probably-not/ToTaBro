@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Scenes.meta
 guid: 79a71470ed105c44488cfeb6baf611fe
+========
+guid: faf6f07bd7b85da47802328e1a9e0138
+>>>>>>>> origin/feat/Player:Assets/Animation/Player.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

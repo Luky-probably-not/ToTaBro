@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Attack.meta
+guid: 8809aece127390545bdb9fbebbe364bd
+=======
 guid: 9f6246228512471469264f558988cf9a
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Attack.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

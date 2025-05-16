@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Idle.meta
+guid: fd5460c4b433fb0498890edf08b1e32a
+=======
 guid: 73429c220cf2c814b86b281b30ccfc28
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Idle.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 577db70d8329472449426947740a3139
+=======
+<<<<<<< HEAD
+guid: 0ab723e7b6572184a8195722a9daa6be
+=======
+guid: 577db70d8329472449426947740a3139
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -70,7 +78,15 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+<<<<<<< HEAD
+    filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +100,15 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
+=======
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 16
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,6 +153,25 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -137,9 +180,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+<<<<<<< HEAD
         y: 48
         width: 16
         height: 16
+=======
+<<<<<<< HEAD
+        y: 47
+        width: 16
+        height: 17
+=======
+        y: 48
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +213,23 @@ TextureImporter:
       name: 7 walk_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 0
+        y: 31
+        width: 16
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 16
         y: 48
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +248,23 @@ TextureImporter:
       name: 7 walk_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 16
+        y: 47
+        width: 16
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 32
         y: 48
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +283,23 @@ TextureImporter:
       name: 7 walk_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 16
+        y: 31
+        width: 16
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 0
         y: 32
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +318,23 @@ TextureImporter:
       name: 7 walk_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 33
+        y: 47
+        width: 14
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 16
         y: 32
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +353,23 @@ TextureImporter:
       name: 7 walk_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 33
+        y: 31
+        width: 14
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 32
         y: 32
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,9 +389,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+<<<<<<< HEAD
         y: 16
         width: 16
         height: 16
+=======
+<<<<<<< HEAD
+        y: 15
+        width: 16
+        height: 17
+=======
+        y: 16
+        width: 16
+        height: 16
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +422,18 @@ TextureImporter:
       name: 7 walk_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 16
         y: 16
+=======
+<<<<<<< HEAD
+        x: 0
+        y: 0
+=======
+        x: 16
+        y: 16
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
         width: 16
         height: 16
       alignment: 0
@@ -312,10 +454,23 @@ TextureImporter:
       name: 7 walk_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 16
+        y: 15
+        width: 16
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 32
         y: 16
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +489,15 @@ TextureImporter:
       name: 7 walk_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
+=======
+<<<<<<< HEAD
+        x: 16
+=======
+        x: 0
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
         y: 0
         width: 16
         height: 16
@@ -356,10 +519,23 @@ TextureImporter:
       name: 7 walk_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        x: 33
+        y: 15
+        width: 14
+        height: 17
+=======
+>>>>>>> origin/feat/Player
         x: 16
         y: 0
         width: 16
         height: 16
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,9 +554,21 @@ TextureImporter:
       name: 7 walk_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 32
         y: 0
         width: 16
+=======
+<<<<<<< HEAD
+        x: 33
+        y: 0
+        width: 14
+=======
+        x: 32
+        y: 0
+        width: 16
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -400,7 +588,15 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: a0e57f102a822b34189cb84269ff87d8
+=======
+<<<<<<< HEAD
+    spriteID: 
+=======
+    spriteID: a0e57f102a822b34189cb84269ff87d8
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
     internalID: 0
     vertices: []
     indices: 
@@ -409,6 +605,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
+>>>>>>> origin/feat/Player
     nameFileIdTable:
       7 walk_0: 4628422984334842028
       7 walk_1: -4311414482397209671
@@ -422,6 +624,10 @@ TextureImporter:
       7 walk_7: 5052661198069013512
       7 walk_8: -6724986477187852471
       7 walk_9: 5351360431040321793
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

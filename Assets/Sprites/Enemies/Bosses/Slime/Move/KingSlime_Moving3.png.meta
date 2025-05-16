@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+guid: c680d690a35ba1347b099a701fd28a6a
+=======
 guid: 64c62d272dd416945b85c21846108651
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -40,7 +44,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +62,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 64
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,6 +111,22 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -106,10 +134,17 @@ TextureImporter:
       name: KingSlime_Moving3_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+        x: 2
+        y: 7
+        width: 60
+        height: 30
+=======
         x: 0
         y: 0
         width: 64
         height: 64
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,11 +159,40 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+    - serializedVersion: 2
+      name: KingSlime_Moving3_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af60495db784a9b0800000000000000
+      internalID: -5069778033196372056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+=======
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
     outline: []
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+    spriteID: 
+=======
     spriteID: bbb12391799379945a379b4b3e0060b5
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -137,8 +201,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD:Assets/Sprites/Enemies/Slime/Move/KingSlime_Moving3.png.meta
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       KingSlime_Moving3_0: -414325670860162993
+>>>>>>> origin/feat/enemies_animation:Assets/Sprites/Enemies/Bosses/Slime/Move/KingSlime_Moving3.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

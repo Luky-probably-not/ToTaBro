@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8eeb969ada34c1e4984f302a1921e89f
+=======
+<<<<<<< HEAD
+guid: cb510110b7a871e4d97994be4a798982
+=======
+guid: 8eeb969ada34c1e4984f302a1921e89f
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -129,6 +137,25 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
   spriteSheet:
     serializedVersion: 2
     sprites:
