@@ -1,0 +1,1200 @@
+fileFormatVersion: 2
+guid: a4fd27640dc25a649ab9cc4104795175
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2306492264222676800
+    second: SpritesPlayerWeapon_Transparent_0
+  - first:
+      213: -6355158633963682432
+    second: SpritesPlayerWeapon_Transparent_1
+  - first:
+      213: 2186769110984785680
+    second: SpritesPlayerWeapon_Transparent_2
+  - first:
+      213: -7423446467962532903
+    second: SpritesPlayerWeapon_Transparent_3
+  - first:
+      213: 607597986711142318
+    second: SpritesPlayerWeapon_Transparent_4
+  - first:
+      213: 4875744425952168132
+    second: SpritesPlayerWeapon_Transparent_5
+  - first:
+      213: 7842468794363498765
+    second: SpritesPlayerWeapon_Transparent_6
+  - first:
+      213: -1213855829439259571
+    second: SpritesPlayerWeapon_Transparent_7
+  - first:
+      213: 6275050939652276221
+    second: SpritesPlayerWeapon_Transparent_8
+  - first:
+      213: -2464906493155107003
+    second: SpritesPlayerWeapon_Transparent_9
+  - first:
+      213: 6968219658879124334
+    second: SpritesPlayerWeapon_Transparent_10
+  - first:
+      213: 6334706103201209008
+    second: SpritesPlayerWeapon_Transparent_11
+  - first:
+      213: 7835637678296467407
+    second: SpritesPlayerWeapon_Transparent_12
+  - first:
+      213: -5726392412062989035
+    second: SpritesPlayerWeapon_Transparent_13
+  - first:
+      213: -5297109742508849009
+    second: SpritesPlayerWeapon_Transparent_14
+  - first:
+      213: 8984280967196659891
+    second: SpritesPlayerWeapon_Transparent_15
+  - first:
+      213: 7901828239023649819
+    second: SpritesPlayerWeapon_Transparent_16
+  - first:
+      213: 5829278502471623969
+    second: SpritesPlayerWeapon_Transparent_17
+  - first:
+      213: 5600363204773964406
+    second: SpritesPlayerWeapon_Transparent_18
+  - first:
+      213: -6053187181238896034
+    second: SpritesPlayerWeapon_Transparent_19
+  - first:
+      213: 3785390248905093112
+    second: SpritesPlayerWeapon_Transparent_20
+  - first:
+      213: 3157021274951002215
+    second: SpritesPlayerWeapon_Transparent_21
+  - first:
+      213: 7578107364454794419
+    second: SpritesPlayerWeapon_Transparent_22
+  - first:
+      213: -6960840040959524578
+    second: SpritesPlayerWeapon_Transparent_23
+  - first:
+      213: -1148474704143349687
+    second: SpritesPlayerWeapon_Transparent_24
+  - first:
+      213: 7164602623654344045
+    second: SpritesPlayerWeapon_Transparent_25
+  - first:
+      213: 8795329081887135800
+    second: SpritesPlayerWeapon_Transparent_26
+  - first:
+      213: 2390116307990156259
+    second: SpritesPlayerWeapon_Transparent_27
+  - first:
+      213: 3638540371499105519
+    second: SpritesPlayerWeapon_Transparent_28
+  - first:
+      213: 5088085918917694092
+    second: SpritesPlayerWeapon_Transparent_29
+  - first:
+      213: -4676588758655806495
+    second: SpritesPlayerWeapon_Transparent_30
+  - first:
+      213: 6280516908139128390
+    second: SpritesPlayerWeapon_Transparent_31
+  - first:
+      213: -4247528834178443548
+    second: SpritesPlayerWeapon_Transparent_32
+  - first:
+      213: -4373414531566376584
+    second: SpritesPlayerWeapon_Transparent_33
+  - first:
+      213: -3469363418295926812
+    second: SpritesPlayerWeapon_Transparent_34
+  - first:
+      213: -3395683027607031490
+    second: SpritesPlayerWeapon_Transparent_35
+  - first:
+      213: -62454737723683301
+    second: SpritesPlayerWeapon_Transparent_36
+  - first:
+      213: -6392832999614479017
+    second: SpritesPlayerWeapon_Transparent_37
+  - first:
+      213: -220366418462355195
+    second: SpritesPlayerWeapon_Transparent_38
+  - first:
+      213: -8174643914946438180
+    second: SpritesPlayerWeapon_Transparent_39
+  - first:
+      213: 533134918558043204
+    second: SpritesPlayerWeapon_Transparent_40
+  - first:
+      213: -8851923298440300186
+    second: SpritesPlayerWeapon_Transparent_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_0
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 227
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c822d98181bdffd0800000000000000
+      internalID: -2306492264222676800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 226
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea8b40a340053e40b4b6ab379fa73a8
+      internalID: -6355158633963682432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 227
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8225dd89e7ea8b48b99cdb5d039b0ef
+      internalID: 2186769110984785680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 182
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e8b55b2983b5543a7a8e26ecafd28c
+      internalID: -7423446467962532903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 182
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b647e39373cc9e49ae534b492fbc9b6
+      internalID: 607597986711142318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 185
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c34e73a621f73e49956453cf11ad4ad
+      internalID: 4875744425952168132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 185
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37fc4aa9b5ce264c9fe889dcd0c65e2
+      internalID: 7842468794363498765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 180
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573fd5d9f28569c4ea9c439ca3c0e83d
+      internalID: -1213855829439259571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 27
+        width: 401
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf0a912be89f474b9c3d1b63509da49
+      internalID: 6275050939652276221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2411fafbc4c866429228553e8cc4d74
+      internalID: -2464906493155107003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 133
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc09c7c7cc03754eafbe6ebe227c3cb
+      internalID: 6968219658879124334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 133
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcf60a141bfda44ca7ff0df8a7388a9
+      internalID: 6334706103201209008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 133
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1393c224a838fb041893a4f41528bf0d
+      internalID: 7835637678296467407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 134
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dd81a82ff0ce947a8d1cb9cf1ec161
+      internalID: -5726392412062989035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_14
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 134
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85063134257cf2c4c95f5c10700433e0
+      internalID: -5297109742508849009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 133
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912d663e23e07104a9a37aaf1b1a43e0
+      internalID: 8984280967196659891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 131
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0090c414f1ee9c54794adda52459b3e1
+      internalID: 7901828239023649819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_17
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 136
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fc1077bc8056f4c84e88be5b7d699a
+      internalID: 5829278502471623969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac601bd3c84bae74f8f99566801954b0
+      internalID: 5600363204773964406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_19
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 74
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9a271b2814d534586a7c4e3e0a7c90
+      internalID: -6053187181238896034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 74
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431eb20fedb3e204896357211ec8a638
+      internalID: 3785390248905093112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 75
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88a499d19913ff4782056957fdb3cd1
+      internalID: 3157021274951002215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 99
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7d890e5ca951942abe655fe4c3f49d
+      internalID: 7578107364454794419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 101
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e7c801074e1634aa33925991b89eea
+      internalID: -6960840040959524578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_24
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 74
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5eb8cc55a83fa498132e17e6992eb8
+      internalID: -1148474704143349687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_25
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 73
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecdfa05099f73c40bef3035a2f3a221
+      internalID: 7164602623654344045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_26
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 70
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9030a8a7f6e15d4495e5094c0259096
+      internalID: 8795329081887135800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 70
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2071f2b566b290a418fb9bee1ebd3c6e
+      internalID: 2390116307990156259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 77
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9625afa481e4144ba5a13134347bf09
+      internalID: 3638540371499105519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 69
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0474369c8a9def4f8903edf932f06d5
+      internalID: 5088085918917694092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 8
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ace53ca94bb88c47b83cd14326212e1
+      internalID: -4676588758655806495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 8
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5738f348baf6f4ba9871deb02900fb
+      internalID: 6280516908139128390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_32
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 7
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80378218ceeb454784b58573c4e55c8
+      internalID: -4247528834178443548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_34
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37f47d23d4846a4fa94ce85a9bfe7cc
+      internalID: -3469363418295926812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2236dd1ff64969e4d9db43d17c689c6f
+      internalID: -3395683027607031490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_36
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 4
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ba329fc0fc64c4ca7faba0eb714187
+      internalID: -62454737723683301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_37
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 10
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb234d2121ce17d4ca1016d1b5bc9071
+      internalID: -6392832999614479017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 7
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125b8f821498d264a83a55821e65ecad
+      internalID: -220366418462355195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 5
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8dce4c014047548b289fd2afa59474
+      internalID: -8174643914946438180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_40
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ed2aff4b4e2e144a357c9884080c48
+      internalID: 533134918558043204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesPlayerWeapon_Transparent_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 6
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91624a37f9241964fb488623b017b6d0
+      internalID: -4373414531566376584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 12476f9ba792b54458754474a9a543c7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpritesPlayerWeapon_Transparent_0: -2306492264222676800
+      SpritesPlayerWeapon_Transparent_1: -6355158633963682432
+      SpritesPlayerWeapon_Transparent_10: 6968219658879124334
+      SpritesPlayerWeapon_Transparent_11: 6334706103201209008
+      SpritesPlayerWeapon_Transparent_12: 7835637678296467407
+      SpritesPlayerWeapon_Transparent_13: -5726392412062989035
+      SpritesPlayerWeapon_Transparent_14: -5297109742508849009
+      SpritesPlayerWeapon_Transparent_15: 8984280967196659891
+      SpritesPlayerWeapon_Transparent_16: 7901828239023649819
+      SpritesPlayerWeapon_Transparent_17: 5829278502471623969
+      SpritesPlayerWeapon_Transparent_18: 5600363204773964406
+      SpritesPlayerWeapon_Transparent_19: -6053187181238896034
+      SpritesPlayerWeapon_Transparent_2: 2186769110984785680
+      SpritesPlayerWeapon_Transparent_20: 3785390248905093112
+      SpritesPlayerWeapon_Transparent_21: 3157021274951002215
+      SpritesPlayerWeapon_Transparent_22: 7578107364454794419
+      SpritesPlayerWeapon_Transparent_23: -6960840040959524578
+      SpritesPlayerWeapon_Transparent_24: -1148474704143349687
+      SpritesPlayerWeapon_Transparent_25: 7164602623654344045
+      SpritesPlayerWeapon_Transparent_26: 8795329081887135800
+      SpritesPlayerWeapon_Transparent_27: 2390116307990156259
+      SpritesPlayerWeapon_Transparent_28: 3638540371499105519
+      SpritesPlayerWeapon_Transparent_29: 5088085918917694092
+      SpritesPlayerWeapon_Transparent_3: -7423446467962532903
+      SpritesPlayerWeapon_Transparent_30: -4676588758655806495
+      SpritesPlayerWeapon_Transparent_31: 6280516908139128390
+      SpritesPlayerWeapon_Transparent_32: -4247528834178443548
+      SpritesPlayerWeapon_Transparent_33: -4373414531566376584
+      SpritesPlayerWeapon_Transparent_34: -3469363418295926812
+      SpritesPlayerWeapon_Transparent_35: -3395683027607031490
+      SpritesPlayerWeapon_Transparent_36: -62454737723683301
+      SpritesPlayerWeapon_Transparent_37: -6392832999614479017
+      SpritesPlayerWeapon_Transparent_38: -220366418462355195
+      SpritesPlayerWeapon_Transparent_39: -8174643914946438180
+      SpritesPlayerWeapon_Transparent_4: 607597986711142318
+      SpritesPlayerWeapon_Transparent_40: 533134918558043204
+      SpritesPlayerWeapon_Transparent_41: -929685949
+      SpritesPlayerWeapon_Transparent_5: 4875744425952168132
+      SpritesPlayerWeapon_Transparent_6: 7842468794363498765
+      SpritesPlayerWeapon_Transparent_7: -1213855829439259571
+      SpritesPlayerWeapon_Transparent_8: 6275050939652276221
+      SpritesPlayerWeapon_Transparent_9: -2464906493155107003
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
