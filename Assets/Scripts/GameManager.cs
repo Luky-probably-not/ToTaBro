@@ -307,7 +307,7 @@ public class GameManager : MonoBehaviour
     {
         if (weapons.Count > 0)
         {
-            GameObject newWeapon = weapons[Random.Range(0, availableWeapons.Count)];
+            GameObject newWeapon = weapons[Random.Range(0, weapons.Count)];
             droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
             droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
@@ -381,7 +381,7 @@ public class GameManager : MonoBehaviour
             currentMerchantItems.Remove(item);
             if (item.GetComponent<Weapon>() != null)
             {
-                currentWeapon=weapon;
+                currentWeapon=item;
             }
         }
     }
