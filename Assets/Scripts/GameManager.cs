@@ -236,31 +236,16 @@ public class GameManager : MonoBehaviour
 
             if (currentWave % 10 == 0)
             {
-                if (currentWave == 50) {
+                if (currentWave == 50)
+                {
                     Instantiate(slurpPrefab, GetRandomPosition(), Quaternion.identity);
                 }
-                else 
+                else
                 {
                     GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
                     Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
                 }
                 enemiesAlive = 1;
-            }
-            else if (currentWave % 5 == 0)
-            {
-                if (currentWave % 10 == 0)
-                {
-                    if (currentWave == 50) {
-                        Instantiate(slurpPrefab, GetRandomPosition(), Quaternion.identity);
-                    }
-                    else 
-                    {
-                        GameObject chosenPrefab = Random.value < 0.5f ? slimePrefab : gunnerPrefab;
-                        Instantiate(chosenPrefab, GetRandomPosition(), Quaternion.identity);
-                    }
-                    enemiesAlive = 1;
-                }
-                TriggerMerchant();
             }
             else
             {
@@ -285,10 +270,15 @@ public class GameManager : MonoBehaviour
         enemiesAlive=enemiesAlive-minus;
         if (enemiesAlive <= 0)
         {
-            if (currentWave % 10 == 0)
+            if (currentWave % 5 == 0)
             {
-                DropNewWeapon();
+                if (currentWave % 10 == 0)
+                {
+                    DropNewWeapon();
+                }
+                TriggerMerchant();
             }
+            
 
             currentWave++;
             if (droppedWeapon != null && currentWave >= dropWeaponWave + 3)
