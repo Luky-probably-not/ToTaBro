@@ -36,8 +36,9 @@ public class GameManager : MonoBehaviour
     public GameObject laserPrefab;
     public GameObject shotgunPrefab;
     public GameObject swordPrefab;
-    private GameObject droppedWeapon;
+    private List<GameObject> droppedWeapons = new List<GameObject>();
     private int dropWeaponWave = -1;
+    private int dropWeaponExpiryWave = -1;
     private List<GameObject> weapons = new List<GameObject>();
     private GameObject currentWeapon;
 
@@ -279,10 +280,14 @@ public class GameManager : MonoBehaviour
             }
 
             currentWave++;
-            if (droppedWeapon != null && currentWave >= dropWeaponWave + 3)
+            for (int i = droppedWeapons.Count - 1; i >= 0; i--)
             {
-                Destroy(droppedWeapon);
-                droppedWeapon = null;
+                GameObject weapon = droppedWeapons[i];
+                if (weapon != null && currentWave >= dropWeaponWave + 3)
+                {
+                    Destroy(weapon);
+                    droppedWeapons.RemoveAt(i);
+                }
             }
             StartCoroutine(SpawnWave(3f));
         }
@@ -297,9 +302,9 @@ public class GameManager : MonoBehaviour
         if (availableWeapons.Count > 0)
         {
             GameObject newWeapon = availableWeapons[Random.Range(0, availableWeapons.Count)];
-            droppedWeapon = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
-            droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
-            droppedWeapon.GetComponent<Weapon>().LevelUp(currentWave);
+            GameObject newDrop = Instantiate(newWeapon, Vector3.right * 2f, Quaternion.identity);
+            droppedWeapons.Add(newDrop);
+            newDrop.GetComponent<Weapon>().LevelUp(currentWave);
             dropWeaponWave = currentWave;
         }
     }
@@ -370,6 +375,18 @@ public class GameManager : MonoBehaviour
         {
             currentMerchantItems.Remove(item);
         }
+    }
+    public void EquipWeapon(GameObject pickedWeapon)
+    {
+        foreach (GameObject weapon in droppedWeapons.ToArray())
+        {
+            if (weapon != pickedWeapon && weapon != null)
+            {
+                Destroy(weapon);
+                droppedWeapons.Remove(weapon);
+            }
+        }
+        droppedWeapons.Remove(pickedWeapon);
     }
     private GameObject GetRandomPotion()
     {

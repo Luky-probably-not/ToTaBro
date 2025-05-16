@@ -92,6 +92,7 @@ public abstract class Weapon : MonoBehaviour
         GameManager.Instance.removeFromMarchent(this.gameObject);
         this.isWielded = true;
         this.ClosePopup();
+        GameManager.Instance.EquipWeapon(this.gameObject);
     }
 
     public void Desequip()
