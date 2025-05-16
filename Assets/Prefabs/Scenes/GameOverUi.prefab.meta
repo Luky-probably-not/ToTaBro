@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Scenes/GameOverUi.prefab.meta
 guid: 996409bebb59af84e9410952240fc16a
 PrefabImporter:
+========
+guid: aeaa7133a44fcc24595c1013af1370ca
+NativeFormatImporter:
+>>>>>>>> origin/feat/Player:Assets/Animation/Player/death.anim.meta
   externalObjects: {}
+  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

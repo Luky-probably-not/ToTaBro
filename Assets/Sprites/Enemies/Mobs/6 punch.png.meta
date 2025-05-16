@@ -2,9 +2,16 @@ fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 42fecc58767b9f6489779fcdfc68bdef
 =======
 <<<<<<< HEAD
+guid: 8b8b2c27c8a07a8449b60994e53bcfc4
+=======
+guid: 42fecc58767b9f6489779fcdfc68bdef
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
+=======
 guid: 8b8b2c27c8a07a8449b60994e53bcfc4
 =======
 guid: 42fecc58767b9f6489779fcdfc68bdef
@@ -154,8 +161,11 @@ TextureImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/feat/Player
 =======
 >>>>>>> origin/feat/Player
 =======
@@ -177,6 +187,9 @@ TextureImporter:
 >>>>>>> origin/feat/enemies_animation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/feat/Player
+=======
 >>>>>>> origin/feat/Player
 =======
 >>>>>>> origin/feat/Player

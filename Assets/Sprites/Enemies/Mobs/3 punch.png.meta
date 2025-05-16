@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 83d260a387bd94c44baf0886fe64ab64
+=======
+<<<<<<< HEAD
+guid: 83d260a387bd94c44baf0886fe64ab64
+=======
+guid: 95d7234accc507942bd66342dea3bc73
+>>>>>>> origin/feat/enemies_animation
+>>>>>>> origin/feat/Player
 TextureImporter:
   internalIDToNameTable:
   - first:
