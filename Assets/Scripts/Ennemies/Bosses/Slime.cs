@@ -6,7 +6,7 @@ public class Slime : Ennemy
 	[Header("Attack")]
     [SerializeField] protected GameObject attack;
     protected bool hasSplit = false;
-    protected int maxHp = 500;
+    protected int maxHp = 50;
 
 	private bool canMove = true;
     
